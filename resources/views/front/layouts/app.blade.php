@@ -8,6 +8,8 @@
 
     @vite('resources/bootstrap/scss/bootstrap.scss')
 
+    @vite('resources/scss/stylesheet.scss')
+
 </head>
 <body>
 

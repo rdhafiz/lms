@@ -1,0 +1,31 @@
+$iteration: 2560;
+
+$base-value: 1px;
+
+@for $i from 1 through $iteration {
+
+    .width-#{$i} {
+        width: $base-value * $i !important;
+    }
+
+    .height-#{$i} {
+        height: $base-value * $i !important;
+    }
+
+    .-mt-#{$i} {
+        margin-top: - $base-value * $i !important;
+    }
+
+    .-mb-#{$i} {
+        margin-bottom: - $base-value * $i !important;
+    }
+
+    .-ml-#{$i} {
+        margin-left: - $base-value * $i !important;
+    }
+
+    .-mr-#{$i} {
+        margin-right: - $base-value * $i !important;
+    }
+
+}

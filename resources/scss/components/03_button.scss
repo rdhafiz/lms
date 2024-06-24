@@ -1,0 +1,26 @@
+.btn-theme {
+    background-color: var(--theme) !important;
+    color: var(--bs-white) !important;
+    transition: 0.3s all ease-in-out !important;
+    border: 1px solid var(--theme) !important;
+
+    &:hover {
+        background-color: var(--dark-theme) !important;
+        transition: 0.3s all ease-in-out !important;
+    }
+
+}
+
+.btn-outline-theme {
+    background-color: var(--bs-white) !important;
+    color: var(--theme) !important;
+    transition: 0.3s all ease-in-out !important;
+    border: 1px solid var(--theme) !important;
+
+    &:hover {
+        background-color: var(--dark-theme) !important;
+        color: var(--bs-white) !important;
+        transition: 0.3s all ease-in-out !important;
+    }
+
+}
