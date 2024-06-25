@@ -125,7 +125,7 @@
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <a href="javascript:void(0)" class="btn btn-theme rounded-pill px-3 py-2">
+                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-3 py-2">
                                         Enroll Now
                                     </a>
                                     <div
@@ -176,7 +176,7 @@
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <a href="javascript:void(0)" class="btn btn-theme rounded-pill px-3 py-2">
+                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-3 py-2">
                                         Enroll Now
                                     </a>
                                     <div
@@ -227,7 +227,7 @@
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <a href="javascript:void(0)" class="btn btn-theme rounded-pill px-3 py-2">
+                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-3 py-2">
                                         Enroll Now
                                     </a>
                                     <div
@@ -278,7 +278,7 @@
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <a href="javascript:void(0)" class="btn btn-theme rounded-pill px-3 py-2">
+                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-3 py-2">
                                         Enroll Now
                                     </a>
                                     <div
@@ -329,7 +329,7 @@
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <a href="javascript:void(0)" class="btn btn-theme rounded-pill px-3 py-2">
+                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-3 py-2">
                                         Enroll Now
                                     </a>
                                     <div
@@ -380,7 +380,7 @@
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <a href="javascript:void(0)" class="btn btn-theme rounded-pill px-3 py-2">
+                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-3 py-2">
                                         Enroll Now
                                     </a>
                                     <div

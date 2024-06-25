@@ -24,3 +24,10 @@
     }
 
 }
+
+.btn-light-theme {
+    background-color: var(--theme-opacity) !important;
+    color: var(--theme) !important;
+    transition: 0.3s all ease-in-out !important;
+    border: 1px solid transparent !important;
+}

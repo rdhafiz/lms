@@ -23,17 +23,17 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a class="dropdown-item" href="javascript:void(0)">
+                            <a class="dropdown-item" href="{{route('front.course-details')}}">
                                 Creative Graphic Design
                             </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="javascript:void(0)">
+                            <a class="dropdown-item" href="{{route('front.course-details')}}">
                                 Full Web Development
                             </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="javascript:void(0)">
+                            <a class="dropdown-item" href="{{route('front.course-details')}}">
                                 Cyber Security
                             </a>
                         </li>
