@@ -1,0 +1,11 @@
+.form-control, .form-select, .form-textarea {
+    outline: none !important;
+    border: 1px solid var(--bs-border-color) !important;
+    transition: 0.3s all ease-in-out !important;
+
+    &:focus, &:active {
+        border: 1px solid var(--theme) !important;
+        transition: 0.3s all ease-in-out !important;
+    }
+
+}
