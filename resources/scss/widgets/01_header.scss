@@ -1,7 +1,9 @@
 .navbar {
     background-color: var(--bs-white);
 
-    .navbar-brand {  }
+    .navbar-brand {
+        font-size: 30px;
+    }
 
     .collapse, .collapsing {
 
@@ -49,7 +51,7 @@
         .navbar-nav {
             @media screen and (max-width: 991px) {
                 display: flex;
-                justify-content: start;
+                justify-content: space-between;
                 align-items: center;
                 height: 100%;
 
