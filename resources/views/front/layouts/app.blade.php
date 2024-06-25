@@ -28,10 +28,10 @@
     @include('front.layouts.widgets.footer')
 
     {{-- bootstrap bundle js --}}
-    <script src="{{asset('assets/js/bootstrap.bundle.min.js')}}" type="application/javascript"></script>
+    <script src="{{asset('assets/js/bootstrap.bundle.min.js')}}"></script>
 
     {{-- aos --}}
-    <script src="{{asset('assets/js/aos.js')}}" type="application/javascript"></script>
+    <script src="{{asset('assets/js/aos.js')}}"></script>
 
     <script type="application/javascript">
         AOS.init();
