@@ -3,82 +3,34 @@
 
 @section('content')
 
-    <div class="mb-4">
-        <div style="height: 350px" class="bg-light position-relative">
-            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center flex-column">
-                <div class="mb-3 text-center fw-medium">
-                    Contact
-                </div>
-                <div class="mb-3 text-center fw-medium d-flex justify-content-center align-items-center gap-3">
-                    <a href="javascript:void(0)" class="text-decoration-none text-secondary">
-                        Home
-                    </a>
-                    <div class="fw-bold">/</div>
-                    <a href="javascript:void(0)" class="text-decoration-none text-secondary active">
-                        Contact
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
+    {{-- Breadcrumb --}}
+    <section class="w-100 bg-warning-subtle">
+        <div class="container">
+            <div class="d-flex justify-content-start align-items-center height-350">
+                <div>
+                    <div class="fs-1 fw-bold text-theme-secondary mb-3 d-block"> Contact Us</div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 mb-4">
-                <div class="mb-3 fw-medium fs-4">
-                    Get In Touch
-                </div>
-                <div class="mb-3 text-secondary">
-                    Phone Number: 123456789
-                </div>
-                <div class="mb-3 text-secondary">
-                    Address: Agnatha Hall, Jasikan College of Education, TBCS Enterprise, Jasikan, Ghana
-                </div>
-                <div class="mb-3 text-secondary">
-                    Email: lms@example.com
-                </div>
-                <form>
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <div class="form-group mb-3">
-                                <label for="name" class="form-label">Full Name</label>
-                                <input id="name" type="text" name="name" class="form-control py-2 px-3 rounded-0 shadow-none border" required autocomplete="new-email">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group mb-3">
-                                <label for="email" class="form-label">Email</label>
-                                <input id="email" type="email" name="email" class="form-control py-2 px-3 rounded-0 shadow-none border" required autocomplete="new-email">
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-group mb-3">
-                                <label for="subject" class="form-label">Subject</label>
-                                <input id="subject" type="text" name="subject" class="form-control py-2 px-3 rounded-0 shadow-none border" required autocomplete="new-subject">
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-group mb-3">
-                                <label for="message" class="form-label">Message</label>
-                                <textarea name="message" id="message" cols="30" rows="5" class="form-textarea p-3 rounded-0 shadow-none border d-block w-100" required autocomplete="new-message"></textarea>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <button type="submit" class="btn btn-primary rounded-0 px-3 py-2">
-                                Submit
-                            </button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="col-lg-6 mb-4">
-                <div class="overflow-hidden w-100" style="height:500px;">
-                    <div id="gmap-canvas" class="w-100 h-100">
-                        <iframe class="w-100 h-100 border-0" src="https://www.google.com/maps/embed/v1/place?q=Agnatha+Hall,+Jasikan+College+of+Education,+TBCS+Enterprise,+Jasikan,+Ghana&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
-                    </div>
+                    <nav
+                        style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+                        aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="{{route('front.home')}}" class="text-decoration-none text-dark">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item active">
+                                <a href="{{route('front.contact')}}" class="text-decoration-none text-theme">
+                                    Contact
+                                </a>
+                            </li>
+                        </ol>
+                    </nav>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+
 
 @endsection
