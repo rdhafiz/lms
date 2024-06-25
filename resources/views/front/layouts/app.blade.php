@@ -36,7 +36,7 @@
     {{-- aos --}}
     <script src="{{asset('assets/js/aos.js')}}"></script>
 
-    <script type="application/javascript">
+    <script>
         AOS.init();
     </script>
 

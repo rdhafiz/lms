@@ -12,7 +12,7 @@
                     <img src="{{asset('/images/svg/header/close.svg')}}" class="img-fluid width-25 height-25"
                          alt="close" onclick="collapse()">
                 </li>
-                <ul class="nav-list d-lg-flex text-start h-100">
+                <ol class="nav-list d-lg-flex text-start h-100">
                     <li class="nav-item">
                         <a class="nav-link mx-lg-2 {{Route::currentRouteName() == 'front.home' ? 'active' : ''}}" href="{{route('front.home')}}">
                             Home
@@ -65,7 +65,7 @@
                             SignUp
                         </a>
                     </li>
-                </ul>
+                </ol>
                 <li class="nav-item w-100 d-flex d-lg-none justify-content-center align-items-center flex-column">
                     <div class="text-center">
                         Get In Touch
