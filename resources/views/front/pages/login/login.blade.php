@@ -24,7 +24,7 @@
                             <button type="submit" class="btn btn-primary py-2 px-3 rounded-0">
                                 Login
                             </button>
-                            <a href="{{route('forget_password')}}" class="text-danger text-decoration-none">
+                            <a href="{{route('front.forget_password')}}" class="text-danger text-decoration-none">
                                 Forget Password?
                             </a>
                         </div>
@@ -33,7 +33,7 @@
                         <div class="mb-3 text-center fw-medium fs-3">
                             Don't have any account
                         </div>
-                        <a href="{{route('register')}}" class="text-decoration-none text-secondary fs-5">
+                        <a href="{{route('front.register')}}" class="text-decoration-none text-secondary fs-5">
                             Create New Account
                         </a>
                     </div>

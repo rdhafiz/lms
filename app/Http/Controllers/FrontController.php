@@ -49,4 +49,8 @@ class FrontController extends BaseController
         return view('front.pages.reset-password.reset-password');
     }
 
+    public function courses() {
+        return view('front.pages.course.course');
+    }
+
 }

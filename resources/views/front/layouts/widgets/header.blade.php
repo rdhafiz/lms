@@ -37,6 +37,11 @@
                                 Cyber Security
                             </a>
                         </li>
+                        <li>
+                            <a class="dropdown-item" href="{{route('front.courses')}}">
+                                Show all
+                            </a>
+                        </li>
                     </ul>
                 </li>
                 <li class="nav-item">
