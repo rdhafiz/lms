@@ -5,8 +5,13 @@ export default defineConfig({
     plugins: [
         laravel({
             input: [
+
+                // bootstrap source
                 'resources/bootstrap/scss/bootstrap.scss',
+
+                // stylesheet source
                 'resources/scss/stylesheet.scss',
+
             ],
             refresh: true,
         }),
