@@ -66,6 +66,64 @@
         </div>
     </section>
 
-
+    {{-- box content --}}
+    <section class="w-100 py-5">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                <div class="p-1">
+                    <div class="bg-secondary-subtle d-flex justify-content-start align-items-center p-4 rounded-3">
+                        <div
+                            class="width-65 height-65 rounded-circle d-flex justify-content-center align-items-center bg-secondary">
+                            <img src="{{asset('/images/svg/home/pencil-ruler.svg')}}" class="width-25 height-25"
+                                 alt="box-icon-1">
+                        </div>
+                        <div class="ms-2">
+                            <div class="fw-bold fs-4"> 1K</div>
+                            <div class="text-secondary fs-6"> Online Courses</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-1">
+                    <div class="bg-secondary-subtle d-flex justify-content-start align-items-center p-4 rounded-3">
+                        <div
+                            class="width-65 height-65 rounded-circle d-flex justify-content-center align-items-center bg-light-pink">
+                            <img src="{{asset('/images/svg/home/people.svg')}}" class="width-25 height-25"
+                                 alt="box-icon-2">
+                        </div>
+                        <div class="ms-2">
+                            <div class="fw-bold fs-4"> 28+</div>
+                            <div class="text-secondary fs-6"> Expert Tutors</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-1">
+                    <div class="bg-secondary-subtle d-flex justify-content-start align-items-center p-4 rounded-3">
+                        <div
+                            class="width-65 height-65 rounded-circle d-flex justify-content-center align-items-center bg-light-purple">
+                            <img src="{{asset('/images/svg/home/certified.svg')}}" class="width-25 height-25"
+                                 alt="box-icon-3">
+                        </div>
+                        <div class="ms-2">
+                            <div class="fw-bold fs-4"> 1K +</div>
+                            <div class="text-secondary fs-6"> Certified Courses</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-1">
+                    <div class="bg-secondary-subtle d-flex justify-content-start align-items-center p-4 rounded-3">
+                        <div
+                            class="width-65 height-65 rounded-circle d-flex justify-content-center align-items-center bg-light-info">
+                            <img src="{{asset('/images/svg/home/morterboard.svg')}}" class="width-25 height-25"
+                                 alt="box-icon-4">
+                        </div>
+                        <div class="ms-2">
+                            <div class="fw-medium"> 8K+</div>
+                            <div class="text-secondary"> Online Students</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 @endsection
