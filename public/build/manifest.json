@@ -1,0 +1,12 @@
+{
+  "resources/bootstrap/scss/bootstrap.scss": {
+    "file": "assets/bootstrap-9kx3olKa.css",
+    "src": "resources/bootstrap/scss/bootstrap.scss",
+    "isEntry": true
+  },
+  "resources/scss/stylesheet.scss": {
+    "file": "assets/stylesheet-WrcsjRQz.css",
+    "src": "resources/scss/stylesheet.scss",
+    "isEntry": true
+  }
+}
