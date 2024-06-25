@@ -9,7 +9,6 @@
             <div class="d-flex justify-content-start align-items-center height-350">
                 <div>
                     <div class="fs-1 fw-bold text-theme-secondary mb-3 d-block"> Contact Us</div>
-
                     <nav
                         style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
                         aria-label="breadcrumb">
@@ -197,14 +196,14 @@
                     </div>
                     <div class="col-lg-6 py-3">
                         <div class="position-relative">
-                            <input type="email" name="email"
-                                   class="form-control shadow-none py-3 ps-4 rounded-0 rounded-pill" required
+                            <input type="email" name="email" class="form-control shadow-none py-3 ps-4 rounded-0 rounded-pill" required
                                    autocomplete="new-email" placeholder="Enter your Email">
                             <div class="position-absolute top-50 end-0 translate-middle-y pe-3">
                                 <button type="submit" class="btn btn-theme rounded-pill px-4">
                                     <span class="d-none d-sm-inline me-1">Subscribe</span>
                                     <span>
-                                        <img src="{{asset('/images/svg/home/send.svg')}}" class="width-21 height-21" alt="send">
+                                        <img src="{{asset('/images/svg/home/send.svg')}}" class="width-21 height-21"
+                                             alt="send">
                                     </span>
                                 </button>
                             </div>
