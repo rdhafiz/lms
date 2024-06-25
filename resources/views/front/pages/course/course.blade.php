@@ -86,6 +86,8 @@
 
             {{-- courses list --}}
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 mt-5">
+
+                {{-- course item --}}
                 <div class="p-2 mb-5">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-1.jpg')}}"
@@ -125,11 +127,11 @@
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-3 py-2">
+                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-4 py-2">
                                         Enroll Now
                                     </a>
                                     <div
-                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-opacity-theme">
+                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
                                         $40
                                     </div>
                                 </div>
@@ -137,6 +139,8 @@
                         </div>
                     </div>
                 </div>
+
+                {{-- course item --}}
                 <div class="p-2 mb-5">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-2.jpg')}}"
@@ -176,11 +180,11 @@
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-3 py-2">
+                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-4 py-2">
                                         Enroll Now
                                     </a>
                                     <div
-                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-opacity-theme">
+                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
                                         $40
                                     </div>
                                 </div>
@@ -188,6 +192,8 @@
                         </div>
                     </div>
                 </div>
+
+                {{-- course item --}}
                 <div class="p-2 mb-5">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-3.jpg')}}"
@@ -227,11 +233,11 @@
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-3 py-2">
+                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-4 py-2">
                                         Enroll Now
                                     </a>
                                     <div
-                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-opacity-theme">
+                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
                                         $40
                                     </div>
                                 </div>
@@ -239,6 +245,8 @@
                         </div>
                     </div>
                 </div>
+
+                {{-- course item --}}
                 <div class="p-2 mb-5">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-4.jpg')}}"
@@ -278,11 +286,11 @@
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-3 py-2">
+                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-4 py-2">
                                         Enroll Now
                                     </a>
                                     <div
-                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-opacity-theme">
+                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
                                         $40
                                     </div>
                                 </div>
@@ -290,6 +298,8 @@
                         </div>
                     </div>
                 </div>
+
+                {{-- course item --}}
                 <div class="p-2 mb-5">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-5.jpg')}}"
@@ -329,11 +339,11 @@
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-3 py-2">
+                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-4 py-2">
                                         Enroll Now
                                     </a>
                                     <div
-                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-opacity-theme">
+                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
                                         $40
                                     </div>
                                 </div>
@@ -341,6 +351,8 @@
                         </div>
                     </div>
                 </div>
+
+                {{-- course item --}}
                 <div class="p-2 mb-5">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-6.jpg')}}"
@@ -380,11 +392,11 @@
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-3 py-2">
+                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-4 py-2">
                                         Enroll Now
                                     </a>
                                     <div
-                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-opacity-theme">
+                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
                                         $40
                                     </div>
                                 </div>
@@ -392,6 +404,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
             <div class="mt-5">
 

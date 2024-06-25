@@ -5,3 +5,52 @@
 .text-theme-secondary {
     color: var(--theme-secondary);
 }
+
+.underline-anim {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+
+    &.text-dark {
+        &:before {
+            background-color: var(--bs-dark);
+        }
+    }
+
+    &.text-white {
+        &:before {
+            background-color: var(--bs-white);
+        }
+    }
+
+    &.text-info {
+        &:before {
+            background-color: var(--bs-info);
+        }
+    }
+
+    &.text-secondary {
+        &:before {
+            background-color: var(--bs-secondary);
+        }
+    }
+
+    &:before {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        height: 1px;
+        background-color: var(--black);
+        width: 100%;
+        transform-origin: left;
+        transform: scale(0);
+        transition: .3s all ease-in-out;
+    }
+
+    &:hover {
+        &:before {
+            transition: .3s all ease-in-out;
+            transform: scale(1);
+        }
+    }
+}
