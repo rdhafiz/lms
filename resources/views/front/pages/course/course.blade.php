@@ -423,4 +423,36 @@
         </div>
     </section>
 
+
+
+    {{-- Join our community of students --}}
+    <section class="w-100 py-5">
+        <div class="container">
+            <div class="bg-light-pink px-4 rounded-3 py-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="fs-1 text-white ">
+                            Join our community of students
+                        </div>
+                    </div>
+                    <div class="col-lg-6 py-3">
+                        <div class="position-relative">
+                            <input type="email" name="email" class="form-control shadow-none py-3 ps-4 rounded-0 rounded-pill" required
+                                   autocomplete="new-email" placeholder="Enter your Email">
+                            <div class="position-absolute top-50 end-0 translate-middle-y pe-3">
+                                <button type="submit" class="btn btn-theme rounded-pill px-4">
+                                    <span class="d-none d-sm-inline me-1">Subscribe</span>
+                                    <span>
+                                        <img src="{{asset('/images/svg/home/send.svg')}}" class="width-21 height-21"
+                                             alt="send">
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 @endsection
