@@ -3,7 +3,7 @@
 
 @section('content')
 
-    {{-- breadcrumb --}}
+    {{-- Breadcrumb --}}
     <section class="w-100 bg-warning-subtle">
         <div class="container">
             <div class="d-flex justify-content-start align-items-center height-350">
@@ -29,10 +29,13 @@
         </div>
     </section>
 
+    {{-- course --}}
     <section class="w-100 py-5">
         <div class="container py-5">
             <div class="row">
                 <div class="col-lg-6">
+
+                    {{-- search course --}}
                     <div class="position-relative">
                         <input type="text" name="keyword"
                                class="form-control shadow-none py-3 ps-5 rounded-0 rounded-pill" required
@@ -42,6 +45,8 @@
                         </div>
                         <div
                             class="position-absolute top-50 end-0 translate-middle-y pe-2 d-flex justify-content-end align-items-center">
+
+                            {{-- course category --}}
                             <div class="dropdown">
                                 <button type="button" class="btn height-40 bg-opacity-theme px-4 border-0 rounded-pill"
                                         data-bs-toggle="dropdown" aria-expanded="false">
@@ -67,7 +72,9 @@
                                     </li>
                                 </ul>
                             </div>
-                            <button type="button"
+
+                            {{-- course submit action --}}
+                            <button type="submit"
                                     class="btn btn-theme width-40 height-40 ms-1 rounded-circle d-flex justify-content-center align-items-center">
                                 <img src="{{asset('/images/svg/home/arrow-right.svg')}}"
                                      class="img-fluid width-25 height-25" alt="arrow-right">
@@ -76,6 +83,8 @@
                     </div>
                 </div>
             </div>
+
+            {{-- courses list --}}
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 mt-5">
                 <div class="p-2 mb-5">
                     <div class="position-relative">
@@ -385,6 +394,8 @@
                 </div>
             </div>
             <div class="mt-5">
+
+                {{-- course pagination --}}
                 <nav aria-label="Page navigation example">
                     <ul class="pagination d-flex justify-content-center align-items-center">
                         <li class="page-item">
@@ -422,8 +433,6 @@
             </div>
         </div>
     </section>
-
-
 
     {{-- Join our community of students --}}
     <section class="w-100 py-5">
