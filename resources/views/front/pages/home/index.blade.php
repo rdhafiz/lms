@@ -90,6 +90,8 @@
     <section class="w-100 py-5">
         <div class="container">
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+
+                {{-- box count of online courses --}}
                 <div class="p-2">
                     <div class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start" style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
                         <div
@@ -103,6 +105,8 @@
                         </div>
                     </div>
                 </div>
+
+                {{-- box count of expert tutors --}}
                 <div class="p-2">
                     <div class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start" style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
                         <div
@@ -116,6 +120,8 @@
                         </div>
                     </div>
                 </div>
+
+                {{-- box count of certified courses --}}
                 <div class="p-2">
                     <div class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start" style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
                         <div
@@ -129,6 +135,8 @@
                         </div>
                     </div>
                 </div>
+
+                {{-- box count of online students --}}
                 <div class="p-2">
                     <div class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start" style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
                         <div
@@ -142,6 +150,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -149,21 +158,32 @@
     {{-- Popular courses --}}
     <section class="w-100 py-5">
         <div class="container">
+
             <div class="row">
+
                 <div class="col-lg-6">
+
                     <div class="mb-2 fs-1 fw-bold"> Popular courses</div>
-                    <div class="text-secondary fw-medium mb-3">
+
+                    <div class="text-dark fw-medium mb-3">
                         Experience seamless online learning with our user-friendly LMS website.
                         Explore our courses and improve your skills today.
                     </div>
+
                 </div>
-                <div class="col-lg-6 text-end">
+
+                {{-- courses route --}}
+                <div class="col-lg-6 text-end mb-3">
                     <a href="{{route('front.courses')}}" class="btn btn-theme rounded-pill py-2 px-4">
                         View all courses
                     </a>
                 </div>
+
             </div>
+
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3">
+
+                {{-- course item --}}
                 <div class="p-2 mb-5">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-1.jpg')}}"
@@ -203,7 +223,7 @@
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-3 py-2">
+                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-4 py-2">
                                         Enroll Now
                                     </a>
                                     <div
@@ -215,6 +235,8 @@
                         </div>
                     </div>
                 </div>
+
+                {{-- course item --}}
                 <div class="p-2 mb-5">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-2.jpg')}}"
@@ -254,7 +276,7 @@
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-3 py-2">
+                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-4 py-2">
                                         Enroll Now
                                     </a>
                                     <div
@@ -266,6 +288,8 @@
                         </div>
                     </div>
                 </div>
+
+                {{-- course item --}}
                 <div class="p-2 mb-5">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-3.jpg')}}"
@@ -305,7 +329,7 @@
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-3 py-2">
+                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-4 py-2">
                                         Enroll Now
                                     </a>
                                     <div
@@ -317,6 +341,8 @@
                         </div>
                     </div>
                 </div>
+
+                {{-- course item --}}
                 <div class="p-2 mb-5">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-4.jpg')}}"
@@ -356,7 +382,7 @@
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-3 py-2">
+                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-4 py-2">
                                         Enroll Now
                                     </a>
                                     <div
@@ -368,6 +394,8 @@
                         </div>
                     </div>
                 </div>
+
+                {{-- course item --}}
                 <div class="p-2 mb-5">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-5.jpg')}}"
@@ -407,7 +435,7 @@
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-3 py-2">
+                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-4 py-2">
                                         Enroll Now
                                     </a>
                                     <div
@@ -419,6 +447,8 @@
                         </div>
                     </div>
                 </div>
+
+                {{-- course item --}}
                 <div class="p-2 mb-5">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-6.jpg')}}"
@@ -458,7 +488,7 @@
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-3 py-2">
+                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-4 py-2">
                                         Enroll Now
                                     </a>
                                     <div
@@ -470,115 +500,136 @@
                         </div>
                     </div>
                 </div>
+
             </div>
+
         </div>
     </section>
 
     {{-- top category --}}
     <section class="w-100 py-5">
         <div class="container py-5">
+
             <div class="mb-4 text-center fs-1 fw-bold">
                 Top Categories
             </div>
+
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+
+                {{-- course category --}}
                 <div class="p-2">
-                    <div
-                        class="w-100 bg-secondary-subtle rounded-3 p-4 d-flex align-items-center justify-content-start">
+                    <a href="javascript:void(0)" class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start text-decoration-none text-dark" style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
                         <img src="{{asset('/images/svg/home/pencil-theme.svg')}}" class="width-45 height-45"
                              alt="pencil-theme">
-                        <div class="ms-3 fw-bold fs-5">
+                        <div class="ms-3 fw-bold fs-6">
                             Art & Design
                         </div>
-                    </div>
+                    </a>
                 </div>
+
+                {{-- course category --}}
                 <div class="p-2">
-                    <div
-                        class="w-100 bg-secondary-subtle rounded-3 p-4 d-flex align-items-center justify-content-start">
+                    <a href="javascript:void(0)" class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start text-decoration-none text-dark" style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
                         <img src="{{asset('/images/svg/home/code-theme.svg')}}" class="width-45 height-45"
                              alt="pencil-theme">
                         <div class="ms-3 fw-bold fs-5">
                             Development
                         </div>
-                    </div>
+                    </a>
                 </div>
+
+                {{-- course category --}}
                 <div class="p-2">
-                    <div
-                        class="w-100 bg-secondary-subtle rounded-3 p-4 d-flex align-items-center justify-content-start">
+                    <a href="javascript:void(0)" class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start text-decoration-none text-dark" style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
                         <img src="{{asset('/images/svg/home/lifestyle-theme.svg')}}" class="width-45 height-45"
                              alt="pencil-theme">
                         <div class="ms-3 fw-bold fs-5">
                             Lifestyle
                         </div>
-                    </div>
+                    </a>
                 </div>
+
+                {{-- course category --}}
                 <div class="p-2">
-                    <div
-                        class="w-100 bg-secondary-subtle rounded-3 p-4 d-flex align-items-center justify-content-start">
+                    <a href="javascript:void(0)" class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start text-decoration-none text-dark" style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
                         <img src="{{asset('/images/svg/home/business.svg')}}" class="width-45 height-45"
                              alt="pencil-theme">
                         <div class="ms-3 fw-bold fs-5">
                             Business
                         </div>
-                    </div>
+                    </a>
                 </div>
+
+                {{-- course category --}}
                 <div class="p-2">
-                    <div
-                        class="w-100 bg-secondary-subtle rounded-3 p-4 d-flex align-items-center justify-content-start">
+                    <a href="javascript:void(0)" class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start text-decoration-none text-dark" style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
                         <img src="{{asset('/images/svg/home/light-theme.svg')}}" class="width-45 height-45"
                              alt="pencil-theme">
                         <div class="ms-3 fw-bold fs-5">
                             Technology
                         </div>
-                    </div>
+                    </a>
                 </div>
+
+                {{-- course category --}}
                 <div class="p-2">
-                    <div
-                        class="w-100 bg-secondary-subtle rounded-3 p-4 d-flex align-items-center justify-content-start">
+                    <a href="javascript:void(0)" class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start text-decoration-none text-dark" style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
                         <img src="{{asset('/images/svg/home/chart-theme.svg')}}" class="width-45 height-45"
                              alt="pencil-theme">
                         <div class="ms-3 fw-bold fs-5">
                             Data Science
                         </div>
-                    </div>
+                    </a>
                 </div>
+
+                {{-- course category --}}
                 <div class="p-2">
-                    <div
-                        class="w-100 bg-secondary-subtle rounded-3 p-4 d-flex align-items-center justify-content-start">
+                    <a href="javascript:void(0)" class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start text-decoration-none text-dark" style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
                         <img src="{{asset('/images/svg/home/heart-theme.svg')}}" class="width-45 height-45"
                              alt="pencil-theme">
                         <div class="ms-3 fw-bold fs-5">
                             Heart Care
                         </div>
-                    </div>
+                    </a>
                 </div>
+
+                {{-- course category --}}
                 <div class="p-2">
-                    <div
-                        class="w-100 bg-secondary-subtle rounded-3 p-4 d-flex align-items-center justify-content-start">
+                    <a  href="javascript:void(0)" class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start text-decoration-none text-dark" style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
                         <img src="{{asset('/images/svg/home/market-theme.svg')}}" class="width-45 height-45"
                              alt="pencil-theme">
                         <div class="ms-3 fw-bold fs-5">
                             Marketing
                         </div>
-                    </div>
+                    </a>
                 </div>
+
             </div>
+
         </div>
     </section>
 
     {{-- Featured Instructor --}}
     <section class="w-100 py-5 bg-warning-subtle">
         <div class="container py-5">
+
             <div class="row">
+
                 <div class="col-lg-6">
+
                     <div class="mb-2 fs-1 fw-bold"> Featured Instructor</div>
-                    <div class="text-secondary lead fw-medium mb-3">
+
+                    <div class="text-dark fw-medium mb-3">
                         Experience seamless online learning with our user-friendly LMS website.
                         Explore our courses and improve your skills today.
                     </div>
                 </div>
+
             </div>
+
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
 
+                {{-- instructor --}}
                 <div class="py-2 mb-5">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/team-1.jpg')}}"
@@ -591,7 +642,7 @@
                                 <div class="text-center text-secondary">
                                     UI Designer
                                 </div>
-                                <div class="d-flex justify-content-around align-items-center mt-3 small">
+                                <div class="d-flex justify-content-around align-items-center mt-3 pb-3 small">
                                     <div class="d-flex align-items-center">
                                         <img src="{{asset('/images/svg/home/star-fill.svg')}}"
                                              class="width-21 height-21" alt="star-fill">
@@ -608,6 +659,7 @@
                     </div>
                 </div>
 
+                {{-- instructor --}}
                 <div class="p-2 mb-5">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/team-2.jpg')}}"
@@ -615,12 +667,12 @@
                         <div class="position-absolute bottom-0 start-0 end-0 p-2 -mb-60">
                             <div class="bg-white p-2 shadow rounded-3">
                                 <div class="text-center fs-4 mb-1">
-                                    Wade Warren
+                                    Esther Howard
                                 </div>
                                 <div class="text-center text-secondary">
-                                    UI Designer
+                                    UX Designer
                                 </div>
-                                <div class="d-flex justify-content-around align-items-center mt-3 small">
+                                <div class="d-flex justify-content-around align-items-center mt-3 pb-3 small">
                                     <div class="d-flex align-items-center">
                                         <img src="{{asset('/images/svg/home/star-fill.svg')}}"
                                              class="width-21 height-21" alt="star-fill">
@@ -637,6 +689,7 @@
                     </div>
                 </div>
 
+                {{-- instructor --}}
                 <div class="p-2 mb-5">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/team-3.jpg')}}"
@@ -644,12 +697,12 @@
                         <div class="position-absolute bottom-0 start-0 end-0 p-2 -mb-60">
                             <div class="bg-white p-2 shadow rounded-3">
                                 <div class="text-center fs-4 mb-1">
-                                    Wade Warren
+                                    Jenny Wilson
                                 </div>
                                 <div class="text-center text-secondary">
-                                    UI Designer
+                                    Human Resource
                                 </div>
-                                <div class="d-flex justify-content-around align-items-center mt-3 small">
+                                <div class="d-flex justify-content-around align-items-center mt-3 pb-3 small">
                                     <div class="d-flex align-items-center">
                                         <img src="{{asset('/images/svg/home/star-fill.svg')}}"
                                              class="width-21 height-21" alt="star-fill">
@@ -666,6 +719,7 @@
                     </div>
                 </div>
 
+                {{-- instructor --}}
                 <div class="p-2 mb-5">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/team-4.jpg')}}"
@@ -673,12 +727,12 @@
                         <div class="position-absolute bottom-0 start-0 end-0 p-2 -mb-60">
                             <div class="bg-white p-2 shadow rounded-3">
                                 <div class="text-center fs-4 mb-1">
-                                    Wade Warren
+                                    Robert Fox
                                 </div>
                                 <div class="text-center text-secondary">
                                     UI Designer
                                 </div>
-                                <div class="d-flex justify-content-around align-items-center mt-3 small">
+                                <div class="d-flex justify-content-around align-items-center mt-3 pb-3 small">
                                     <div class="d-flex align-items-center">
                                         <img src="{{asset('/images/svg/home/star-fill.svg')}}"
                                              class="width-21 height-21" alt="star-fill">
@@ -702,16 +756,23 @@
     {{-- Trending courses --}}
     <section class="w-100 py-5">
         <div class="container py-5">
+
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="mb-2 fs-1 fw-bold"> Trending courses</div>
-                    <div class="text-secondary lead fw-medium mb-3">
+
+                    <div class="mb-2 fs-1 fw-bold"> Trending courses </div>
+
+                    <div class="text-dark fw-medium mb-3">
                         Experience seamless online learning with our user-friendly LMS website.
                         Explore our courses and improve your skills today.
                     </div>
+
                 </div>
             </div>
+
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
+
+                {{-- trend course --}}
                 <div class="p-2 mb-5">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-1.jpg')}}"
@@ -751,7 +812,7 @@
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <a href="javascript:void(0)" class="btn btn-theme rounded-pill px-3 py-2">
+                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-3 py-2">
                                         Enroll Now
                                     </a>
                                     <div
@@ -763,6 +824,8 @@
                         </div>
                     </div>
                 </div>
+
+                {{-- trend course --}}
                 <div class="p-2 mb-5">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-2.jpg')}}"
@@ -802,7 +865,7 @@
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <a href="javascript:void(0)" class="btn btn-theme rounded-pill px-3 py-2">
+                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-3 py-2">
                                         Enroll Now
                                     </a>
                                     <div
@@ -814,6 +877,8 @@
                         </div>
                     </div>
                 </div>
+
+                {{-- trend course --}}
                 <div class="p-2 mb-5">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-3.jpg')}}"
@@ -853,7 +918,7 @@
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <a href="javascript:void(0)" class="btn btn-theme rounded-pill px-3 py-2">
+                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-3 py-2">
                                         Enroll Now
                                     </a>
                                     <div
@@ -865,6 +930,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -872,18 +938,27 @@
     {{-- People says about courses --}}
     <section class="w-100 py-5 bg-warning-subtle">
         <div class="container py-5">
+
             <div class="col-lg-6">
+
                 <div class="mb-2 fs-1 fw-bold">
                     People Says About Courses
                 </div>
-                <div class="text-secondary lead fw-medium mb-3">
+
+                <div class="text-dark fw-medium mb-3">
                     Experience seamless online learning with our user-friendly LMS website.
                     Explore our courses and improve your skills today.
                 </div>
+
             </div>
+
             <div class="row">
+
                 <div class="col-lg-6">
+
                     <div class="p-4 bg-white rounded-4 mb-4">
+
+                        {{-- carousel message - rate --}}
                         <div class="d-flex justify-content-start align-items-center gap-1 mb-3">
                             <img src="{{asset('/images/svg/home/star-fill.svg')}}" class="width-18 height-18"
                                  alt="star">
@@ -896,29 +971,42 @@
                             <img src="{{asset('/images/svg/home/star-fill.svg')}}" class="width-18 height-18"
                                  alt="star">
                         </div>
+
+                        {{-- carousel message - description --}}
                         <div class="lead text-secondary fw-medium mb-3">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur id magnam natus
                             saepe! A ab, accusamus ad alias amet architecto asperiores aspernatur aut beatae dicta est
                             eum ex exercitationem expedita
                         </div>
+
+                        {{-- carousel message - author --}}
                         <div class="fs-4 fw-bold">
                             Melissa McGovern
                         </div>
+
+                        {{-- carousel message - profession --}}
                         <div class="small text-secondary">
                             Manager
                         </div>
+
                     </div>
+
+                    {{-- see more route --}}
                     <a href="javascript:void(0)" class="btn btn-theme rounded-pill px-4 py-2">
                         See More
                     </a>
+
                 </div>
                 <div class="col-lg-6">
+
+                    {{-- carousel image of feedback provider --}}
                     <div class="position-relative">
                         <img src="{{asset('/images/home/feedback-1.jpg')}}" class="img-fluid object-fit-cover h-100 w-100 rounded-3" alt="feedback-1">
                         <div class="position-absolute end-0 bottom-0 p-3">
                             <img src="{{asset('/images/home/feedback-2.jpg')}}" class="width-200 height-200 img-fluid object-fit-cover h-100 w-100 rounded-3 shadow" alt="feedback-2">
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
