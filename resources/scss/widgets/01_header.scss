@@ -52,7 +52,7 @@
             @media screen and (max-width: 991px) {
                 display: flex;
                 justify-content: space-between;
-                align-items: center;
+                align-items: flex-start;
                 height: 100%;
 
                 .nav-link {
@@ -64,11 +64,11 @@
 
                 .nav-link {
                     transition: 0.3s all ease-in-out;
-                    color: var(--light-gray) !important;
+                    color: var(--theme-secondary) !important;
 
                     &:hover, &.active {
                         transition: 0.3s all ease-in-out;
-                        color: var(--active-color) !important;
+                        color: var(--theme) !important;
                     }
 
                 }

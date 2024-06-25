@@ -12,9 +12,9 @@
                     <img src="{{asset('/images/svg/header/close.svg')}}" class="img-fluid width-25 height-25"
                          alt="close" onclick="collapse()">
                 </li>
-                <span class="d-lg-flex text-center">
+                <span class="d-lg-flex text-start h-100">
                     <li class="nav-item">
-                        <a class="nav-link mx-lg-2" href="{{route('front.home')}}">
+                        <a class="nav-link mx-lg-2 {{Route::currentRouteName() == 'front.home' ? 'active' : ''}}" href="{{route('front.home')}}">
                             Home
                         </a>
                     </li>
@@ -46,27 +46,27 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-lg-2" href="{{route('front.about')}}">
+                        <a class="nav-link mx-lg-2 {{Route::currentRouteName() == 'front.about' ? 'active' : ''}}" href="{{route('front.about')}}">
                             About Us
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-lg-2" href="{{route('front.contact')}}">
+                        <a class="nav-link mx-lg-2 {{Route::currentRouteName() == 'front.contact' ? 'active' : ''}}" href="{{route('front.contact')}}">
                             Contact Us
                         </a>
                     </li>
                     <li class="nav-item d-lg-none">
-                        <a class="nav-link mx-lg-2" href="{{route('front.login')}}">
+                        <a class="nav-link mx-lg-2 {{Route::currentRouteName() == 'front.login' ? 'active' : ''}}" href="{{route('front.login')}}">
                             SignIn
                         </a>
                     </li>
                     <li class="nav-item d-lg-none">
-                        <a class="nav-link mx-lg-2" href="{{route('front.register')}}">
+                        <a class="nav-link mx-lg-2 {{Route::currentRouteName() == 'front.register' ? 'active' : ''}}" href="{{route('front.register')}}">
                             SignUp
                         </a>
                     </li>
                 </span>
-                <div class="d-flex d-lg-none justify-content-center align-items-center flex-column">
+                <div class="w-100 d-flex d-lg-none justify-content-center align-items-center flex-column">
                     <div class="text-center">
                         Get In Touch
                     </div>
