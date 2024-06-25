@@ -31,15 +31,18 @@
         </div>
     </section>
 
+    {{-- Course Details with related course --}}
     <div class="w-100 py-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
 
+                    {{-- Course Details - image --}}
                     <div class="p-4 bg-white shadow rounded-3">
                         <img src="{{asset('/images/home/course-1.jpg')}}" class="img-fluid object-fit-cover rounded-3"
                              alt="course">
 
+                        {{-- Course Details - title --}}
                         <div class="mt-4">
                             <div class="mb-2 fs-3 fw-bold text-theme-secondary">
                                 Information About UI/UX Design Degree
@@ -71,12 +74,15 @@
                                 </div>
                             </div>
                         </div>
+
                     </div>
 
                     <div class="mt-4">
                         <div class="bg-white shadow">
                             <ul class="nav nav-tabs bg-opacity-theme d-flex justify-content-between align-items-center" id="myTab"
                                 role="tablist">
+
+                                {{-- Course Details - tab of overview --}}
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link w-100 active py-3" id="home-tab" data-bs-toggle="tab"
                                             data-bs-target="#home-tab-pane" type="button" role="tab"
@@ -87,6 +93,8 @@
                                         </div>
                                     </button>
                                 </li>
+
+                                {{-- Course Details - tab of curriculum --}}
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link w-100 py-3" id="profile-tab" data-bs-toggle="tab"
                                             data-bs-target="#profile-tab-pane" type="button" role="tab"
@@ -97,6 +105,8 @@
                                         </div>
                                     </button>
                                 </li>
+
+                                {{-- Course Details - tab of instructor --}}
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link w-100 py-3" id="contact-tab" data-bs-toggle="tab"
                                             data-bs-target="#contact-tab-pane" type="button" role="tab"
@@ -107,6 +117,8 @@
                                         </div>
                                     </button>
                                 </li>
+
+                                {{-- Course Details - tab of reviews --}}
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link w-100 py-3" id="disabled-tab" data-bs-toggle="tab"
                                             data-bs-target="#disabled-tab-pane" type="button" role="tab"
@@ -119,6 +131,8 @@
                                 </li>
                             </ul>
                             <div class="tab-content" id="myTabContent">
+
+                                {{-- Course Details - tab of overview --}}
                                 <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
                                      aria-labelledby="home-tab" tabindex="0">
 
@@ -195,22 +209,30 @@
                                     </div>
 
                                 </div>
+
+                                {{-- Course Details - tab of curriculum --}}
                                 <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel"
                                      aria-labelledby="profile-tab" tabindex="0">
                                     <div class="vh-100"></div>
                                 </div>
+
+                                {{-- Course Details - tab of instructor --}}
                                 <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel"
                                      aria-labelledby="contact-tab" tabindex="0">
                                     <div class="vh-100"></div>
                                 </div>
+
+                                {{-- Course Details - tab of review --}}
                                 <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel"
                                      aria-labelledby="disabled-tab" tabindex="0">
                                     <div class="vh-100"></div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
 
+                    {{-- related courses --}}
                     <div class="mt-4">
                         <div class="fs-1 mb-4 text-theme-secondary fw-bold">
                             Related Courses
@@ -326,7 +348,10 @@
                     </div>
 
                 </div>
+
                 <div class="col-lg-4">
+
+                    {{-- course enroll part --}}
                     <div class="mb-4 bg-white shadow rounded-4 sticky-top z-0" style="top: 120px">
                         <div class="position-relative">
                             <img src="{{asset('/images/home/course-1.jpg')}}" class="rounded-3 img-fluid object-fit-cover w-100 h-100" alt="course-1">
@@ -336,6 +361,8 @@
                                 </button>
                             </div>
                         </div>
+
+                        {{-- course enroll price --}}
                         <div class="d-flex justify-content-between align-items-center px-3 pt-3">
                             <div class="d-flex align-items-end">
                                 <div class="fs-3">$30</div>
@@ -349,6 +376,8 @@
                             </span>
                             5 days left at this price!
                         </div>
+
+                        {{-- course enroll course level --}}
                         <div class="text-dark d-flex align-items-center p-3 border-bottom">
                             <div class="d-flex align-items-center">
                                 <div class="me-2">
@@ -360,6 +389,8 @@
                                 All levels
                             </div>
                         </div>
+
+                        {{-- course enroll instractor --}}
                         <div class="text-dark d-flex align-items-center p-3 border-bottom">
                             <div class="d-flex align-items-center">
                                 <div class="me-2">
@@ -371,6 +402,8 @@
                                 Raju Raj
                             </div>
                         </div>
+
+                        {{-- course enroll lesson --}}
                         <div class="text-dark d-flex align-items-center p-3 border-bottom">
                             <div class="d-flex align-items-center">
                                 <div class="me-2">
@@ -382,6 +415,8 @@
                                 30
                             </div>
                         </div>
+
+                        {{-- course enroll enrolled students --}}
                         <div class="text-dark d-flex align-items-center p-3 border-bottom">
                             <div class="d-flex align-items-center">
                                 <div class="me-2">
@@ -393,6 +428,8 @@
                                 165 Students
                             </div>
                         </div>
+
+                        {{-- course enroll last update --}}
                         <div class="text-dark d-flex align-items-center p-3 border-bottom">
                             <div class="d-flex align-items-center">
                                 <div class="me-2">
@@ -404,8 +441,10 @@
                                 February 17, 2022
                             </div>
                         </div>
+
+                        {{-- course enroll button --}}
                         <div class="text-center py-4">
-                            <button type="button" class="btn btn-light-theme py-3 px-5 rounded-pill">
+                            <button type="submit" class="btn btn-light-theme py-3 px-5 rounded-pill">
                                 <span class="me-2">
                                     <img src="{{asset('/images/svg/course-details/share.svg')}}" class="width-21 height-21" alt="share">
                                 </span>
