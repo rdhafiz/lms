@@ -43,21 +43,21 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="fs-1 fw-bold text-theme-secondary mb-3"> Welcome to Our Online Learning Platform </div>
-                    <div class="lead mb-4">
+                    <div class="text-dark fw-medium mb-4">
                         Continuously harmless backward competitive initiatives and synergistic content.
                         Objectively strategize cutting edge niches with collaborative synergistic.
                         Globally pontificate e-business processes through orthoonal web readiness enhence
                         backend value whereas bricks-and-clicks services
                     </div>
-                    <div class="mb-3 d-flex align-items-center justify-content-start lead">
+                    <div class="mb-3 d-flex align-items-center justify-content-start fw-medium">
                         <img src="{{asset('/images/svg/about/check-circle.svg')}}" class="width-21 height-21 me-2" alt="check-circle">
                         Dramatically re-engineer value added systems via mission
                     </div>
-                    <div class="mb-3 d-flex align-items-center justify-content-start lead">
+                    <div class="mb-3 d-flex align-items-center justify-content-start fw-medium">
                         <img src="{{asset('/images/svg/about/check-circle.svg')}}" class="width-21 height-21 me-2" alt="check-circle">
                         Our Unique learning environment sparks physical growth
                     </div>
-                    <div class="mb-3 d-flex align-items-center justify-content-start lead">
+                    <div class="mb-3 d-flex align-items-center justify-content-start fw-medium">
                         <img src="{{asset('/images/svg/about/check-circle.svg')}}" class="width-21 height-21 me-2" alt="check-circle">
                         Discovery while our creative curriculum which combines
                     </div>
@@ -71,52 +71,52 @@
         <div class="container">
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
                 <div class="p-1">
-                    <div class="bg-secondary-subtle d-flex justify-content-start align-items-center p-4 rounded-3">
+                    <div class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start" style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
                         <div
                             class="width-65 height-65 rounded-circle d-flex justify-content-center align-items-center bg-secondary">
                             <img src="{{asset('/images/svg/home/pencil-ruler.svg')}}" class="width-25 height-25"
                                  alt="box-icon-1">
                         </div>
-                        <div class="ms-2">
+                        <div class="ms-3">
                             <div class="fw-bold fs-4"> 1K</div>
                             <div class="text-secondary fs-6"> Online Courses</div>
                         </div>
                     </div>
                 </div>
                 <div class="p-1">
-                    <div class="bg-secondary-subtle d-flex justify-content-start align-items-center p-4 rounded-3">
+                    <div class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start" style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
                         <div
                             class="width-65 height-65 rounded-circle d-flex justify-content-center align-items-center bg-light-pink">
                             <img src="{{asset('/images/svg/home/people.svg')}}" class="width-25 height-25"
                                  alt="box-icon-2">
                         </div>
-                        <div class="ms-2">
+                        <div class="ms-3">
                             <div class="fw-bold fs-4"> 28+</div>
                             <div class="text-secondary fs-6"> Expert Tutors</div>
                         </div>
                     </div>
                 </div>
                 <div class="p-1">
-                    <div class="bg-secondary-subtle d-flex justify-content-start align-items-center p-4 rounded-3">
+                    <div class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start" style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
                         <div
                             class="width-65 height-65 rounded-circle d-flex justify-content-center align-items-center bg-light-purple">
                             <img src="{{asset('/images/svg/home/certified.svg')}}" class="width-25 height-25"
                                  alt="box-icon-3">
                         </div>
-                        <div class="ms-2">
+                        <div class="ms-3">
                             <div class="fw-bold fs-4"> 1K +</div>
                             <div class="text-secondary fs-6"> Certified Courses</div>
                         </div>
                     </div>
                 </div>
                 <div class="p-1">
-                    <div class="bg-secondary-subtle d-flex justify-content-start align-items-center p-4 rounded-3">
+                    <div class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start" style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
                         <div
                             class="width-65 height-65 rounded-circle d-flex justify-content-center align-items-center bg-light-info">
                             <img src="{{asset('/images/svg/home/morterboard.svg')}}" class="width-25 height-25"
                                  alt="box-icon-4">
                         </div>
-                        <div class="ms-2">
+                        <div class="ms-3">
                             <div class="fw-medium"> 8K+</div>
                             <div class="text-secondary"> Online Students</div>
                         </div>

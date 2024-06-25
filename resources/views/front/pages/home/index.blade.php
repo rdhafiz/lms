@@ -227,7 +227,7 @@
                                         Enroll Now
                                     </a>
                                     <div
-                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-opacity-theme">
+                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
                                         $40
                                     </div>
                                 </div>
@@ -280,7 +280,7 @@
                                         Enroll Now
                                     </a>
                                     <div
-                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-opacity-theme">
+                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
                                         $40
                                     </div>
                                 </div>
@@ -333,7 +333,7 @@
                                         Enroll Now
                                     </a>
                                     <div
-                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-opacity-theme">
+                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
                                         $40
                                     </div>
                                 </div>
@@ -386,7 +386,7 @@
                                         Enroll Now
                                     </a>
                                     <div
-                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-opacity-theme">
+                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
                                         $40
                                     </div>
                                 </div>
@@ -439,7 +439,7 @@
                                         Enroll Now
                                     </a>
                                     <div
-                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-opacity-theme">
+                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
                                         $40
                                     </div>
                                 </div>
@@ -492,7 +492,7 @@
                                         Enroll Now
                                     </a>
                                     <div
-                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-opacity-theme">
+                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
                                         $40
                                     </div>
                                 </div>
@@ -816,7 +816,7 @@
                                         Enroll Now
                                     </a>
                                     <div
-                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-opacity-theme">
+                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
                                         $40
                                     </div>
                                 </div>
@@ -869,7 +869,7 @@
                                         Enroll Now
                                     </a>
                                     <div
-                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-opacity-theme">
+                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
                                         $40
                                     </div>
                                 </div>
@@ -922,7 +922,7 @@
                                         Enroll Now
                                     </a>
                                     <div
-                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-opacity-theme">
+                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
                                         $40
                                     </div>
                                 </div>
@@ -992,9 +992,11 @@
                     </div>
 
                     {{-- see more route --}}
-                    <a href="javascript:void(0)" class="btn btn-theme rounded-pill px-4 py-2">
-                        See More
-                    </a>
+                    <div class="mb-3">
+                        <a href="javascript:void(0)" class="btn btn-theme rounded-pill px-4 py-2">
+                            See More
+                        </a>
+                    </div>
 
                 </div>
                 <div class="col-lg-6">
@@ -1003,7 +1005,7 @@
                     <div class="position-relative">
                         <img src="{{asset('/images/home/feedback-1.jpg')}}" class="img-fluid object-fit-cover h-100 w-100 rounded-3" alt="feedback-1">
                         <div class="position-absolute end-0 bottom-0 p-3">
-                            <img src="{{asset('/images/home/feedback-2.jpg')}}" class="width-200 height-200 img-fluid object-fit-cover h-100 w-100 rounded-3 shadow" alt="feedback-2">
+                            <img src="{{asset('/images/home/feedback-2.jpg')}}" class="width-120 height-120 img-fluid object-fit-cover h-100 w-100 rounded-3 shadow" alt="feedback-2">
                         </div>
                     </div>
 
@@ -1012,16 +1014,40 @@
         </div>
     </section>
 
+    {{-- trusted company --}}
+    <section class="w-100 py-5">
+        <div class="container text-center py-5 border-top border-bottom">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+                <div class="p-2">
+                    <img src="{{asset('/images/home/company-logo-1.png')}}" class="img-fluid object-fit-contain" alt="company-logo">
+                </div>
+                <div class="p-2">
+                    <img src="{{asset('/images/home/company-logo-2.png')}}" class="img-fluid object-fit-contain" alt="company-logo">
+                </div>
+                <div class="p-2">
+                    <img src="{{asset('/images/home/company-logo-3.png')}}" class="img-fluid object-fit-contain" alt="company-logo">
+                </div>
+                <div class="p-2">
+                    <img src="{{asset('/images/home/company-logo-4.png')}}" class="img-fluid object-fit-contain" alt="company-logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
     {{-- Latest blog --}}
     <section class="w-100 py-5">
         <div class="container py-5">
+
             <div class="row">
                 <div class="col-lg-6">
+
                     <div class="mb-2 fs-1 fw-bold"> Latest Blog</div>
-                    <div class="text-secondary lead fw-medium mb-3">
+
+                    <div class="text-dark fw-medium mb-3">
                         Experience seamless online learning with our user-friendly LMS website.
                         Explore our courses and improve your skills today.
                     </div>
+
                 </div>
             </div>
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
@@ -1047,7 +1073,7 @@
                                         <img src="{{asset('/images/svg/home/person-circle.svg')}}" class="width-25 height-25" alt="person-circle">
                                         <span class="ms-2 text-secondary"> By Sumit Raj </span>
                                     </div>
-                                    <a href="javascript:void(0)" class="text-theme">
+                                    <a href="javascript:void(0)" class="text-theme fw-medium">
                                         Read More
                                     </a>
                                 </div>
@@ -1077,7 +1103,7 @@
                                         <img src="{{asset('/images/svg/home/person-circle.svg')}}" class="width-25 height-25" alt="person-circle">
                                         <span class="ms-2 text-secondary"> By Sumit Raj </span>
                                     </div>
-                                    <a href="javascript:void(0)" class="text-theme">
+                                    <a href="javascript:void(0)" class="text-theme fw-medium">
                                         Read More
                                     </a>
                                 </div>
@@ -1107,7 +1133,7 @@
                                         <img src="{{asset('/images/svg/home/person-circle.svg')}}" class="width-25 height-25" alt="person-circle">
                                         <span class="ms-2 text-secondary"> By Sumit Raj </span>
                                     </div>
-                                    <a href="javascript:void(0)" class="text-theme">
+                                    <a href="javascript:void(0)" class="text-theme fw-medium">
                                         Read More
                                     </a>
                                 </div>
@@ -1124,21 +1150,23 @@
     <section class="w-100 py-5">
         <div class="container">
             <div class="bg-light-pink px-4 rounded-3 py-5">
-                <div class="row">
+                <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="fs-1 text-white ">
                             Join our community of students
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 py-3">
                         <div class="position-relative">
                             <input type="email" name="email"
                                    class="form-control shadow-none py-3 ps-4 rounded-0 rounded-pill" required
                                    autocomplete="new-email" placeholder="Enter your Email">
                             <div class="position-absolute top-50 end-0 translate-middle-y pe-3">
                                 <button type="submit" class="btn btn-theme rounded-pill px-4">
-                                    Subscribe
-                                    <span class="ms-1">
+                                    <span class="d-none d-md-inline me-2">
+                                        Subscribe
+                                    </span>
+                                    <span>
                                         <img src="{{asset('/images/svg/home/send.svg')}}" class="width-21 height-21" alt="send">
                                     </span>
                                 </button>

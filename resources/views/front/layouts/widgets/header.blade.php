@@ -55,12 +55,12 @@
                             Contact Us
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item d-lg-none">
                         <a class="nav-link mx-lg-2" href="{{route('front.login')}}">
                             SignIn
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item d-lg-none">
                         <a class="nav-link mx-lg-2" href="{{route('front.register')}}">
                             SignUp
                         </a>
