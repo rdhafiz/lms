@@ -8,20 +8,21 @@
         <div class="container py-5 pb-3">
             <div class="row py-5 justify-content-center">
                 <div class="col-12 col-sm-10 col-lg-8 col-xl-6 py-5">
-                    <div class="lead fw-medium text-theme" data-aos="fade-up" data-aos-delay="50">
+                    <h6 class="lead fw-medium text-theme" data-aos="fade-up" data-aos-delay="50">
                         The leader in Online learning
-                    </div>
-                    <div class="fs-1 text-theme-secondary fw-bold my-3" data-aos="fade-up" data-aos-delay="100">
+                    </h6>
+                    <h1 class="fs-1 text-theme-secondary fw-bold my-3" data-aos="fade-up" data-aos-delay="100">
                         Build Your Skills and Achieve Your Goals
-                    </div>
-                    <div class="text-dark mb-4 fw-medium" data-aos="fade-up" data-aos-delay="150">
+                    </h1>
+                    <p class="text-dark mb-4 fw-medium" data-aos="fade-up" data-aos-delay="150">
                         Experience seamless online learning with our user-friendly LMS website.
                         Explore our courses and improve your skills today.
-                    </div>
+                    </p>
                     <div class="position-relative" data-aos="fade-up" data-aos-delay="200">
-                        <input type="text" name="keyword"
+                        <label for="category" hidden="hidden">category</label>
+                        <input id="category" type="text" name="category"
                                class="form-control shadow-none py-3 ps-5 rounded-0 rounded-pill" required
-                               autocomplete="new-keyword" placeholder="Search Courses">
+                               placeholder="Search Courses">
                         <div class="position-absolute top-50 start-0 translate-middle-y ps-3">
                             <img src="{{asset('/images/svg/home/search.svg')}}" class="width-25 height-25" alt="search">
                         </div>
@@ -102,7 +103,7 @@
                                  alt="box-icon-1">
                         </div>
                         <div class="ms-3">
-                            <div class="fw-bold fs-4"> 1K</div>
+                            <h4 class="fw-bold fs-4"> 1K</h4>
                             <div class="text-secondary fw-medium"> Online Courses</div>
                         </div>
                     </div>
@@ -119,7 +120,7 @@
                                  alt="box-icon-2">
                         </div>
                         <div class="ms-3">
-                            <div class="fw-bold fs-4"> 28+</div>
+                            <h4 class="fw-bold fs-4"> 28+</h4>
                             <div class="text-secondary fw-medium"> Expert Tutors</div>
                         </div>
                     </div>
@@ -136,7 +137,7 @@
                                  alt="box-icon-3">
                         </div>
                         <div class="ms-3">
-                            <div class="fw-bold fs-4"> 1K +</div>
+                            <h4 class="fw-bold fs-4"> 1K +</h4>
                             <div class="text-secondary fw-medium"> Certified Courses</div>
                         </div>
                     </div>
@@ -153,7 +154,7 @@
                                  alt="box-icon-4">
                         </div>
                         <div class="ms-3">
-                            <div class="fw-bold fs-4"> 8K+</div>
+                            <h4 class="fw-bold fs-4"> 8K+</h4>
                             <div class="text-secondary fw-medium"> Online Students</div>
                         </div>
                     </div>
@@ -171,7 +172,7 @@
 
                 <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
 
-                    <div class="mb-2 fs-1 fw-bold"> Popular courses</div>
+                    <h1 class="mb-2 fs-1 fw-bold"> Popular courses</h1>
 
                     <div class="text-dark fw-medium mb-3">
                         Experience seamless online learning with our user-friendly LMS website.
@@ -225,10 +226,10 @@
                                     </div>
                                 </div>
                                 <div class="mb-3">
-                                    <div class="fs-4 px-2 fw-bold truncate-line-2">
+                                    <h4 class="fs-4 px-2 fw-bold truncate-line-2">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae explicabo
                                         natus reprehenderit saepe temporibus.
-                                    </div>
+                                    </h4>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <a href="{{route('front.course-details')}}"
@@ -236,7 +237,7 @@
                                         Enroll Now
                                     </a>
                                     <div
-                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
+                                        class="width-65 height-65 fw-medium d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
                                         $40
                                     </div>
                                 </div>
@@ -279,10 +280,10 @@
                                     </div>
                                 </div>
                                 <div class="mb-3">
-                                    <div class="fs-4 px-2 fw-bold truncate-line-2">
+                                    <h4 class="fs-4 px-2 fw-bold truncate-line-2">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae explicabo
                                         natus reprehenderit saepe temporibus.
-                                    </div>
+                                    </h4>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <a href="{{route('front.course-details')}}"
@@ -290,7 +291,7 @@
                                         Enroll Now
                                     </a>
                                     <div
-                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
+                                        class="width-65 height-65 fw-medium d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
                                         $40
                                     </div>
                                 </div>
@@ -333,10 +334,10 @@
                                     </div>
                                 </div>
                                 <div class="mb-3">
-                                    <div class="fs-4 px-2 fw-bold truncate-line-2">
+                                    <h4 class="fs-4 px-2 fw-bold truncate-line-2">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae explicabo
                                         natus reprehenderit saepe temporibus.
-                                    </div>
+                                    </h4>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <a href="{{route('front.course-details')}}"
@@ -344,7 +345,7 @@
                                         Enroll Now
                                     </a>
                                     <div
-                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
+                                        class="width-65 height-65 fw-medium d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
                                         $40
                                     </div>
                                 </div>
@@ -387,10 +388,10 @@
                                     </div>
                                 </div>
                                 <div class="mb-3">
-                                    <div class="fs-4 px-2 fw-bold truncate-line-2">
+                                    <h4 class="fs-4 px-2 fw-bold truncate-line-2">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae explicabo
                                         natus reprehenderit saepe temporibus.
-                                    </div>
+                                    </h4>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <a href="{{route('front.course-details')}}"
@@ -398,7 +399,7 @@
                                         Enroll Now
                                     </a>
                                     <div
-                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
+                                        class="width-65 height-65 fw-medium d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
                                         $40
                                     </div>
                                 </div>
@@ -441,10 +442,10 @@
                                     </div>
                                 </div>
                                 <div class="mb-3">
-                                    <div class="fs-4 px-2 fw-bold truncate-line-2">
+                                    <h4 class="fs-4 px-2 fw-bold truncate-line-2">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae explicabo
                                         natus reprehenderit saepe temporibus.
-                                    </div>
+                                    </h4>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <a href="{{route('front.course-details')}}"
@@ -452,7 +453,7 @@
                                         Enroll Now
                                     </a>
                                     <div
-                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
+                                        class="width-65 height-65 fw-medium d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
                                         $40
                                     </div>
                                 </div>
@@ -495,10 +496,10 @@
                                     </div>
                                 </div>
                                 <div class="mb-3">
-                                    <div class="fs-4 px-2 fw-bold truncate-line-2">
+                                    <h4 class="fs-4 px-2 fw-bold truncate-line-2">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae explicabo
                                         natus reprehenderit saepe temporibus.
-                                    </div>
+                                    </h4>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <a href="{{route('front.course-details')}}"
@@ -506,7 +507,7 @@
                                         Enroll Now
                                     </a>
                                     <div
-                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
+                                        class="width-65 height-65 fw-medium d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
                                         $40
                                     </div>
                                 </div>
@@ -524,9 +525,9 @@
     <section class="w-100 py-5" data-aos="fade-up">
         <div class="container py-5">
 
-            <div class="mb-4 text-center fs-1 fw-bold">
+            <h1 class="mb-4 text-center fs-1 fw-bold">
                 Top Categories
-            </div>
+            </h1>
 
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
 
@@ -537,9 +538,9 @@
                        style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
                         <img src="{{asset('/images/svg/home/pencil-theme.svg')}}" class="width-45 height-45"
                              alt="pencil-theme">
-                        <div class="ms-3 fw-bold fs-6">
+                        <h5 class="ms-3 fw-bold fs-5">
                             Art & Design
-                        </div>
+                        </h5>
                     </a>
                 </div>
 
@@ -550,9 +551,9 @@
                        style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
                         <img src="{{asset('/images/svg/home/code-theme.svg')}}" class="width-45 height-45"
                              alt="pencil-theme">
-                        <div class="ms-3 fw-bold fs-5">
+                        <h5 class="ms-3 fw-bold fs-5">
                             Development
-                        </div>
+                        </h5>
                     </a>
                 </div>
 
@@ -563,9 +564,9 @@
                        style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
                         <img src="{{asset('/images/svg/home/lifestyle-theme.svg')}}" class="width-45 height-45"
                              alt="pencil-theme">
-                        <div class="ms-3 fw-bold fs-5">
+                        <h5 class="ms-3 fw-bold fs-5">
                             Lifestyle
-                        </div>
+                        </h5>
                     </a>
                 </div>
 
@@ -576,9 +577,9 @@
                        style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
                         <img src="{{asset('/images/svg/home/business.svg')}}" class="width-45 height-45"
                              alt="pencil-theme">
-                        <div class="ms-3 fw-bold fs-5">
+                        <h5 class="ms-3 fw-bold fs-5">
                             Business
-                        </div>
+                        </h5>
                     </a>
                 </div>
 
@@ -589,9 +590,9 @@
                        style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
                         <img src="{{asset('/images/svg/home/light-theme.svg')}}" class="width-45 height-45"
                              alt="pencil-theme">
-                        <div class="ms-3 fw-bold fs-5">
+                        <h5 class="ms-3 fw-bold fs-5">
                             Technology
-                        </div>
+                        </h5>
                     </a>
                 </div>
 
@@ -602,9 +603,9 @@
                        style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
                         <img src="{{asset('/images/svg/home/chart-theme.svg')}}" class="width-45 height-45"
                              alt="pencil-theme">
-                        <div class="ms-3 fw-bold fs-5">
+                        <h5 class="ms-3 fw-bold fs-5">
                             Data Science
-                        </div>
+                        </h5>
                     </a>
                 </div>
 
@@ -615,9 +616,9 @@
                        style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
                         <img src="{{asset('/images/svg/home/heart-theme.svg')}}" class="width-45 height-45"
                              alt="pencil-theme">
-                        <div class="ms-3 fw-bold fs-5">
+                        <h5 class="ms-3 fw-bold fs-5">
                             Heart Care
-                        </div>
+                        </h5>
                     </a>
                 </div>
 
@@ -628,9 +629,9 @@
                        style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
                         <img src="{{asset('/images/svg/home/market-theme.svg')}}" class="width-45 height-45"
                              alt="pencil-theme">
-                        <div class="ms-3 fw-bold fs-5">
+                        <h5 class="ms-3 fw-bold fs-5">
                             Marketing
-                        </div>
+                        </h5>
                     </a>
                 </div>
 
@@ -647,12 +648,12 @@
 
                 <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
 
-                    <div class="mb-2 fs-1 fw-bold"> Featured Instructor</div>
+                    <h1 class="mb-2 fs-1 fw-bold"> Featured Instructor</h1>
 
-                    <div class="text-dark fw-medium mb-3">
+                    <p class="text-dark fw-medium mb-3">
                         Experience seamless online learning with our user-friendly LMS website.
                         Explore our courses and improve your skills today.
-                    </div>
+                    </p>
                 </div>
 
             </div>
@@ -666,12 +667,12 @@
                              class="img-fluid object-fit-cover height-350 rounded-3 w-100" alt="course-1">
                         <div class="position-absolute bottom-0 start-0 end-0 p-2 -mb-60">
                             <div class="bg-white p-2 shadow rounded-3">
-                                <div class="text-center fs-4 mb-1">
+                                <h4 class="text-center fs-4 mb-1">
                                     Wade Warren
-                                </div>
-                                <div class="text-center text-secondary">
+                                </h4>
+                                <p class="text-center text-secondary">
                                     UI Designer
-                                </div>
+                                </p>
                                 <div class="d-flex justify-content-around align-items-center mt-3 pb-3 small">
                                     <div class="d-flex align-items-center">
                                         <img src="{{asset('/images/svg/home/star-fill.svg')}}"
@@ -696,12 +697,12 @@
                              class="img-fluid object-fit-cover height-350 rounded-3 w-100" alt="course-1">
                         <div class="position-absolute bottom-0 start-0 end-0 p-2 -mb-60">
                             <div class="bg-white p-2 shadow rounded-3">
-                                <div class="text-center fs-4 mb-1">
+                                <h4 class="text-center fs-4 mb-1">
                                     Esther Howard
-                                </div>
-                                <div class="text-center text-secondary">
+                                </h4>
+                                <p class="text-center text-secondary">
                                     UX Designer
-                                </div>
+                                </p>
                                 <div class="d-flex justify-content-around align-items-center mt-3 pb-3 small">
                                     <div class="d-flex align-items-center">
                                         <img src="{{asset('/images/svg/home/star-fill.svg')}}"
@@ -726,12 +727,12 @@
                              class="img-fluid object-fit-cover height-350 rounded-3 w-100" alt="course-1">
                         <div class="position-absolute bottom-0 start-0 end-0 p-2 -mb-60">
                             <div class="bg-white p-2 shadow rounded-3">
-                                <div class="text-center fs-4 mb-1">
+                                <h4 class="text-center fs-4 mb-1">
                                     Jenny Wilson
-                                </div>
-                                <div class="text-center text-secondary">
+                                </h4>
+                                <p class="text-center text-secondary">
                                     Human Resource
-                                </div>
+                                </p>
                                 <div class="d-flex justify-content-around align-items-center mt-3 pb-3 small">
                                     <div class="d-flex align-items-center">
                                         <img src="{{asset('/images/svg/home/star-fill.svg')}}"
@@ -756,12 +757,12 @@
                              class="img-fluid object-fit-cover height-350 rounded-3 w-100" alt="course-1">
                         <div class="position-absolute bottom-0 start-0 end-0 p-2 -mb-60">
                             <div class="bg-white p-2 shadow rounded-3">
-                                <div class="text-center fs-4 mb-1">
+                                <h4 class="text-center fs-4 mb-1">
                                     Robert Fox
-                                </div>
-                                <div class="text-center text-secondary">
+                                </h4>
+                                <p class="text-center text-secondary">
                                     UI Designer
-                                </div>
+                                </p>
                                 <div class="d-flex justify-content-around align-items-center mt-3 pb-3 small">
                                     <div class="d-flex align-items-center">
                                         <img src="{{asset('/images/svg/home/star-fill.svg')}}"
@@ -790,12 +791,14 @@
             <div class="row">
                 <div class="col-lg-6">
 
-                    <div class="mb-2 fs-1 fw-bold" data-aos="fade-up" data-aos-delay="100"> Trending courses</div>
+                    <h1 class="mb-2 fs-1 fw-bold" data-aos="fade-up" data-aos-delay="100">
+                        Trending courses
+                    </h1>
 
-                    <div class="text-dark fw-medium mb-3" data-aos="fade-up" data-aos-delay="200">
+                    <p class="text-dark fw-medium mb-3" data-aos="fade-up" data-aos-delay="200">
                         Experience seamless online learning with our user-friendly LMS website.
                         Explore our courses and improve your skills today.
-                    </div>
+                    </p>
 
                 </div>
             </div>
@@ -816,7 +819,7 @@
                                             <img src="{{asset('/images/svg/home/play.svg')}}" class="width-12 height-12"
                                                  alt="play">
                                         </div>
-                                        <div class="ms-2 text-secondary text-opacity-75 small"> 20 videos</div>
+                                        <p class="ms-2 text-secondary text-opacity-75 small"> 20 videos</p>
                                     </div>
                                     <div class="d-flex align-items-center">
                                         <div
@@ -824,7 +827,7 @@
                                             <img src="{{asset('/images/svg/home/star-fill.svg')}}"
                                                  class="width-12 height-12" alt="star-fill">
                                         </div>
-                                        <div class="ms-2 text-secondary text-opacity-75 small"> 1K reviews</div>
+                                        <p class="ms-2 text-secondary text-opacity-75 small"> 1K reviews</p>
                                     </div>
                                     <div class="d-flex align-items-center">
                                         <div
@@ -832,14 +835,14 @@
                                             <img src="{{asset('/images/svg/home/student.svg')}}"
                                                  class="width-12 height-12" alt="star-fill">
                                         </div>
-                                        <div class="ms-2 text-secondary text-opacity-75 small"> 2K students</div>
+                                        <p class="ms-2 text-secondary text-opacity-75 small"> 2K students</p>
                                     </div>
                                 </div>
                                 <div class="mb-3">
-                                    <div class="fs-4 px-2 fw-bold truncate-line-2">
+                                    <h4 class="fs-4 px-2 fw-bold truncate-line-2">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae explicabo
                                         natus reprehenderit saepe temporibus.
-                                    </div>
+                                    </h4>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <a href="{{route('front.course-details')}}"
@@ -847,7 +850,7 @@
                                         Enroll Now
                                     </a>
                                     <div
-                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
+                                        class="width-65 height-65 fw-medium d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
                                         $40
                                     </div>
                                 </div>
@@ -870,7 +873,7 @@
                                             <img src="{{asset('/images/svg/home/play.svg')}}" class="width-12 height-12"
                                                  alt="play">
                                         </div>
-                                        <div class="ms-2 text-secondary text-opacity-75 small"> 20 videos</div>
+                                        <p class="ms-2 text-secondary text-opacity-75 small"> 20 videos</p>
                                     </div>
                                     <div class="d-flex align-items-center">
                                         <div
@@ -878,7 +881,7 @@
                                             <img src="{{asset('/images/svg/home/star-fill.svg')}}"
                                                  class="width-12 height-12" alt="star-fill">
                                         </div>
-                                        <div class="ms-2 text-secondary text-opacity-75 small"> 1K reviews</div>
+                                        <p class="ms-2 text-secondary text-opacity-75 small"> 1K reviews</p>
                                     </div>
                                     <div class="d-flex align-items-center">
                                         <div
@@ -886,14 +889,14 @@
                                             <img src="{{asset('/images/svg/home/student.svg')}}"
                                                  class="width-12 height-12" alt="star-fill">
                                         </div>
-                                        <div class="ms-2 text-secondary text-opacity-75 small"> 2K students</div>
+                                        <p class="ms-2 text-secondary text-opacity-75 small"> 2K students</p>
                                     </div>
                                 </div>
                                 <div class="mb-3">
-                                    <div class="fs-4 px-2 fw-bold truncate-line-2">
+                                    <h4 class="fs-4 px-2 fw-bold truncate-line-2">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae explicabo
                                         natus reprehenderit saepe temporibus.
-                                    </div>
+                                    </h4>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <a href="{{route('front.course-details')}}"
@@ -901,7 +904,7 @@
                                         Enroll Now
                                     </a>
                                     <div
-                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
+                                        class="width-65 height-65 fw-medium d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
                                         $40
                                     </div>
                                 </div>
@@ -924,7 +927,7 @@
                                             <img src="{{asset('/images/svg/home/play.svg')}}" class="width-12 height-12"
                                                  alt="play">
                                         </div>
-                                        <div class="ms-2 text-secondary text-opacity-75 small"> 20 videos</div>
+                                        <p class="ms-2 text-secondary text-opacity-75 small"> 20 videos</p>
                                     </div>
                                     <div class="d-flex align-items-center">
                                         <div
@@ -932,7 +935,7 @@
                                             <img src="{{asset('/images/svg/home/star-fill.svg')}}"
                                                  class="width-12 height-12" alt="star-fill">
                                         </div>
-                                        <div class="ms-2 text-secondary text-opacity-75 small"> 1K reviews</div>
+                                        <p class="ms-2 text-secondary text-opacity-75 small"> 1K reviews</p>
                                     </div>
                                     <div class="d-flex align-items-center">
                                         <div
@@ -940,14 +943,14 @@
                                             <img src="{{asset('/images/svg/home/student.svg')}}"
                                                  class="width-12 height-12" alt="star-fill">
                                         </div>
-                                        <div class="ms-2 text-secondary text-opacity-75 small"> 2K students</div>
+                                        <p class="ms-2 text-secondary text-opacity-75 small"> 2K students</p>
                                     </div>
                                 </div>
                                 <div class="mb-3">
-                                    <div class="fs-4 px-2 fw-bold truncate-line-2">
+                                    <h4 class="fs-4 px-2 fw-bold truncate-line-2">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae explicabo
                                         natus reprehenderit saepe temporibus.
-                                    </div>
+                                    </h4>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <a href="{{route('front.course-details')}}"
@@ -955,7 +958,7 @@
                                         Enroll Now
                                     </a>
                                     <div
-                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
+                                        class="width-65 height-65 fw-medium d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
                                         $40
                                     </div>
                                 </div>
@@ -974,14 +977,14 @@
 
             <div class="col-lg-6">
 
-                <div class="mb-2 fs-1 fw-bold" data-aos="fade-up" data-aos-delay="100">
+                <h1 class="mb-2 fs-1 fw-bold" data-aos="fade-up" data-aos-delay="100">
                     People Says About Courses
-                </div>
+                </h1>
 
-                <div class="text-dark fw-medium mb-3" data-aos="fade-up" data-aos-delay="200">
+                <p class="text-dark fw-medium mb-3" data-aos="fade-up" data-aos-delay="200">
                     Experience seamless online learning with our user-friendly LMS website.
                     Explore our courses and improve your skills today.
-                </div>
+                </p>
 
             </div>
 
@@ -1007,21 +1010,21 @@
                         </div>
 
                         {{-- carousel message - description --}}
-                        <div class="lead text-secondary fw-medium mb-3" data-aos="fade-up" data-aos-delay="500">
+                        <p class="lead text-secondary fw-medium mb-3" data-aos="fade-up" data-aos-delay="500">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur id magnam natus
                             saepe! A ab, accusamus ad alias amet architecto asperiores aspernatur aut beatae dicta est
                             eum ex exercitationem expedita
-                        </div>
+                        </p>
 
                         {{-- carousel message - author --}}
-                        <div class="fs-4 fw-bold" data-aos="fade-up" data-aos-delay="600">
+                        <h4 class="fs-4 fw-bold" data-aos="fade-up" data-aos-delay="600">
                             Melissa McGovern
-                        </div>
+                        </h4>
 
                         {{-- carousel message - profession --}}
-                        <div class="small text-secondary" data-aos="fade-up" data-aos-delay="700">
+                        <p class="small text-secondary" data-aos="fade-up" data-aos-delay="700">
                             Manager
-                        </div>
+                        </p>
 
                     </div>
 
@@ -1082,17 +1085,20 @@
             <div class="row">
                 <div class="col-lg-6">
 
-                    <div class="mb-2 fs-1 fw-bold" data-aos="fade-up" data-aos-delay="100"> Latest Blog</div>
+                    <h1 class="mb-2 fs-1 fw-bold" data-aos="fade-up" data-aos-delay="100">
+                        Latest Blog
+                    </h1>
 
-                    <div class="text-dark fw-medium mb-3" data-aos="fade-up" data-aos-delay="200">
+                    <p class="text-dark fw-medium mb-3" data-aos="fade-up" data-aos-delay="200">
                         Experience seamless online learning with our user-friendly LMS website.
                         Explore our courses and improve your skills today.
-                    </div>
+                    </p>
 
                 </div>
             </div>
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
 
+                {{-- blog item --}}
                 <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="300">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-6.jpg')}}"
@@ -1100,14 +1106,14 @@
                         <div class="position-absolute bottom-0 start-0 end-0 p-3 -mb-60">
                             <div class="bg-white p-3 shadow rounded-3 position-relative">
                                 <div class="position-absolute top-0 start-0 translate-middle-y ps-3">
-                                    <div class="bg-theme py-1 px-3 text-white d-inline-block small rounded-4">
+                                    <p class="bg-theme py-1 px-3 text-white d-inline-block small rounded-4">
                                         21 December 2023
-                                    </div>
+                                    </p>
                                 </div>
                                 <div class="py-2">
-                                    <div class="truncate-line-2 fs-3 fw-bold px-2">
+                                    <p class="truncate-line-2 fs-3 fw-bold px-2">
                                         11 Tips To Help You Get New Client
-                                    </div>
+                                    </p>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center p-2">
                                     <div class="d-flex align-items-center justify-content-start">
@@ -1124,21 +1130,22 @@
                     </div>
                 </div>
 
-                <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="400">
+                {{-- blog item --}}
+                <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="300">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-5.jpg')}}"
                              class="img-fluid object-fit-cover height-350 rounded-3" alt="course-1">
                         <div class="position-absolute bottom-0 start-0 end-0 p-3 -mb-60">
                             <div class="bg-white p-3 shadow rounded-3 position-relative">
                                 <div class="position-absolute top-0 start-0 translate-middle-y ps-3">
-                                    <div class="bg-theme py-1 px-3 text-white d-inline-block small rounded-4">
+                                    <p class="bg-theme py-1 px-3 text-white d-inline-block small rounded-4">
                                         21 December 2023
-                                    </div>
+                                    </p>
                                 </div>
                                 <div class="py-2">
-                                    <div class="truncate-line-2 fs-3 fw-bold px-2">
+                                    <p class="truncate-line-2 fs-3 fw-bold px-2">
                                         11 Tips To Help You Get New Client
-                                    </div>
+                                    </p>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center p-2">
                                     <div class="d-flex align-items-center justify-content-start">
@@ -1155,21 +1162,22 @@
                     </div>
                 </div>
 
-                <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="500">
+                {{-- blog item --}}
+                <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="300">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-4.jpg')}}"
                              class="img-fluid object-fit-cover height-350 rounded-3" alt="course-1">
                         <div class="position-absolute bottom-0 start-0 end-0 p-3 -mb-60">
                             <div class="bg-white p-3 shadow rounded-3 position-relative">
                                 <div class="position-absolute top-0 start-0 translate-middle-y ps-3">
-                                    <div class="bg-theme py-1 px-3 text-white d-inline-block small rounded-4">
+                                    <p class="bg-theme py-1 px-3 text-white d-inline-block small rounded-4">
                                         21 December 2023
-                                    </div>
+                                    </p>
                                 </div>
                                 <div class="py-2">
-                                    <div class="truncate-line-2 fs-3 fw-bold px-2">
+                                    <p class="truncate-line-2 fs-3 fw-bold px-2">
                                         11 Tips To Help You Get New Client
-                                    </div>
+                                    </p>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center p-2">
                                     <div class="d-flex align-items-center justify-content-start">
@@ -1196,9 +1204,9 @@
             <div class="bg-light-pink px-4 rounded-3 py-5">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
-                        <div class="fs-1 text-white" data-aos="fade-up" data-aos-delay="100">
+                        <h1 class="fs-1 text-white" data-aos="fade-up" data-aos-delay="100">
                             Join our community of students
-                        </div>
+                        </h1>
                     </div>
                     <div class="col-lg-6 py-3" data-aos="fade-up" data-aos-delay="200">
                         <div class="position-relative">

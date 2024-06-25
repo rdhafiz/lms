@@ -66,7 +66,7 @@
                         </a>
                     </li>
                 </span>
-                <div class="w-100 d-flex d-lg-none justify-content-center align-items-center flex-column">
+                <li class="nav-item w-100 d-flex d-lg-none justify-content-center align-items-center flex-column">
                     <div class="text-center">
                         Get In Touch
                     </div>
@@ -87,7 +87,7 @@
                             <img src="{{asset('/images/svg/header/youtube.svg')}}" class="width-35 height-35" alt="youtube">
                         </a>
                     </div>
-                </div>
+                </li>
             </ul>
             <ul class="navbar-nav d-none d-lg-flex">
                 <li class="nav-item">
