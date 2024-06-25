@@ -126,6 +126,65 @@
         </div>
     </section>
 
+    {{-- Ready To Get Started? Fill up the form and our team contact with you --}}
+    <section class="w-100 py-5">
+        <div class="container py-5">
+            <div class="d-flex justify-content-center">
+                <div class="mb-4 fw-bold text-center fs-1 col-lg-8">
+                    Ready To Get Started? Fill up the form and our team contact with you
+                </div>
+            </div>
+            <form>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <div class="form-group mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input id="name" type="text" name="name" placeholder="Enter your name"
+                                   class="form-control p-3 rounded-2 shadow-none bg-light" required
+                                   autocomplete="new-email">
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="website-url" class="form-label">Website</label>
+                        <input id="website-url" type="url" name="website-url" placeholder="Enter your website"
+                               class="form-control p-3 rounded-2 shadow-none bg-light" required
+                               autocomplete="new-website-url">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input id="email" type="email" name="email" placeholder="Enter your email"
+                                   class="form-control p-3 rounded-2 shadow-none bg-light" required
+                                   autocomplete="new-email">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input id="subject" type="text" name="subject" placeholder="Enter your subject"
+                                   class="form-control p-3 rounded-2 shadow-none bg-light" required
+                                   autocomplete="new-subject">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-group mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea name="message" id="message" cols="30" rows="5"
+                                      class="form-textarea p-3 rounded-2 shadow-none bg-light d-block w-100"
+                                      required placeholder="Typing Here..."
+                                      autocomplete="new-message"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button type="submit" class="btn btn-theme rounded-pill px-5 py-3">
+                            Send Message
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
 
 
 @endsection
