@@ -24,3 +24,5 @@ Route::get('/register', [FrontController::class, 'register'])->name('front.regis
 Route::get('/login', [FrontController::class, 'login'])->name('front.login');
 Route::get('/forget_password', [FrontController::class, 'forget_password'])->name('front.forget_password');
 Route::get('/reset_password', [FrontController::class, 'reset_password'])->name('front.reset_password');
+Route::get('/courses', [FrontController::class, 'courses'])->name('front.courses');
+Route::get('/course-details', [FrontController::class, 'courseDetails'])->name('front.course-details');
