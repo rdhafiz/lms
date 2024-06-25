@@ -18,6 +18,9 @@
 </head>
 <body>
 
+    {{-- preloader --}}
+    @include('front.layouts.widgets.preloader')
+
     {{-- header --}}
     @include('front.layouts.widgets.header')
 
