@@ -8,9 +8,10 @@
         <div class="container">
             <div class="d-flex justify-content-start align-items-center height-350">
                 <div>
-                    <div class="fs-1 fw-bold text-theme-secondary mb-3 d-block" data-aos="fade-up" data-aos-delay="100">
+
+                    <h1 class="fs-1 fw-bold text-theme-secondary mb-3 d-block" data-aos="fade-up" data-aos-delay="100">
                         Courses
-                    </div>
+                    </h1>
 
                     <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="200">
                         <ol class="breadcrumb">
@@ -26,6 +27,7 @@
                             </li>
                         </ol>
                     </nav>
+
                 </div>
             </div>
         </div>
@@ -35,13 +37,14 @@
     <section class="w-100 py-5" data-aos="fade-up">
         <div class="container py-5">
             <div class="row">
-                <div class="col-lg-6">
+                <form class="col-lg-6">
 
                     {{-- search course --}}
                     <div class="position-relative z-2" data-aos="fade-up" data-aos-delay="100">
-                        <input type="text" name="keyword"
+                        <label for="course" hidden="hidden">course</label>
+                        <input id="course" type="text" name="course"
                                class="form-control shadow-none py-3 ps-5 rounded-0 rounded-pill" required
-                               autocomplete="new-keyword" placeholder="Search Courses">
+                               autocomplete="new-course" placeholder="Search Courses">
                         <div class="position-absolute top-50 start-0 translate-middle-y ps-3">
                             <img src="{{asset('/images/svg/home/search.svg')}}" class="width-25 height-25" alt="search">
                         </div>
@@ -81,9 +84,11 @@
                                 <img src="{{asset('/images/svg/home/arrow-right.svg')}}"
                                      class="img-fluid width-25 height-25" alt="arrow-right">
                             </button>
+
                         </div>
                     </div>
-                </div>
+
+                </form>
             </div>
 
             {{-- courses list --}}
@@ -133,7 +138,7 @@
                                         Enroll Now
                                     </a>
                                     <div
-                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
+                                        class="width-65 height-65 fw-medium d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
                                         $40
                                     </div>
                                 </div>
@@ -176,17 +181,17 @@
                                     </div>
                                 </div>
                                 <div class="mb-3">
-                                    <div class="fs-4 px-2 fw-bold truncate-line-2">
+                                    <h4 class="fs-4 px-2 fw-bold truncate-line-2">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae explicabo
                                         natus reprehenderit saepe temporibus.
-                                    </div>
+                                    </h4>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-4 py-2">
                                         Enroll Now
                                     </a>
                                     <div
-                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
+                                        class="width-65 height-65 fw-medium d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
                                         $40
                                     </div>
                                 </div>
@@ -229,17 +234,17 @@
                                     </div>
                                 </div>
                                 <div class="mb-3">
-                                    <div class="fs-4 px-2 fw-bold truncate-line-2">
+                                    <h4 class="fs-4 px-2 fw-bold truncate-line-2">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae explicabo
                                         natus reprehenderit saepe temporibus.
-                                    </div>
+                                    </h4>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-4 py-2">
                                         Enroll Now
                                     </a>
                                     <div
-                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
+                                        class="width-65 height-65 fw-medium d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
                                         $40
                                     </div>
                                 </div>
@@ -282,17 +287,17 @@
                                     </div>
                                 </div>
                                 <div class="mb-3">
-                                    <div class="fs-4 px-2 fw-bold truncate-line-2">
+                                    <h4 class="fs-4 px-2 fw-bold truncate-line-2">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae explicabo
                                         natus reprehenderit saepe temporibus.
-                                    </div>
+                                    </h4>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-4 py-2">
                                         Enroll Now
                                     </a>
                                     <div
-                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
+                                        class="width-65 height-65 fw-medium d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
                                         $40
                                     </div>
                                 </div>
@@ -335,17 +340,17 @@
                                     </div>
                                 </div>
                                 <div class="mb-3">
-                                    <div class="fs-4 px-2 fw-bold truncate-line-2">
+                                    <h4 class="fs-4 px-2 fw-bold truncate-line-2">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae explicabo
                                         natus reprehenderit saepe temporibus.
-                                    </div>
+                                    </h4>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-4 py-2">
                                         Enroll Now
                                     </a>
                                     <div
-                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
+                                        class="width-65 height-65 fw-medium d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
                                         $40
                                     </div>
                                 </div>
@@ -388,17 +393,17 @@
                                     </div>
                                 </div>
                                 <div class="mb-3">
-                                    <div class="fs-4 px-2 fw-bold truncate-line-2">
+                                    <h4 class="fs-4 px-2 fw-bold truncate-line-2">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae explicabo
                                         natus reprehenderit saepe temporibus.
-                                    </div>
+                                    </h4>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-4 py-2">
                                         Enroll Now
                                     </a>
                                     <div
-                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
+                                        class="width-65 height-65 fw-medium d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
                                         $40
                                     </div>
                                 </div>
@@ -461,8 +466,9 @@
                         </div>
                     </div>
                     <div class="col-lg-6 py-3" data-aos="fade-up" data-aos-delay="200">
+                        <label for="email" hidden="hidden">email</label>
                         <div class="position-relative">
-                            <input type="email" name="email" class="form-control shadow-none py-3 ps-4 rounded-0 rounded-pill" required
+                            <input id="email" type="email" name="email" class="form-control shadow-none py-3 ps-4 rounded-0 rounded-pill" required
                                    autocomplete="new-email" placeholder="Enter your Email">
                             <div class="position-absolute top-50 end-0 translate-middle-y pe-3">
                                 <button type="submit" class="btn btn-theme rounded-pill px-4">

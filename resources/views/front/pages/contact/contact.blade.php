@@ -8,9 +8,11 @@
         <div class="container">
             <div class="d-flex justify-content-start align-items-center height-350">
                 <div>
-                    <div class="fs-1 fw-bold text-theme-secondary mb-3 d-block" data-aos="fade-up" data-aos-delay="100">
+
+                    <h1 class="fs-1 fw-bold text-theme-secondary mb-3 d-block" data-aos="fade-up" data-aos-delay="100">
                         Contact Us
-                    </div>
+                    </h1>
+
                     <nav data-aos="fade-up" data-aos-delay="200"
                         style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
                         aria-label="breadcrumb">
@@ -27,6 +29,7 @@
                             </li>
                         </ol>
                     </nav>
+
                 </div>
             </div>
         </div>
@@ -35,10 +38,14 @@
     {{-- Get in touch with us --}}
     <section class="w-100 py-5" data-aos="fade-up">
         <div class="container py-5">
-            <div class="mb-4 fw-bold text-center fs-1" data-aos="fade-up" data-aos-delay="100">
+
+            <h1 class="mb-4 fw-bold text-center fs-1" data-aos="fade-up" data-aos-delay="100">
                 Get In Touch With Us
-            </div>
+            </h1>
+
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2">
+
+                {{-- address --}}
                 <div class="p-3" data-aos="fade-up" data-aos-delay="200">
                     <div
                         class="shadow p-2 p-sm-5 bg-size-cover object-fit-cover bg-repeat-none d-flex align-items-center justify-content-start"
@@ -51,15 +58,17 @@
                             </div>
                         </div>
                         <div>
-                            <div class="d-block fw-bold text-theme-secondary">
+                            <p class="d-block fw-bold text-theme-secondary pb-0 mb-0">
                                 Our Address
-                            </div>
-                            <div class="text-secondary">
+                            </p>
+                            <p class="text-secondary pb-0 mb-0">
                                 32D, Jenmark road, Franklin, USA
-                            </div>
+                            </p>
                         </div>
                     </div>
                 </div>
+
+                {{-- contact --}}
                 <div class="p-3" data-aos="fade-up" data-aos-delay="300">
                     <div
                         class="shadow p-2 p-sm-5 bg-size-cover object-fit-cover bg-repeat-none d-flex align-items-center justify-content-start"
@@ -72,15 +81,17 @@
                             </div>
                         </div>
                         <div>
-                            <div class="d-block fw-bold text-theme-secondary">
+                            <p class="d-block fw-bold text-theme-secondary pb-0 mb-0">
                                 Contact
-                            </div>
-                            <div class="text-secondary">
+                            </p>
+                            <p class="text-secondary pb-0 mb-0">
                                 +1(135) 1984 2020
-                            </div>
+                            </p>
                         </div>
                     </div>
                 </div>
+
+                {{-- contact --}}
                 <div class="p-3" data-aos="fade-up" data-aos-delay="400">
                     <div
                         class="shadow p-2 p-sm-5 bg-size-cover object-fit-cover bg-repeat-none d-flex align-items-center justify-content-start"
@@ -93,15 +104,17 @@
                             </div>
                         </div>
                         <div>
-                            <div class="d-block fw-bold text-theme-secondary">
+                            <p class="d-block fw-bold text-theme-secondary pb-0 mb-0">
                                 House of Operations
-                            </div>
-                            <div class="text-secondary">
+                            </p>
+                            <p class="text-secondary pb-0 mb-0">
                                 (8 AM - 7 PM, Monday - Friday)
-                            </div>
+                            </p>
                         </div>
                     </div>
                 </div>
+
+                {{-- email --}}
                 <div class="p-3" data-aos="fade-up" data-aos-delay="500">
                     <div
                         class="shadow p-2 p-sm-5 bg-size-cover object-fit-cover bg-repeat-none d-flex align-items-center justify-content-start"
@@ -114,12 +127,12 @@
                             </div>
                         </div>
                         <div>
-                            <div class="d-block fw-bold text-theme-secondary">
+                            <p class="d-block fw-bold text-theme-secondary pb-0 mb-0">
                                 Email
-                            </div>
-                            <div class="text-secondary">
+                            </p>
+                            <p class="text-secondary pb-0 mb-0">
                                 example@example.com
-                            </div>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -198,7 +211,8 @@
                     </div>
                     <div class="col-lg-6 py-3" data-aos="fade-up" data-aos-delay="200">
                         <div class="position-relative">
-                            <input type="email" name="email" class="form-control shadow-none py-3 ps-4 rounded-0 rounded-pill" required
+                            <label for="email" hidden="hidden">email</label>
+                            <input id="email" type="email" name="email" class="form-control shadow-none py-3 ps-4 rounded-0 rounded-pill" required
                                    autocomplete="new-email" placeholder="Enter your Email">
                             <div class="position-absolute top-50 end-0 translate-middle-y pe-3">
                                 <button type="submit" class="btn btn-theme rounded-pill px-4">

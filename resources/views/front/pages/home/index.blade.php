@@ -18,48 +18,50 @@
                         Experience seamless online learning with our user-friendly LMS website.
                         Explore our courses and improve your skills today.
                     </p>
-                    <div class="position-relative" data-aos="fade-up" data-aos-delay="200">
-                        <label for="category" hidden="hidden">category</label>
-                        <input id="category" type="text" name="category"
-                               class="form-control shadow-none py-3 ps-5 rounded-0 rounded-pill" required
-                               placeholder="Search Courses">
-                        <div class="position-absolute top-50 start-0 translate-middle-y ps-3">
-                            <img src="{{asset('/images/svg/home/search.svg')}}" class="width-25 height-25" alt="search">
-                        </div>
-                        <div
-                            class="position-absolute top-50 end-0 translate-middle-y pe-2 d-flex justify-content-end align-items-center">
-                            <div class="dropdown">
-                                <button type="button" class="btn height-40 bg-opacity-theme px-4 border-0 rounded-pill"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                    <span class="text-theme me-1 d-none d-sm-inline"> Category </span>
-                                    <img src="{{asset('/images/svg/home/chevron-down.svg')}}" class="width-18 height-18"
-                                         alt="chevron-down">
-                                </button>
-                                <ul class="dropdown-menu dropdown-menu-end">
-                                    <li>
-                                        <a href="javascript:void(0)" class="dropdown-item">
-                                            Basic
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)" class="dropdown-item">
-                                            Intermediate
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)" class="dropdown-item">
-                                            Advanced
-                                        </a>
-                                    </li>
-                                </ul>
+                    <form>
+                        <div class="position-relative" data-aos="fade-up" data-aos-delay="200">
+                            <label for="category" hidden="hidden">category</label>
+                            <input id="category" type="text" name="category"
+                                   class="form-control shadow-none py-3 ps-5 rounded-0 rounded-pill" required
+                                   placeholder="Search Courses">
+                            <div class="position-absolute top-50 start-0 translate-middle-y ps-3">
+                                <img src="{{asset('/images/svg/home/search.svg')}}" class="width-25 height-25" alt="search">
                             </div>
-                            <button type="button"
-                                    class="btn btn-theme width-40 height-40 ms-1 rounded-circle d-flex justify-content-center align-items-center">
-                                <img src="{{asset('/images/svg/home/arrow-right.svg')}}"
-                                     class="img-fluid width-25 height-25" alt="arrow-right">
-                            </button>
+                            <div
+                                class="position-absolute top-50 end-0 translate-middle-y pe-2 d-flex justify-content-end align-items-center">
+                                <div class="dropdown">
+                                    <button type="button" class="btn height-40 bg-opacity-theme px-4 border-0 rounded-pill"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span class="text-theme me-1 d-none d-sm-inline"> Category </span>
+                                        <img src="{{asset('/images/svg/home/chevron-down.svg')}}" class="width-18 height-18"
+                                             alt="chevron-down">
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end">
+                                        <li>
+                                            <a href="javascript:void(0)" class="dropdown-item">
+                                                Basic
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)" class="dropdown-item">
+                                                Intermediate
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)" class="dropdown-item">
+                                                Advanced
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button type="button"
+                                        class="btn btn-theme width-40 height-40 ms-1 rounded-circle d-flex justify-content-center align-items-center">
+                                    <img src="{{asset('/images/svg/home/arrow-right.svg')}}"
+                                         class="img-fluid width-25 height-25" alt="arrow-right">
+                                </button>
+                            </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
                 <div class="col-xl-6 d-xl-flex justify-content-center align-items-center flex-wrap d-none">
                     <div
@@ -103,7 +105,7 @@
                                  alt="box-icon-1">
                         </div>
                         <div class="ms-3">
-                            <h4 class="fw-bold fs-4"> 1K</h4>
+                            <h4 class="fw-bold fs-4 mb-0"> 1K</h4>
                             <div class="text-secondary fw-medium"> Online Courses</div>
                         </div>
                     </div>
@@ -120,7 +122,7 @@
                                  alt="box-icon-2">
                         </div>
                         <div class="ms-3">
-                            <h4 class="fw-bold fs-4"> 28+</h4>
+                            <h4 class="fw-bold fs-4 mb-0"> 28+</h4>
                             <div class="text-secondary fw-medium"> Expert Tutors</div>
                         </div>
                     </div>
@@ -137,7 +139,7 @@
                                  alt="box-icon-3">
                         </div>
                         <div class="ms-3">
-                            <h4 class="fw-bold fs-4"> 1K +</h4>
+                            <h4 class="fw-bold fs-4 mb-0"> 1K +</h4>
                             <div class="text-secondary fw-medium"> Certified Courses</div>
                         </div>
                     </div>
@@ -154,7 +156,7 @@
                                  alt="box-icon-4">
                         </div>
                         <div class="ms-3">
-                            <h4 class="fw-bold fs-4"> 8K+</h4>
+                            <h4 class="fw-bold fs-4 mb-0"> 8K+</h4>
                             <div class="text-secondary fw-medium"> Online Students</div>
                         </div>
                     </div>
