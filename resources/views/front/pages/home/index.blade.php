@@ -6,15 +6,15 @@
     {{-- hero content --}}
     <section class="w-100 bg-warning-subtle h-100">
         <div class="container py-5 pb-3">
-            <div class="row py-5">
-                <div class="col-lg-6 py-5">
+            <div class="row py-5 justify-content-center">
+                <div class="col-12 col-sm-10 col-lg-8 col-xl-6 py-5">
                     <div class="lead fw-medium text-theme">
                         The leader in Online learning
                     </div>
                     <div class="fs-1 text-theme-secondary fw-bold my-3">
                         Build Your Skills and Achieve Your Goals
                     </div>
-                    <div class="lead text-secondary mb-4 fw-medium">
+                    <div class="text-dark mb-4 fw-medium">
                         Experience seamless online learning with our user-friendly LMS website.
                         Explore our courses and improve your skills today.
                     </div>
@@ -30,9 +30,9 @@
                             <div class="dropdown">
                                 <button type="button" class="btn height-40 bg-opacity-theme px-4 border-0 rounded-pill"
                                         data-bs-toggle="dropdown" aria-expanded="false">
-                                    <span class="text-theme me-1"> Category </span>
+                                    <span class="text-theme me-1 d-none d-sm-inline"> Category </span>
                                     <img src="{{asset('/images/svg/home/chevron-down.svg')}}" class="width-18 height-18"
-                                         alt="">
+                                         alt="chevron-down">
                                 </button>
                                 <ul class="dropdown-menu dropdown-menu-end">
                                     <li>
@@ -60,7 +60,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 d-md-flex justify-content-center align-items-center flex-wrap d-none">
+                <div class="col-xl-6 d-xl-flex justify-content-center align-items-center flex-wrap d-none">
                     <div
                         class="overflow-hidden rounded-circle width-300 height-300 border border-5 border-white mx-4 -mt-40">
                         <img src="{{asset('/images/home/young-woman.jpg')}}"
@@ -90,55 +90,55 @@
     <section class="w-100 py-5">
         <div class="container">
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
-                <div class="p-1">
-                    <div class="bg-secondary-subtle d-flex justify-content-start align-items-center p-4 rounded-3">
+                <div class="p-2">
+                    <div class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start" style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
                         <div
                             class="width-65 height-65 rounded-circle d-flex justify-content-center align-items-center bg-secondary">
                             <img src="{{asset('/images/svg/home/pencil-ruler.svg')}}" class="width-25 height-25"
                                  alt="box-icon-1">
                         </div>
-                        <div class="ms-2">
+                        <div class="ms-3">
                             <div class="fw-bold fs-4"> 1K</div>
-                            <div class="text-secondary fs-6"> Online Courses</div>
+                            <div class="text-secondary fw-medium"> Online Courses</div>
                         </div>
                     </div>
                 </div>
-                <div class="p-1">
-                    <div class="bg-secondary-subtle d-flex justify-content-start align-items-center p-4 rounded-3">
+                <div class="p-2">
+                    <div class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start" style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
                         <div
                             class="width-65 height-65 rounded-circle d-flex justify-content-center align-items-center bg-light-pink">
                             <img src="{{asset('/images/svg/home/people.svg')}}" class="width-25 height-25"
                                  alt="box-icon-2">
                         </div>
-                        <div class="ms-2">
+                        <div class="ms-3">
                             <div class="fw-bold fs-4"> 28+</div>
-                            <div class="text-secondary fs-6"> Expert Tutors</div>
+                            <div class="text-secondary fw-medium"> Expert Tutors</div>
                         </div>
                     </div>
                 </div>
-                <div class="p-1">
-                    <div class="bg-secondary-subtle d-flex justify-content-start align-items-center p-4 rounded-3">
+                <div class="p-2">
+                    <div class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start" style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
                         <div
                             class="width-65 height-65 rounded-circle d-flex justify-content-center align-items-center bg-light-purple">
                             <img src="{{asset('/images/svg/home/certified.svg')}}" class="width-25 height-25"
                                  alt="box-icon-3">
                         </div>
-                        <div class="ms-2">
+                        <div class="ms-3">
                             <div class="fw-bold fs-4"> 1K +</div>
-                            <div class="text-secondary fs-6"> Certified Courses</div>
+                            <div class="text-secondary fw-medium"> Certified Courses</div>
                         </div>
                     </div>
                 </div>
-                <div class="p-1">
-                    <div class="bg-secondary-subtle d-flex justify-content-start align-items-center p-4 rounded-3">
+                <div class="p-2">
+                    <div class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start" style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
                         <div
                             class="width-65 height-65 rounded-circle d-flex justify-content-center align-items-center bg-light-info">
                             <img src="{{asset('/images/svg/home/morterboard.svg')}}" class="width-25 height-25"
                                  alt="box-icon-4">
                         </div>
-                        <div class="ms-2">
-                            <div class="fw-medium"> 8K+</div>
-                            <div class="text-secondary"> Online Students</div>
+                        <div class="ms-3">
+                            <div class="fw-bold fs-4"> 8K+</div>
+                            <div class="text-secondary fw-medium"> Online Students</div>
                         </div>
                     </div>
                 </div>
@@ -152,13 +152,13 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="mb-2 fs-1 fw-bold"> Popular courses</div>
-                    <div class="text-secondary lead fw-medium">
+                    <div class="text-secondary fw-medium mb-3">
                         Experience seamless online learning with our user-friendly LMS website.
                         Explore our courses and improve your skills today.
                     </div>
                 </div>
                 <div class="col-lg-6 text-end">
-                    <a href="javascript:void(0)" class="btn btn-theme rounded-pill py-2 px-4">
+                    <a href="{{route('front.courses')}}" class="btn btn-theme rounded-pill py-2 px-4">
                         View all courses
                     </a>
                 </div>
@@ -203,7 +203,7 @@
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <a href="javascript:void(0)" class="btn btn-theme rounded-pill px-3 py-2">
+                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-3 py-2">
                                         Enroll Now
                                     </a>
                                     <div
@@ -254,7 +254,7 @@
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <a href="javascript:void(0)" class="btn btn-theme rounded-pill px-3 py-2">
+                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-3 py-2">
                                         Enroll Now
                                     </a>
                                     <div
@@ -305,7 +305,7 @@
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <a href="javascript:void(0)" class="btn btn-theme rounded-pill px-3 py-2">
+                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-3 py-2">
                                         Enroll Now
                                     </a>
                                     <div
@@ -356,7 +356,7 @@
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <a href="javascript:void(0)" class="btn btn-theme rounded-pill px-3 py-2">
+                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-3 py-2">
                                         Enroll Now
                                     </a>
                                     <div
@@ -407,7 +407,7 @@
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <a href="javascript:void(0)" class="btn btn-theme rounded-pill px-3 py-2">
+                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-3 py-2">
                                         Enroll Now
                                     </a>
                                     <div
@@ -458,7 +458,7 @@
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <a href="javascript:void(0)" class="btn btn-theme rounded-pill px-3 py-2">
+                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-3 py-2">
                                         Enroll Now
                                     </a>
                                     <div
