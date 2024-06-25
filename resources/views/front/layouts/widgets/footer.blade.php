@@ -21,32 +21,36 @@
                         For Instructor
                         <hr class="col-3 pt-0 mt-2 border border-danger">
                     </div>
-                    <a href="javascript:void(0)"
-                       class="nav-link mb-3 text-secondary d-flex align-items-center justify-content-start">
-                        <div class="width-8 height-8 rounded-circle bg-success"></div>
-                        <span class="ms-2">
-                            Profile
+                    <a href="javascript:void(0)" class="nav-link mb-3">
+                        <span class="d-flex align-items-center justify-content-start">
+                            <span class="width-8 height-8 rounded-circle bg-success"></span>
+                            <span class="ms-2 underline-anim text-secondary pe-3">
+                                Profile
+                            </span>
                         </span>
                     </a>
-                    <a href="javascript:void(0)"
-                       class="nav-link mb-3 text-secondary d-flex align-items-center justify-content-start">
-                        <div class="width-8 height-8 rounded-circle bg-success"></div>
-                        <span class="ms-2">
-                            Login
+                    <a href="javascript:void(0)" class="nav-link mb-3">
+                        <span class="d-flex align-items-center justify-content-start">
+                            <span class="width-8 height-8 rounded-circle bg-success"></span>
+                            <span class="ms-2 underline-anim text-secondary pe-3">
+                                Login
+                            </span>
                         </span>
                     </a>
-                    <a href="javascript:void(0)"
-                       class="nav-link mb-3 text-secondary d-flex align-items-center justify-content-start">
-                        <div class="width-8 height-8 rounded-circle bg-success"></div>
-                        <span class="ms-2">
-                            Register
+                    <a href="javascript:void(0)" class="nav-link mb-3">
+                        <span class="d-flex align-items-center justify-content-start">
+                            <span class="width-8 height-8 rounded-circle bg-success"></span>
+                            <span class="ms-2 underline-anim text-secondary pe-3">
+                                Register
+                            </span>
                         </span>
                     </a>
-                    <a href="javascript:void(0)"
-                       class="nav-link mb-3 text-secondary d-flex align-items-center justify-content-start">
-                        <div class="width-8 height-8 rounded-circle bg-success"></div>
-                        <span class="ms-2">
-                            Dashboard
+                    <a href="javascript:void(0)" class="nav-link mb-3">
+                        <span class="d-flex align-items-center justify-content-start">
+                            <span class="width-8 height-8 rounded-circle bg-success"></span>
+                            <span class="ms-2 underline-anim text-secondary pe-3">
+                                Dashboard
+                            </span>
                         </span>
                     </a>
                 </div>
@@ -57,32 +61,36 @@
                         For Students
                         <hr class="col-3 pt-0 mt-2 border border-danger">
                     </div>
-                    <a href="javascript:void(0)"
-                       class="nav-link mb-3 text-secondary d-flex align-items-center justify-content-start">
-                        <div class="width-8 height-8 rounded-circle bg-success"></div>
-                        <span class="ms-2">
-                            Profile
+                    <a href="javascript:void(0)" class="nav-link mb-3">
+                        <span class="d-flex align-items-center justify-content-start">
+                            <span class="width-8 height-8 rounded-circle bg-success"></span>
+                            <span class="ms-2 underline-anim text-secondary pe-3">
+                                Profile
+                            </span>
                         </span>
                     </a>
-                    <a href="javascript:void(0)"
-                       class="nav-link mb-3 text-secondary d-flex align-items-center justify-content-start">
-                        <div class="width-8 height-8 rounded-circle bg-success"></div>
-                        <span class="ms-2">
-                            Login
+                    <a href="javascript:void(0)" class="nav-link mb-3">
+                        <span class="d-flex align-items-center justify-content-start">
+                            <span class="width-8 height-8 rounded-circle bg-success"></span>
+                            <span class="ms-2 underline-anim text-secondary pe-3">
+                                Login
+                            </span>
                         </span>
                     </a>
-                    <a href="javascript:void(0)"
-                       class="nav-link mb-3 text-secondary d-flex align-items-center justify-content-start">
-                        <div class="width-8 height-8 rounded-circle bg-success"></div>
-                        <span class="ms-2">
-                            Register
+                    <a href="javascript:void(0)" class="nav-link mb-3">
+                        <span class="d-flex align-items-center justify-content-start">
+                            <span class="width-8 height-8 rounded-circle bg-success"></span>
+                            <span class="ms-2 underline-anim text-secondary pe-3">
+                                Register
+                            </span>
                         </span>
                     </a>
-                    <a href="javascript:void(0)"
-                       class="nav-link mb-3 text-secondary d-flex align-items-center justify-content-start">
-                        <div class="width-8 height-8 rounded-circle bg-success"></div>
-                        <span class="ms-2">
-                            Dashboard
+                    <a href="javascript:void(0)" class="nav-link mb-3">
+                        <span class="d-flex align-items-center justify-content-start">
+                            <span class="width-8 height-8 rounded-circle bg-success"></span>
+                            <span class="ms-2 underline-anim text-secondary pe-3">
+                                Dashboard
+                            </span>
                         </span>
                     </a>
                 </div>
@@ -94,18 +102,15 @@
                         <hr class="col-3 pt-0 mt-2 border border-danger">
                     </div>
                     <div class="d-flex align-items-start justify-content-start mb-3">
-                        <img src="{{asset('/images/svg/home/geo-alt.svg')}}" class="width-24 height-24 me-2"
-                             alt="geo-alt">
+                        <img src="{{asset('/images/svg/home/geo-alt.svg')}}" class="width-24 height-24 me-2" alt="geo-alt">
                         3556 Beech Street, Sam franciso California CA 94108
                     </div>
                     <div class="d-flex align-items-start justify-content-start mb-3">
-                        <img src="{{asset('/images/svg/home/envelope-green.svg')}}"
-                             class="width-24 height-24 me-2" alt="geo-alt">
+                        <img src="{{asset('/images/svg/home/envelope-green.svg')}}" class="width-18 height-18 me-2" alt="geo-alt">
                         example@example.com
                     </div>
                     <div class="d-flex align-items-start justify-content-start mb-3">
-                        <img src="{{asset('/images/svg/home/green-telephone.svg')}}"
-                             class="width-24 height-24 me-2" alt="geo-alt">
+                        <img src="{{asset('/images/svg/home/green-telephone.svg')}}" class="width-20 height-20 me-2" alt="geo-alt">
                         +12 33 4545 6678 789
                     </div>
                 </div>
