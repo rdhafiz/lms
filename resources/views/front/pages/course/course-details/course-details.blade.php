@@ -410,8 +410,7 @@
                         </div>
                         <div class="text-theme p-3 fw-medium" data-aos="fade-up" data-aos-delay="500">
                             <span class="me-2">
-                                <img src="{{asset('/images/svg/course-details/clock.svg')}}" class="width-21 height-21"
-                                     alt="clock">
+                                <img src="{{asset('/images/svg/course-details/clock.svg')}}" class="width-21 height-21" alt="clock">
                             </span>
                             5 days left at this price!
                         </div>
@@ -421,8 +420,7 @@
                              data-aos-delay="600">
                             <div class="d-flex align-items-center">
                                 <div class="me-2">
-                                    <img src="{{asset('/images/svg/course-details/tag.svg')}}"
-                                         class="width-21 height-21" alt="tag">
+                                    <img src="{{asset('/images/svg/course-details/tag.svg')}}" class="width-21 height-21" alt="tag">
                                 </div>
                                 Course level :
                             </div>
@@ -436,8 +434,7 @@
                              data-aos-delay="700">
                             <div class="d-flex align-items-center">
                                 <div class="me-2">
-                                    <img src="{{asset('/images/svg/course-details/instructor-black.svg')}}"
-                                         class="width-21 height-21" alt="tag">
+                                    <img src="{{asset('/images/svg/course-details/instructor-black.svg')}}" class="width-21 height-21" alt="tag">
                                 </div>
                                 Instructor :
                             </div>
@@ -451,8 +448,7 @@
                              data-aos-delay="800">
                             <div class="d-flex align-items-center">
                                 <div class="me-2">
-                                    <img src="{{asset('/images/svg/course-details/video-file.svg')}}"
-                                         class="width-21 height-21" alt="tag">
+                                    <img src="{{asset('/images/svg/course-details/video-file.svg')}}" class="width-21 height-21" alt="tag">
                                 </div>
                                 Lesson :
                             </div>
@@ -466,8 +462,7 @@
                              data-aos-delay="900">
                             <div class="d-flex align-items-center">
                                 <div class="me-2">
-                                    <img src="{{asset('/images/svg/course-details/person.svg')}}"
-                                         class="width-21 height-21" alt="tag">
+                                    <img src="{{asset('/images/svg/course-details/person.svg')}}" class="width-21 height-21" alt="tag">
                                 </div>
                                 Enrolled :
                             </div>
@@ -481,8 +476,7 @@
                              data-aos-delay="1000">
                             <div class="d-flex align-items-center">
                                 <div class="me-2">
-                                    <img src="{{asset('/images/svg/course-details/latest-update.svg')}}"
-                                         class="width-21 height-21" alt="tag">
+                                    <img src="{{asset('/images/svg/course-details/latest-update.svg')}}" class="width-21 height-21" alt="tag">
                                 </div>
                                 Latest Updated :
                             </div>
@@ -496,8 +490,7 @@
                             <button type="submit" class="btn btn-light-theme py-3 px-5 rounded-pill" data-aos="fade-up"
                                     data-aos-delay="1100">
                                 <span class="me-2">
-                                    <img src="{{asset('/images/svg/course-details/share.svg')}}"
-                                         class="width-21 height-21" alt="share">
+                                    <img src="{{asset('/images/svg/course-details/share.svg')}}" class="width-21 height-21" alt="share">
                                 </span>
                                 Share this course
                             </button>
@@ -528,8 +521,7 @@
                                 <button type="submit" class="btn btn-theme rounded-pill px-4">
                                     <span class="d-none d-sm-inline me-1">Subscribe</span>
                                     <span>
-                                        <img src="{{asset('/images/svg/home/send.svg')}}" class="width-21 height-21"
-                                             alt="send">
+                                        <img src="{{asset('/images/svg/home/send.svg')}}" class="width-21 height-21" alt="send">
                                     </span>
                                 </button>
                             </div>
