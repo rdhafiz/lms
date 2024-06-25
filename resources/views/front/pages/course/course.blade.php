@@ -36,7 +36,7 @@
                 <div class="col-lg-6">
 
                     {{-- search course --}}
-                    <div class="position-relative">
+                    <div class="position-relative z-2">
                         <input type="text" name="keyword"
                                class="form-control shadow-none py-3 ps-5 rounded-0 rounded-pill" required
                                autocomplete="new-keyword" placeholder="Search Courses">
