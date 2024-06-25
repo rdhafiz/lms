@@ -4,12 +4,14 @@
 @section('content')
 
     {{-- Breadcrumb --}}
-    <section class="w-100 bg-warning-subtle">
+    <section class="w-100 bg-warning-subtle" data-aos="fade-up">
         <div class="container">
             <div class="d-flex justify-content-start align-items-center height-350">
                 <div>
-                    <div class="fs-1 fw-bold text-theme-secondary mb-3 d-block"> Contact Us</div>
-                    <nav
+                    <div class="fs-1 fw-bold text-theme-secondary mb-3 d-block" data-aos="fade-up" data-aos-delay="100">
+                        Contact Us
+                    </div>
+                    <nav data-aos="fade-up" data-aos-delay="200"
                         style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
                         aria-label="breadcrumb">
                         <ol class="breadcrumb">
@@ -31,13 +33,13 @@
     </section>
 
     {{-- Get in touch with us --}}
-    <section class="w-100 py-5">
+    <section class="w-100 py-5" data-aos="fade-up">
         <div class="container py-5">
-            <div class="mb-4 fw-bold text-center fs-1">
+            <div class="mb-4 fw-bold text-center fs-1" data-aos="fade-up" data-aos-delay="100">
                 Get In Touch With Us
             </div>
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2">
-                <div class="p-3">
+                <div class="p-3" data-aos="fade-up" data-aos-delay="200">
                     <div
                         class="shadow p-2 p-sm-5 bg-size-cover object-fit-cover bg-repeat-none d-flex align-items-center justify-content-start"
                         style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
@@ -58,7 +60,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="p-3">
+                <div class="p-3" data-aos="fade-up" data-aos-delay="300">
                     <div
                         class="shadow p-2 p-sm-5 bg-size-cover object-fit-cover bg-repeat-none d-flex align-items-center justify-content-start"
                         style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
@@ -79,7 +81,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="p-3">
+                <div class="p-3" data-aos="fade-up" data-aos-delay="400">
                     <div
                         class="shadow p-2 p-sm-5 bg-size-cover object-fit-cover bg-repeat-none d-flex align-items-center justify-content-start"
                         style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
@@ -100,7 +102,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="p-3">
+                <div class="p-3" data-aos="fade-up" data-aos-delay="500">
                     <div
                         class="shadow p-2 p-sm-5 bg-size-cover object-fit-cover bg-repeat-none d-flex align-items-center justify-content-start"
                         style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
@@ -126,16 +128,16 @@
     </section>
 
     {{-- Ready To Get Started? Fill up the form and our team contact with you --}}
-    <section class="w-100 py-5">
+    <section class="w-100 py-5" data-aos="fade-up">
         <div class="container py-5">
             <div class="d-flex justify-content-center">
-                <div class="mb-4 fw-bold text-center fs-1 col-lg-8">
+                <div class="mb-4 fw-bold text-center fs-1 col-lg-8" data-aos="fade-up" data-aos-delay="100">
                     Ready To Get Started? Fill up the form and our team contact with you
                 </div>
             </div>
             <form>
                 <div class="row">
-                    <div class="col-md-6 mb-3">
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
                         <div class="form-group mb-3">
                             <label for="name" class="form-label">Name</label>
                             <input id="name" type="text" name="name" placeholder="Enter your name"
@@ -143,13 +145,13 @@
                                    autocomplete="new-email">
                         </div>
                     </div>
-                    <div class="col-md-6 mb-3">
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
                         <label for="website-url" class="form-label">Website</label>
                         <input id="website-url" type="url" name="website-url" placeholder="Enter your website"
                                class="form-control p-3 rounded-2 shadow-none bg-light" required
                                autocomplete="new-website-url">
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
                         <div class="form-group mb-3">
                             <label for="email" class="form-label">Email</label>
                             <input id="email" type="email" name="email" placeholder="Enter your email"
@@ -157,7 +159,7 @@
                                    autocomplete="new-email">
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
                         <div class="form-group mb-3">
                             <label for="subject" class="form-label">Subject</label>
                             <input id="subject" type="text" name="subject" placeholder="Enter your subject"
@@ -165,7 +167,7 @@
                                    autocomplete="new-subject">
                         </div>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12" data-aos="fade-up" data-aos-delay="600">
                         <div class="form-group mb-3">
                             <label for="message" class="form-label">Message</label>
                             <textarea name="message" id="message" cols="30" rows="5"
@@ -174,7 +176,7 @@
                                       autocomplete="new-message"></textarea>
                         </div>
                     </div>
-                    <div class="col-12 text-center">
+                    <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="700">
                         <button type="submit" class="btn btn-theme rounded-pill px-5 py-3">
                             Send Message
                         </button>
@@ -185,16 +187,16 @@
     </section>
 
     {{-- Join our community of students --}}
-    <section class="w-100 py-5">
+    <section class="w-100 py-5" data-aos="fade-up">
         <div class="container">
             <div class="bg-light-pink px-4 rounded-3 py-5">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
-                        <div class="fs-1 text-white ">
+                        <div class="fs-1 text-white" data-aos="fade-up" data-aos-delay="100">
                             Join our community of students
                         </div>
                     </div>
-                    <div class="col-lg-6 py-3">
+                    <div class="col-lg-6 py-3" data-aos="fade-up" data-aos-delay="200">
                         <div class="position-relative">
                             <input type="email" name="email" class="form-control shadow-none py-3 ps-4 rounded-0 rounded-pill" required
                                    autocomplete="new-email" placeholder="Enter your Email">
