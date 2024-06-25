@@ -8,9 +8,9 @@
         <div class="container">
             <div class="d-flex justify-content-start align-items-center height-350">
                 <div>
-                    <div class="fs-1 fw-bold text-theme-secondary mb-3 d-block" data-aos="fade-up" data-aos-delay="100">
+                    <h1 class="fs-1 fw-bold text-theme-secondary mb-3 d-block" data-aos="fade-up" data-aos-delay="100">
                         About Us
-                    </div>
+                    </h1>
 
                     <nav
                         style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
@@ -28,6 +28,7 @@
                             </li>
                         </ol>
                     </nav>
+
                 </div>
             </div>
         </div>
@@ -49,33 +50,33 @@
                     </div>
                 </div>
                 <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="fs-1 fw-bold text-theme-secondary mb-3" data-aos="fade-up" data-aos-delay="300">
+                    <h1 class="fs-1 fw-bold text-theme-secondary mb-3" data-aos="fade-up" data-aos-delay="300">
                         Welcome to Our Online Learning Platform
-                    </div>
-                    <div class="text-dark fw-medium mb-4" data-aos="fade-up" data-aos-delay="400">
+                    </h1>
+                    <p class="text-dark fw-medium mb-4" data-aos="fade-up" data-aos-delay="400">
                         Continuously harmless backward competitive initiatives and synergistic content.
                         Objectively strategize cutting edge niches with collaborative synergistic.
-                        Globally pontificate e-business processes through orthoonal web readiness enhence
+                        Globally pontificate e-business processes through orthogonal web readiness enhance
                         backend value whereas bricks-and-clicks services
-                    </div>
-                    <div class="mb-3 d-flex align-items-center justify-content-start fw-medium" data-aos="fade-up"
+                    </p>
+                    <p class="mb-3 d-flex align-items-center justify-content-start fw-medium" data-aos="fade-up"
                          data-aos-delay="500">
                         <img src="{{asset('/images/svg/about/check-circle.svg')}}" class="width-21 height-21 me-2"
                              alt="check-circle">
                         Dramatically re-engineer value added systems via mission
-                    </div>
-                    <div class="mb-3 d-flex align-items-center justify-content-start fw-medium" data-aos="fade-up"
+                    </p>
+                    <p class="mb-3 d-flex align-items-center justify-content-start fw-medium" data-aos="fade-up"
                          data-aos-delay="600">
                         <img src="{{asset('/images/svg/about/check-circle.svg')}}" class="width-21 height-21 me-2"
                              alt="check-circle">
                         Our Unique learning environment sparks physical growth
-                    </div>
-                    <div class="mb-3 d-flex align-items-center justify-content-start fw-medium" data-aos="fade-up"
+                    </p>
+                    <p class="mb-3 d-flex align-items-center justify-content-start fw-medium" data-aos="fade-up"
                          data-aos-delay="700">
                         <img src="{{asset('/images/svg/about/check-circle.svg')}}" class="width-21 height-21 me-2"
                              alt="check-circle">
                         Discovery while our creative curriculum which combines
-                    </div>
+                    </p>
                 </div>
             </div>
         </div>
@@ -95,8 +96,8 @@
                                  alt="box-icon-1">
                         </div>
                         <div class="ms-3">
-                            <div class="fw-bold fs-4"> 1K</div>
-                            <div class="text-secondary fs-6"> Online Courses</div>
+                            <h4 class="fw-bold fs-4"> 1K</h4>
+                            <p class="text-secondary fs-6"> Online Courses</p>
                         </div>
                     </div>
                 </div>
@@ -110,8 +111,8 @@
                                  alt="box-icon-2">
                         </div>
                         <div class="ms-3">
-                            <div class="fw-bold fs-4"> 28+</div>
-                            <div class="text-secondary fs-6"> Expert Tutors</div>
+                            <h4 class="fw-bold fs-4"> 28+</h4>
+                            <p class="text-secondary fs-6"> Expert Tutors</p>
                         </div>
                     </div>
                 </div>
@@ -125,8 +126,8 @@
                                  alt="box-icon-3">
                         </div>
                         <div class="ms-3">
-                            <div class="fw-bold fs-4"> 1K +</div>
-                            <div class="text-secondary fs-6"> Certified Courses</div>
+                            <h4 class="fw-bold fs-4"> 1K +</h4>
+                            <p class="text-secondary fs-6"> Certified Courses</p>
                         </div>
                     </div>
                 </div>
@@ -140,8 +141,8 @@
                                  alt="box-icon-4">
                         </div>
                         <div class="ms-3">
-                            <div class="fw-medium"> 8K+</div>
-                            <div class="text-secondary"> Online Students</div>
+                            <h4 class="fw-medium"> 8K+</h4>
+                            <p class="text-secondary"> Online Students</p>
                         </div>
                     </div>
                 </div>

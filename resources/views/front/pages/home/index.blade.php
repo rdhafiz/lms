@@ -1209,8 +1209,9 @@
                         </h1>
                     </div>
                     <div class="col-lg-6 py-3" data-aos="fade-up" data-aos-delay="200">
+                        <label for="email" hidden="hidden">Email</label>
                         <div class="position-relative">
-                            <input type="email" name="email"
+                            <input id="email" type="email" name="email"
                                    class="form-control shadow-none py-3 ps-4 rounded-0 rounded-pill" required
                                    autocomplete="new-email" placeholder="Enter your Email">
                             <div class="position-absolute top-50 end-0 translate-middle-y pe-3">
