@@ -1215,7 +1215,7 @@
                         <div class="position-relative">
                             <input id="email" type="email" name="email"
                                    class="form-control shadow-none py-3 ps-4 rounded-0 rounded-pill" required
-                                   autocomplete="new-email" placeholder="Enter your Email">
+                                   autocomplete="off" placeholder="Enter your Email">
                             <div class="position-absolute top-50 end-0 translate-middle-y pe-3">
                                 <button type="submit" class="btn btn-theme rounded-pill px-4">
                                     <span class="d-none d-md-inline me-2">

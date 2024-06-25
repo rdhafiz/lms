@@ -14,7 +14,7 @@
                         </div>
                         <div class="form-group mb-3">
                             <label for="email" class="form-label">Email</label>
-                            <input id="email" type="email" name="email" class="form-control py-2 px-3 rounded-0 shadow-none border" required autocomplete="new-email">
+                            <input id="email" type="email" name="email" class="form-control py-2 px-3 rounded-0 shadow-none border" required autocomplete="off">
                         </div>
                         <div class="mb-3">
                             <button type="submit" class="btn btn-primary py-2 px-3 rounded-0">

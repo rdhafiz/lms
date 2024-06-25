@@ -15,23 +15,23 @@
                             </div>
                             <div class="form-group mb-3">
                                 <label for="name" class="form-label">Name</label>
-                                <input id="name" type="text" name="name" class="form-control py-2 px-3 rounded-0 shadow-none border" required autocomplete="new-name">
+                                <input id="name" type="text" name="name" class="form-control py-2 px-3 rounded-0 shadow-none border" required autocomplete="off">
                             </div>
                             <div class="form-group mb-3">
                                 <label for="phone" class="form-label">Phone Number</label>
-                                <input id="phone" type="text" name="phone" class="form-control py-2 px-3 rounded-0 shadow-none border" required autocomplete="new-phone">
+                                <input id="phone" type="text" name="phone" class="form-control py-2 px-3 rounded-0 shadow-none border" required autocomplete="off">
                             </div>
                             <div class="form-group mb-3">
                                 <label for="email" class="form-label">Email</label>
-                                <input id="email" type="email" name="email" class="form-control py-2 px-3 rounded-0 shadow-none border" required autocomplete="new-email">
+                                <input id="email" type="email" name="email" class="form-control py-2 px-3 rounded-0 shadow-none border" required autocomplete="off">
                             </div>
                             <div class="form-group mb-3">
                                 <label for="password" class="form-label">Password</label>
-                                <input id="password" type="password" name="password" class="form-control py-2 px-3 rounded-0 shadow-none border" required autocomplete="new-password">
+                                <input id="password" type="password" name="password" class="form-control py-2 px-3 rounded-0 shadow-none border" required autocomplete="off">
                             </div>
                             <div class="form-group mb-3">
                                 <label for="password-confirmation" class="form-label">Confirm Password</label>
-                                <input id="password-confirmation" type="password" name="password-confirmation" class="form-control py-2 px-3 rounded-0 shadow-none border" required autocomplete="new-password-confirmation">
+                                <input id="password-confirmation" type="password" name="password-confirmation" class="form-control py-2 px-3 rounded-0 shadow-none border" required autocomplete="off">
                             </div>
                             <div class="mb-3">
                                 <button type="submit" class="btn btn-primary py-2 px-3 rounded-0">

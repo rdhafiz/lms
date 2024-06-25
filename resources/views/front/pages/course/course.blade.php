@@ -44,7 +44,7 @@
                         <label for="course" hidden="hidden">course</label>
                         <input id="course" type="text" name="course"
                                class="form-control shadow-none py-3 ps-5 rounded-0 rounded-pill" required
-                               autocomplete="new-course" placeholder="Search Courses">
+                               autocomplete="off" placeholder="Search Courses">
                         <div class="position-absolute top-50 start-0 translate-middle-y ps-3">
                             <img src="{{asset('/images/svg/home/search.svg')}}" class="width-25 height-25" alt="search">
                         </div>
@@ -469,7 +469,7 @@
                         <label for="email" hidden="hidden">email</label>
                         <div class="position-relative">
                             <input id="email" type="email" name="email" class="form-control shadow-none py-3 ps-4 rounded-0 rounded-pill" required
-                                   autocomplete="new-email" placeholder="Enter your Email">
+                                   autocomplete="pff" placeholder="Enter your Email">
                             <div class="position-absolute top-50 end-0 translate-middle-y pe-3">
                                 <button type="submit" class="btn btn-theme rounded-pill px-4">
                                     <span class="d-none d-sm-inline me-1">Subscribe</span>

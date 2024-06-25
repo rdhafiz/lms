@@ -155,21 +155,21 @@
                             <label for="name" class="form-label">Name</label>
                             <input id="name" type="text" name="name" placeholder="Enter your name"
                                    class="form-control p-3 rounded-2 shadow-none bg-light" required
-                                   autocomplete="new-email">
+                                   autocomplete="off">
                         </div>
                     </div>
                     <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
                         <label for="website-url" class="form-label">Website</label>
                         <input id="website-url" type="url" name="website-url" placeholder="Enter your website"
                                class="form-control p-3 rounded-2 shadow-none bg-light" required
-                               autocomplete="new-website-url">
+                               autocomplete="off">
                     </div>
                     <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
                         <div class="form-group mb-3">
                             <label for="email" class="form-label">Email</label>
                             <input id="email" type="email" name="email" placeholder="Enter your email"
                                    class="form-control p-3 rounded-2 shadow-none bg-light" required
-                                   autocomplete="new-email">
+                                   autocomplete="off">
                         </div>
                     </div>
                     <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
@@ -177,7 +177,7 @@
                             <label for="subject" class="form-label">Subject</label>
                             <input id="subject" type="text" name="subject" placeholder="Enter your subject"
                                    class="form-control p-3 rounded-2 shadow-none bg-light" required
-                                   autocomplete="new-subject">
+                                   autocomplete="off">
                         </div>
                     </div>
                     <div class="col-12" data-aos="fade-up" data-aos-delay="600">
@@ -186,7 +186,7 @@
                             <textarea name="message" id="message" cols="30" rows="5"
                                       class="form-textarea p-3 rounded-2 shadow-none bg-light d-block w-100"
                                       required placeholder="Typing Here..."
-                                      autocomplete="new-message"></textarea>
+                                      autocomplete="off"></textarea>
                         </div>
                     </div>
                     <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="700">
@@ -213,7 +213,7 @@
                         <div class="position-relative">
                             <label for="email" hidden="hidden">email</label>
                             <input id="email" type="email" name="email" class="form-control shadow-none py-3 ps-4 rounded-0 rounded-pill" required
-                                   autocomplete="new-email" placeholder="Enter your Email">
+                                   autocomplete="off" placeholder="Enter your Email">
                             <div class="position-absolute top-50 end-0 translate-middle-y pe-3">
                                 <button type="submit" class="btn btn-theme rounded-pill px-4">
                                     <span class="d-none d-sm-inline me-1">Subscribe</span>
