@@ -56,10 +56,21 @@
                 height: 100%;
 
                 .nav-link {
-                    font-size: 22px;
+                    font-size: 20px;
                 }
 
             }
+
+            .nav-list {
+                list-style: none;
+
+                @media screen and (max-width: 991px) {
+                    margin-left: 0 !important;
+                    padding-left: 0 !important;
+                }
+
+            }
+
             .nav-item {
 
                 .nav-link {

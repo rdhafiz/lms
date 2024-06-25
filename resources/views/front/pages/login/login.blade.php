@@ -15,11 +15,11 @@
                             </div>
                             <div class="form-group mb-3">
                                 <label for="email" class="form-label">Email</label>
-                                <input id="email" type="email" name="email" class="form-control py-2 px-3 rounded-0 shadow-none border" required autocomplete="new-email">
+                                <input id="email" type="email" name="email" class="form-control py-2 px-3 rounded-0 shadow-none border" required autocomplete="off">
                             </div>
                             <div class="form-group mb-3">
                                 <label for="pasword" class="form-label">Password</label>
-                                <input id="password" type="password" name="password" class="form-control py-2 px-3 rounded-0 shadow-none border" required autocomplete="new-password">
+                                <input id="password" type="password" name="password" class="form-control py-2 px-3 rounded-0 shadow-none border" required autocomplete="off">
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
                                 <button type="submit" class="btn btn-theme py-2 px-3 rounded-0">

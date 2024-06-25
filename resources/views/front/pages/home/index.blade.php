@@ -4,61 +4,64 @@
 @section('content')
 
     {{-- hero content --}}
-    <section class="w-100 bg-warning-subtle h-100">
+    <section class="w-100 bg-warning-subtle h-100 py-5" data-aos="fade-up">
         <div class="container py-5 pb-3">
             <div class="row py-5 justify-content-center">
                 <div class="col-12 col-sm-10 col-lg-8 col-xl-6 py-5">
-                    <div class="lead fw-medium text-theme">
+                    <h6 class="lead fw-medium text-theme" data-aos="fade-up" data-aos-delay="50">
                         The leader in Online learning
-                    </div>
-                    <div class="fs-1 text-theme-secondary fw-bold my-3">
+                    </h6>
+                    <h1 class="fs-1 text-theme-secondary fw-bold my-3" data-aos="fade-up" data-aos-delay="100">
                         Build Your Skills and Achieve Your Goals
-                    </div>
-                    <div class="text-dark mb-4 fw-medium">
+                    </h1>
+                    <p class="text-dark mb-4 fw-medium" data-aos="fade-up" data-aos-delay="150">
                         Experience seamless online learning with our user-friendly LMS website.
                         Explore our courses and improve your skills today.
-                    </div>
-                    <div class="position-relative">
-                        <input type="text" name="keyword"
-                               class="form-control shadow-none py-3 ps-5 rounded-0 rounded-pill" required
-                               autocomplete="new-keyword" placeholder="Search Courses">
-                        <div class="position-absolute top-50 start-0 translate-middle-y ps-3">
-                            <img src="{{asset('/images/svg/home/search.svg')}}" class="width-25 height-25" alt="search">
-                        </div>
-                        <div
-                            class="position-absolute top-50 end-0 translate-middle-y pe-2 d-flex justify-content-end align-items-center">
-                            <div class="dropdown">
-                                <button type="button" class="btn height-40 bg-opacity-theme px-4 border-0 rounded-pill"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                    <span class="text-theme me-1 d-none d-sm-inline"> Category </span>
-                                    <img src="{{asset('/images/svg/home/chevron-down.svg')}}" class="width-18 height-18"
-                                         alt="chevron-down">
-                                </button>
-                                <ul class="dropdown-menu dropdown-menu-end">
-                                    <li>
-                                        <a href="javascript:void(0)" class="dropdown-item">
-                                            Basic
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)" class="dropdown-item">
-                                            Intermediate
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)" class="dropdown-item">
-                                            Advanced
-                                        </a>
-                                    </li>
-                                </ul>
+                    </p>
+                    <form>
+                        <div class="position-relative" data-aos="fade-up" data-aos-delay="200">
+                            <label for="category" hidden="hidden">category</label>
+                            <input id="category" type="text" name="category"
+                                   class="form-control shadow-none py-3 ps-5 rounded-0 rounded-pill" required
+                                   placeholder="Search Courses">
+                            <div class="position-absolute top-50 start-0 translate-middle-y ps-3">
+                                <img src="{{asset('/images/svg/home/search.svg')}}" class="width-25 height-25" alt="search">
                             </div>
-                            <button type="button"
-                                    class="btn btn-theme width-40 height-40 ms-1 rounded-circle d-flex justify-content-center align-items-center">
-                                <img src="{{asset('/images/svg/home/arrow-right.svg')}}"
-                                     class="img-fluid width-25 height-25" alt="arrow-right">
-                            </button>
+                            <div
+                                class="position-absolute top-50 end-0 translate-middle-y pe-2 d-flex justify-content-end align-items-center">
+                                <div class="dropdown">
+                                    <button type="button" class="btn height-40 bg-opacity-theme px-4 border-0 rounded-pill"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span class="text-theme me-1 d-none d-sm-inline"> Category </span>
+                                        <img src="{{asset('/images/svg/home/chevron-down.svg')}}" class="width-18 height-18"
+                                             alt="chevron-down">
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end">
+                                        <li>
+                                            <a href="javascript:void(0)" class="dropdown-item">
+                                                Basic
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)" class="dropdown-item">
+                                                Intermediate
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)" class="dropdown-item">
+                                                Advanced
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button type="button"
+                                        class="btn btn-theme width-40 height-40 ms-1 rounded-circle d-flex justify-content-center align-items-center">
+                                    <img src="{{asset('/images/svg/home/arrow-right.svg')}}"
+                                         class="img-fluid width-25 height-25" alt="arrow-right">
+                                </button>
+                            </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
                 <div class="col-xl-6 d-xl-flex justify-content-center align-items-center flex-wrap d-none">
                     <div
@@ -92,60 +95,68 @@
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
 
                 {{-- box count of online courses --}}
-                <div class="p-2">
-                    <div class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start" style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
+                <div class="p-2" data-aos="fade-up" data-aos-delay="100">
+                    <div
+                        class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start"
+                        style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
                         <div
                             class="width-65 height-65 rounded-circle d-flex justify-content-center align-items-center bg-secondary">
                             <img src="{{asset('/images/svg/home/pencil-ruler.svg')}}" class="width-25 height-25"
                                  alt="box-icon-1">
                         </div>
                         <div class="ms-3">
-                            <div class="fw-bold fs-4"> 1K</div>
+                            <h4 class="fw-bold fs-4 mb-0"> 1K</h4>
                             <div class="text-secondary fw-medium"> Online Courses</div>
                         </div>
                     </div>
                 </div>
 
                 {{-- box count of expert tutors --}}
-                <div class="p-2">
-                    <div class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start" style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
+                <div class="p-2" data-aos="fade-up" data-aos-delay="200">
+                    <div
+                        class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start"
+                        style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
                         <div
                             class="width-65 height-65 rounded-circle d-flex justify-content-center align-items-center bg-light-pink">
                             <img src="{{asset('/images/svg/home/people.svg')}}" class="width-25 height-25"
                                  alt="box-icon-2">
                         </div>
                         <div class="ms-3">
-                            <div class="fw-bold fs-4"> 28+</div>
+                            <h4 class="fw-bold fs-4 mb-0"> 28+</h4>
                             <div class="text-secondary fw-medium"> Expert Tutors</div>
                         </div>
                     </div>
                 </div>
 
                 {{-- box count of certified courses --}}
-                <div class="p-2">
-                    <div class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start" style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
+                <div class="p-2" data-aos="fade-up" data-aos-delay="300">
+                    <div
+                        class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start"
+                        style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
                         <div
                             class="width-65 height-65 rounded-circle d-flex justify-content-center align-items-center bg-light-purple">
                             <img src="{{asset('/images/svg/home/certified.svg')}}" class="width-25 height-25"
                                  alt="box-icon-3">
                         </div>
                         <div class="ms-3">
-                            <div class="fw-bold fs-4"> 1K +</div>
+                            <h4 class="fw-bold fs-4 mb-0"> 1K +</h4>
                             <div class="text-secondary fw-medium"> Certified Courses</div>
                         </div>
                     </div>
                 </div>
 
                 {{-- box count of online students --}}
-                <div class="p-2">
-                    <div class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start" style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
+                <div class="p-2" data-aos="fade-up" data-aos-delay="400">
+                    <div
+                        class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start"
+                        style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
                         <div
                             class="width-65 height-65 rounded-circle d-flex justify-content-center align-items-center bg-light-info">
                             <img src="{{asset('/images/svg/home/morterboard.svg')}}" class="width-25 height-25"
                                  alt="box-icon-4">
                         </div>
                         <div class="ms-3">
-                            <div class="fw-bold fs-4"> 8K+</div>
+                            <h4 class="fw-bold fs-4 mb-0"> 8K+</h4>
                             <div class="text-secondary fw-medium"> Online Students</div>
                         </div>
                     </div>
@@ -156,14 +167,14 @@
     </section>
 
     {{-- Popular courses --}}
-    <section class="w-100 py-5">
+    <section class="w-100 py-5" data-aos="fade-up">
         <div class="container">
 
             <div class="row">
 
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
 
-                    <div class="mb-2 fs-1 fw-bold"> Popular courses</div>
+                    <h1 class="mb-2 fs-1 fw-bold"> Popular courses</h1>
 
                     <div class="text-dark fw-medium mb-3">
                         Experience seamless online learning with our user-friendly LMS website.
@@ -173,7 +184,7 @@
                 </div>
 
                 {{-- courses route --}}
-                <div class="col-lg-6 text-end mb-3">
+                <div class="col-lg-6 text-end mb-3" data-aos="fade-up" data-aos-delay="200">
                     <a href="{{route('front.courses')}}" class="btn btn-theme rounded-pill py-2 px-4">
                         View all courses
                     </a>
@@ -184,7 +195,7 @@
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3">
 
                 {{-- course item --}}
-                <div class="p-2 mb-5">
+                <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="100">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-1.jpg')}}"
                              class="img-fluid object-fit-cover height-350 rounded-3" alt="course-1">
@@ -217,17 +228,18 @@
                                     </div>
                                 </div>
                                 <div class="mb-3">
-                                    <div class="fs-4 px-2 fw-bold truncate-line-2">
+                                    <h4 class="fs-4 px-2 fw-bold truncate-line-2">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae explicabo
                                         natus reprehenderit saepe temporibus.
-                                    </div>
+                                    </h4>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-4 py-2">
+                                    <a href="{{route('front.course-details')}}"
+                                       class="btn btn-theme rounded-pill px-4 py-2">
                                         Enroll Now
                                     </a>
                                     <div
-                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
+                                        class="width-65 height-65 fw-medium d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
                                         $40
                                     </div>
                                 </div>
@@ -237,7 +249,7 @@
                 </div>
 
                 {{-- course item --}}
-                <div class="p-2 mb-5">
+                <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="200">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-2.jpg')}}"
                              class="img-fluid object-fit-cover height-350 rounded-3" alt="course-2">
@@ -270,17 +282,18 @@
                                     </div>
                                 </div>
                                 <div class="mb-3">
-                                    <div class="fs-4 px-2 fw-bold truncate-line-2">
+                                    <h4 class="fs-4 px-2 fw-bold truncate-line-2">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae explicabo
                                         natus reprehenderit saepe temporibus.
-                                    </div>
+                                    </h4>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-4 py-2">
+                                    <a href="{{route('front.course-details')}}"
+                                       class="btn btn-theme rounded-pill px-4 py-2">
                                         Enroll Now
                                     </a>
                                     <div
-                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
+                                        class="width-65 height-65 fw-medium d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
                                         $40
                                     </div>
                                 </div>
@@ -290,7 +303,7 @@
                 </div>
 
                 {{-- course item --}}
-                <div class="p-2 mb-5">
+                <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="300">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-3.jpg')}}"
                              class="img-fluid object-fit-cover height-350 rounded-3" alt="course-3">
@@ -323,17 +336,18 @@
                                     </div>
                                 </div>
                                 <div class="mb-3">
-                                    <div class="fs-4 px-2 fw-bold truncate-line-2">
+                                    <h4 class="fs-4 px-2 fw-bold truncate-line-2">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae explicabo
                                         natus reprehenderit saepe temporibus.
-                                    </div>
+                                    </h4>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-4 py-2">
+                                    <a href="{{route('front.course-details')}}"
+                                       class="btn btn-theme rounded-pill px-4 py-2">
                                         Enroll Now
                                     </a>
                                     <div
-                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
+                                        class="width-65 height-65 fw-medium d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
                                         $40
                                     </div>
                                 </div>
@@ -343,7 +357,7 @@
                 </div>
 
                 {{-- course item --}}
-                <div class="p-2 mb-5">
+                <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="400">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-4.jpg')}}"
                              class="img-fluid object-fit-cover height-350 rounded-3" alt="course-4">
@@ -376,17 +390,18 @@
                                     </div>
                                 </div>
                                 <div class="mb-3">
-                                    <div class="fs-4 px-2 fw-bold truncate-line-2">
+                                    <h4 class="fs-4 px-2 fw-bold truncate-line-2">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae explicabo
                                         natus reprehenderit saepe temporibus.
-                                    </div>
+                                    </h4>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-4 py-2">
+                                    <a href="{{route('front.course-details')}}"
+                                       class="btn btn-theme rounded-pill px-4 py-2">
                                         Enroll Now
                                     </a>
                                     <div
-                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
+                                        class="width-65 height-65 fw-medium d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
                                         $40
                                     </div>
                                 </div>
@@ -396,7 +411,7 @@
                 </div>
 
                 {{-- course item --}}
-                <div class="p-2 mb-5">
+                <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="500">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-5.jpg')}}"
                              class="img-fluid object-fit-cover height-350 rounded-3" alt="course-5">
@@ -429,17 +444,18 @@
                                     </div>
                                 </div>
                                 <div class="mb-3">
-                                    <div class="fs-4 px-2 fw-bold truncate-line-2">
+                                    <h4 class="fs-4 px-2 fw-bold truncate-line-2">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae explicabo
                                         natus reprehenderit saepe temporibus.
-                                    </div>
+                                    </h4>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-4 py-2">
+                                    <a href="{{route('front.course-details')}}"
+                                       class="btn btn-theme rounded-pill px-4 py-2">
                                         Enroll Now
                                     </a>
                                     <div
-                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
+                                        class="width-65 height-65 fw-medium d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
                                         $40
                                     </div>
                                 </div>
@@ -449,7 +465,7 @@
                 </div>
 
                 {{-- course item --}}
-                <div class="p-2 mb-5">
+                <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="600">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-6.jpg')}}"
                              class="img-fluid object-fit-cover height-350 rounded-3" alt="course-6">
@@ -482,17 +498,18 @@
                                     </div>
                                 </div>
                                 <div class="mb-3">
-                                    <div class="fs-4 px-2 fw-bold truncate-line-2">
+                                    <h4 class="fs-4 px-2 fw-bold truncate-line-2">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae explicabo
                                         natus reprehenderit saepe temporibus.
-                                    </div>
+                                    </h4>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-4 py-2">
+                                    <a href="{{route('front.course-details')}}"
+                                       class="btn btn-theme rounded-pill px-4 py-2">
                                         Enroll Now
                                     </a>
                                     <div
-                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
+                                        class="width-65 height-65 fw-medium d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
                                         $40
                                     </div>
                                 </div>
@@ -507,100 +524,116 @@
     </section>
 
     {{-- top category --}}
-    <section class="w-100 py-5">
+    <section class="w-100 py-5" data-aos="fade-up">
         <div class="container py-5">
 
-            <div class="mb-4 text-center fs-1 fw-bold">
+            <h1 class="mb-4 text-center fs-1 fw-bold">
                 Top Categories
-            </div>
+            </h1>
 
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
 
                 {{-- course category --}}
-                <div class="p-2">
-                    <a href="javascript:void(0)" class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start text-decoration-none text-dark" style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
+                <div class="p-2" data-aos="fade-up" data-aos-delay="100">
+                    <a href="javascript:void(0)"
+                       class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start text-decoration-none text-dark"
+                       style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
                         <img src="{{asset('/images/svg/home/pencil-theme.svg')}}" class="width-45 height-45"
                              alt="pencil-theme">
-                        <div class="ms-3 fw-bold fs-6">
+                        <h5 class="ms-3 fw-bold fs-5">
                             Art & Design
-                        </div>
+                        </h5>
                     </a>
                 </div>
 
                 {{-- course category --}}
-                <div class="p-2">
-                    <a href="javascript:void(0)" class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start text-decoration-none text-dark" style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
+                <div class="p-2" data-aos="fade-up" data-aos-delay="200">
+                    <a href="javascript:void(0)"
+                       class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start text-decoration-none text-dark"
+                       style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
                         <img src="{{asset('/images/svg/home/code-theme.svg')}}" class="width-45 height-45"
                              alt="pencil-theme">
-                        <div class="ms-3 fw-bold fs-5">
+                        <h5 class="ms-3 fw-bold fs-5">
                             Development
-                        </div>
+                        </h5>
                     </a>
                 </div>
 
                 {{-- course category --}}
-                <div class="p-2">
-                    <a href="javascript:void(0)" class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start text-decoration-none text-dark" style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
+                <div class="p-2" data-aos="fade-up" data-aos-delay="300">
+                    <a href="javascript:void(0)"
+                       class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start text-decoration-none text-dark"
+                       style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
                         <img src="{{asset('/images/svg/home/lifestyle-theme.svg')}}" class="width-45 height-45"
                              alt="pencil-theme">
-                        <div class="ms-3 fw-bold fs-5">
+                        <h5 class="ms-3 fw-bold fs-5">
                             Lifestyle
-                        </div>
+                        </h5>
                     </a>
                 </div>
 
                 {{-- course category --}}
-                <div class="p-2">
-                    <a href="javascript:void(0)" class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start text-decoration-none text-dark" style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
+                <div class="p-2" data-aos="fade-up" data-aos-delay="400">
+                    <a href="javascript:void(0)"
+                       class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start text-decoration-none text-dark"
+                       style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
                         <img src="{{asset('/images/svg/home/business.svg')}}" class="width-45 height-45"
                              alt="pencil-theme">
-                        <div class="ms-3 fw-bold fs-5">
+                        <h5 class="ms-3 fw-bold fs-5">
                             Business
-                        </div>
+                        </h5>
                     </a>
                 </div>
 
                 {{-- course category --}}
-                <div class="p-2">
-                    <a href="javascript:void(0)" class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start text-decoration-none text-dark" style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
+                <div class="p-2" data-aos="fade-up" data-aos-delay="500">
+                    <a href="javascript:void(0)"
+                       class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start text-decoration-none text-dark"
+                       style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
                         <img src="{{asset('/images/svg/home/light-theme.svg')}}" class="width-45 height-45"
                              alt="pencil-theme">
-                        <div class="ms-3 fw-bold fs-5">
+                        <h5 class="ms-3 fw-bold fs-5">
                             Technology
-                        </div>
+                        </h5>
                     </a>
                 </div>
 
                 {{-- course category --}}
-                <div class="p-2">
-                    <a href="javascript:void(0)" class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start text-decoration-none text-dark" style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
+                <div class="p-2" data-aos="fade-up" data-aos-delay="600">
+                    <a href="javascript:void(0)"
+                       class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start text-decoration-none text-dark"
+                       style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
                         <img src="{{asset('/images/svg/home/chart-theme.svg')}}" class="width-45 height-45"
                              alt="pencil-theme">
-                        <div class="ms-3 fw-bold fs-5">
+                        <h5 class="ms-3 fw-bold fs-5">
                             Data Science
-                        </div>
+                        </h5>
                     </a>
                 </div>
 
                 {{-- course category --}}
-                <div class="p-2">
-                    <a href="javascript:void(0)" class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start text-decoration-none text-dark" style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
+                <div class="p-2" data-aos="fade-up" data-aos-delay="700">
+                    <a href="javascript:void(0)"
+                       class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start text-decoration-none text-dark"
+                       style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
                         <img src="{{asset('/images/svg/home/heart-theme.svg')}}" class="width-45 height-45"
                              alt="pencil-theme">
-                        <div class="ms-3 fw-bold fs-5">
+                        <h5 class="ms-3 fw-bold fs-5">
                             Heart Care
-                        </div>
+                        </h5>
                     </a>
                 </div>
 
                 {{-- course category --}}
-                <div class="p-2">
-                    <a  href="javascript:void(0)" class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start text-decoration-none text-dark" style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
+                <div class="p-2" data-aos="fade-up" data-aos-delay="800">
+                    <a href="javascript:void(0)"
+                       class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start text-decoration-none text-dark"
+                       style="background-image: url({{asset('/images/about/small-abstract-spheres.jpg')}})">
                         <img src="{{asset('/images/svg/home/market-theme.svg')}}" class="width-45 height-45"
                              alt="pencil-theme">
-                        <div class="ms-3 fw-bold fs-5">
+                        <h5 class="ms-3 fw-bold fs-5">
                             Marketing
-                        </div>
+                        </h5>
                     </a>
                 </div>
 
@@ -610,19 +643,19 @@
     </section>
 
     {{-- Featured Instructor --}}
-    <section class="w-100 py-5 bg-warning-subtle">
+    <section class="w-100 py-5 bg-warning-subtle" data-aos="fade-up">
         <div class="container py-5">
 
             <div class="row">
 
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
 
-                    <div class="mb-2 fs-1 fw-bold"> Featured Instructor</div>
+                    <h1 class="mb-2 fs-1 fw-bold"> Featured Instructor</h1>
 
-                    <div class="text-dark fw-medium mb-3">
+                    <p class="text-dark fw-medium mb-3">
                         Experience seamless online learning with our user-friendly LMS website.
                         Explore our courses and improve your skills today.
-                    </div>
+                    </p>
                 </div>
 
             </div>
@@ -630,18 +663,18 @@
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
 
                 {{-- instructor --}}
-                <div class="py-2 mb-5">
+                <div class="py-2 mb-5" data-aos="fade-up" data-aos-delay="100">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/team-1.jpg')}}"
                              class="img-fluid object-fit-cover height-350 rounded-3 w-100" alt="course-1">
                         <div class="position-absolute bottom-0 start-0 end-0 p-2 -mb-60">
                             <div class="bg-white p-2 shadow rounded-3">
-                                <div class="text-center fs-4 mb-1">
+                                <h4 class="text-center fs-4 mb-1">
                                     Wade Warren
-                                </div>
-                                <div class="text-center text-secondary">
+                                </h4>
+                                <p class="text-center text-secondary">
                                     UI Designer
-                                </div>
+                                </p>
                                 <div class="d-flex justify-content-around align-items-center mt-3 pb-3 small">
                                     <div class="d-flex align-items-center">
                                         <img src="{{asset('/images/svg/home/star-fill.svg')}}"
@@ -660,18 +693,18 @@
                 </div>
 
                 {{-- instructor --}}
-                <div class="p-2 mb-5">
+                <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="200">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/team-2.jpg')}}"
                              class="img-fluid object-fit-cover height-350 rounded-3 w-100" alt="course-1">
                         <div class="position-absolute bottom-0 start-0 end-0 p-2 -mb-60">
                             <div class="bg-white p-2 shadow rounded-3">
-                                <div class="text-center fs-4 mb-1">
+                                <h4 class="text-center fs-4 mb-1">
                                     Esther Howard
-                                </div>
-                                <div class="text-center text-secondary">
+                                </h4>
+                                <p class="text-center text-secondary">
                                     UX Designer
-                                </div>
+                                </p>
                                 <div class="d-flex justify-content-around align-items-center mt-3 pb-3 small">
                                     <div class="d-flex align-items-center">
                                         <img src="{{asset('/images/svg/home/star-fill.svg')}}"
@@ -690,18 +723,18 @@
                 </div>
 
                 {{-- instructor --}}
-                <div class="p-2 mb-5">
+                <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="300">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/team-3.jpg')}}"
                              class="img-fluid object-fit-cover height-350 rounded-3 w-100" alt="course-1">
                         <div class="position-absolute bottom-0 start-0 end-0 p-2 -mb-60">
                             <div class="bg-white p-2 shadow rounded-3">
-                                <div class="text-center fs-4 mb-1">
+                                <h4 class="text-center fs-4 mb-1">
                                     Jenny Wilson
-                                </div>
-                                <div class="text-center text-secondary">
+                                </h4>
+                                <p class="text-center text-secondary">
                                     Human Resource
-                                </div>
+                                </p>
                                 <div class="d-flex justify-content-around align-items-center mt-3 pb-3 small">
                                     <div class="d-flex align-items-center">
                                         <img src="{{asset('/images/svg/home/star-fill.svg')}}"
@@ -720,18 +753,18 @@
                 </div>
 
                 {{-- instructor --}}
-                <div class="p-2 mb-5">
+                <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="400">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/team-4.jpg')}}"
                              class="img-fluid object-fit-cover height-350 rounded-3 w-100" alt="course-1">
                         <div class="position-absolute bottom-0 start-0 end-0 p-2 -mb-60">
                             <div class="bg-white p-2 shadow rounded-3">
-                                <div class="text-center fs-4 mb-1">
+                                <h4 class="text-center fs-4 mb-1">
                                     Robert Fox
-                                </div>
-                                <div class="text-center text-secondary">
+                                </h4>
+                                <p class="text-center text-secondary">
                                     UI Designer
-                                </div>
+                                </p>
                                 <div class="d-flex justify-content-around align-items-center mt-3 pb-3 small">
                                     <div class="d-flex align-items-center">
                                         <img src="{{asset('/images/svg/home/star-fill.svg')}}"
@@ -754,18 +787,20 @@
     </section>
 
     {{-- Trending courses --}}
-    <section class="w-100 py-5">
+    <section class="w-100 py-5" data-aos="fade-up">
         <div class="container py-5">
 
             <div class="row">
                 <div class="col-lg-6">
 
-                    <div class="mb-2 fs-1 fw-bold"> Trending courses </div>
+                    <h1 class="mb-2 fs-1 fw-bold" data-aos="fade-up" data-aos-delay="100">
+                        Trending courses
+                    </h1>
 
-                    <div class="text-dark fw-medium mb-3">
+                    <p class="text-dark fw-medium mb-3" data-aos="fade-up" data-aos-delay="200">
                         Experience seamless online learning with our user-friendly LMS website.
                         Explore our courses and improve your skills today.
-                    </div>
+                    </p>
 
                 </div>
             </div>
@@ -773,7 +808,7 @@
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
 
                 {{-- trend course --}}
-                <div class="p-2 mb-5">
+                <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="300">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-1.jpg')}}"
                              class="img-fluid object-fit-cover height-350 rounded-3" alt="course-1">
@@ -786,7 +821,7 @@
                                             <img src="{{asset('/images/svg/home/play.svg')}}" class="width-12 height-12"
                                                  alt="play">
                                         </div>
-                                        <div class="ms-2 text-secondary text-opacity-75 small"> 20 videos</div>
+                                        <p class="ms-2 text-secondary text-opacity-75 small"> 20 videos</p>
                                     </div>
                                     <div class="d-flex align-items-center">
                                         <div
@@ -794,7 +829,7 @@
                                             <img src="{{asset('/images/svg/home/star-fill.svg')}}"
                                                  class="width-12 height-12" alt="star-fill">
                                         </div>
-                                        <div class="ms-2 text-secondary text-opacity-75 small"> 1K reviews</div>
+                                        <p class="ms-2 text-secondary text-opacity-75 small"> 1K reviews</p>
                                     </div>
                                     <div class="d-flex align-items-center">
                                         <div
@@ -802,21 +837,22 @@
                                             <img src="{{asset('/images/svg/home/student.svg')}}"
                                                  class="width-12 height-12" alt="star-fill">
                                         </div>
-                                        <div class="ms-2 text-secondary text-opacity-75 small"> 2K students</div>
+                                        <p class="ms-2 text-secondary text-opacity-75 small"> 2K students</p>
                                     </div>
                                 </div>
                                 <div class="mb-3">
-                                    <div class="fs-4 px-2 fw-bold truncate-line-2">
+                                    <h4 class="fs-4 px-2 fw-bold truncate-line-2">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae explicabo
                                         natus reprehenderit saepe temporibus.
-                                    </div>
+                                    </h4>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-3 py-2">
+                                    <a href="{{route('front.course-details')}}"
+                                       class="btn btn-theme rounded-pill px-3 py-2">
                                         Enroll Now
                                     </a>
                                     <div
-                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
+                                        class="width-65 height-65 fw-medium d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
                                         $40
                                     </div>
                                 </div>
@@ -826,7 +862,7 @@
                 </div>
 
                 {{-- trend course --}}
-                <div class="p-2 mb-5">
+                <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="400">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-2.jpg')}}"
                              class="img-fluid object-fit-cover height-350 rounded-3" alt="course-2">
@@ -839,7 +875,7 @@
                                             <img src="{{asset('/images/svg/home/play.svg')}}" class="width-12 height-12"
                                                  alt="play">
                                         </div>
-                                        <div class="ms-2 text-secondary text-opacity-75 small"> 20 videos</div>
+                                        <p class="ms-2 text-secondary text-opacity-75 small"> 20 videos</p>
                                     </div>
                                     <div class="d-flex align-items-center">
                                         <div
@@ -847,7 +883,7 @@
                                             <img src="{{asset('/images/svg/home/star-fill.svg')}}"
                                                  class="width-12 height-12" alt="star-fill">
                                         </div>
-                                        <div class="ms-2 text-secondary text-opacity-75 small"> 1K reviews</div>
+                                        <p class="ms-2 text-secondary text-opacity-75 small"> 1K reviews</p>
                                     </div>
                                     <div class="d-flex align-items-center">
                                         <div
@@ -855,21 +891,22 @@
                                             <img src="{{asset('/images/svg/home/student.svg')}}"
                                                  class="width-12 height-12" alt="star-fill">
                                         </div>
-                                        <div class="ms-2 text-secondary text-opacity-75 small"> 2K students</div>
+                                        <p class="ms-2 text-secondary text-opacity-75 small"> 2K students</p>
                                     </div>
                                 </div>
                                 <div class="mb-3">
-                                    <div class="fs-4 px-2 fw-bold truncate-line-2">
+                                    <h4 class="fs-4 px-2 fw-bold truncate-line-2">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae explicabo
                                         natus reprehenderit saepe temporibus.
-                                    </div>
+                                    </h4>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-3 py-2">
+                                    <a href="{{route('front.course-details')}}"
+                                       class="btn btn-theme rounded-pill px-3 py-2">
                                         Enroll Now
                                     </a>
                                     <div
-                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
+                                        class="width-65 height-65 fw-medium d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
                                         $40
                                     </div>
                                 </div>
@@ -879,7 +916,7 @@
                 </div>
 
                 {{-- trend course --}}
-                <div class="p-2 mb-5">
+                <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="500">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-3.jpg')}}"
                              class="img-fluid object-fit-cover height-350 rounded-3" alt="course-3">
@@ -892,7 +929,7 @@
                                             <img src="{{asset('/images/svg/home/play.svg')}}" class="width-12 height-12"
                                                  alt="play">
                                         </div>
-                                        <div class="ms-2 text-secondary text-opacity-75 small"> 20 videos</div>
+                                        <p class="ms-2 text-secondary text-opacity-75 small"> 20 videos</p>
                                     </div>
                                     <div class="d-flex align-items-center">
                                         <div
@@ -900,7 +937,7 @@
                                             <img src="{{asset('/images/svg/home/star-fill.svg')}}"
                                                  class="width-12 height-12" alt="star-fill">
                                         </div>
-                                        <div class="ms-2 text-secondary text-opacity-75 small"> 1K reviews</div>
+                                        <p class="ms-2 text-secondary text-opacity-75 small"> 1K reviews</p>
                                     </div>
                                     <div class="d-flex align-items-center">
                                         <div
@@ -908,21 +945,22 @@
                                             <img src="{{asset('/images/svg/home/student.svg')}}"
                                                  class="width-12 height-12" alt="star-fill">
                                         </div>
-                                        <div class="ms-2 text-secondary text-opacity-75 small"> 2K students</div>
+                                        <p class="ms-2 text-secondary text-opacity-75 small"> 2K students</p>
                                     </div>
                                 </div>
                                 <div class="mb-3">
-                                    <div class="fs-4 px-2 fw-bold truncate-line-2">
+                                    <h4 class="fs-4 px-2 fw-bold truncate-line-2">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae explicabo
                                         natus reprehenderit saepe temporibus.
-                                    </div>
+                                    </h4>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-3 py-2">
+                                    <a href="{{route('front.course-details')}}"
+                                       class="btn btn-theme rounded-pill px-3 py-2">
                                         Enroll Now
                                     </a>
                                     <div
-                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
+                                        class="width-65 height-65 fw-medium d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
                                         $40
                                     </div>
                                 </div>
@@ -936,19 +974,19 @@
     </section>
 
     {{-- People says about courses --}}
-    <section class="w-100 py-5 bg-warning-subtle">
+    <section class="w-100 py-5 bg-warning-subtle" data-aos="fade-up">
         <div class="container py-5">
 
             <div class="col-lg-6">
 
-                <div class="mb-2 fs-1 fw-bold">
+                <h1 class="mb-2 fs-1 fw-bold" data-aos="fade-up" data-aos-delay="100">
                     People Says About Courses
-                </div>
+                </h1>
 
-                <div class="text-dark fw-medium mb-3">
+                <p class="text-dark fw-medium mb-3" data-aos="fade-up" data-aos-delay="200">
                     Experience seamless online learning with our user-friendly LMS website.
                     Explore our courses and improve your skills today.
-                </div>
+                </p>
 
             </div>
 
@@ -956,10 +994,11 @@
 
                 <div class="col-lg-6">
 
-                    <div class="p-4 bg-white rounded-4 mb-4">
+                    <div class="p-4 bg-white rounded-4 mb-4" data-aos="fade-up" data-aos-delay="300">
 
                         {{-- carousel message - rate --}}
-                        <div class="d-flex justify-content-start align-items-center gap-1 mb-3">
+                        <div class="d-flex justify-content-start align-items-center gap-1 mb-3" data-aos="fade-up"
+                             data-aos-delay="400">
                             <img src="{{asset('/images/svg/home/star-fill.svg')}}" class="width-18 height-18"
                                  alt="star">
                             <img src="{{asset('/images/svg/home/star-fill.svg')}}" class="width-18 height-18"
@@ -973,26 +1012,26 @@
                         </div>
 
                         {{-- carousel message - description --}}
-                        <div class="lead text-secondary fw-medium mb-3">
+                        <p class="lead text-secondary fw-medium mb-3" data-aos="fade-up" data-aos-delay="500">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur id magnam natus
                             saepe! A ab, accusamus ad alias amet architecto asperiores aspernatur aut beatae dicta est
                             eum ex exercitationem expedita
-                        </div>
+                        </p>
 
                         {{-- carousel message - author --}}
-                        <div class="fs-4 fw-bold">
+                        <h4 class="fs-4 fw-bold" data-aos="fade-up" data-aos-delay="600">
                             Melissa McGovern
-                        </div>
+                        </h4>
 
                         {{-- carousel message - profession --}}
-                        <div class="small text-secondary">
+                        <p class="small text-secondary" data-aos="fade-up" data-aos-delay="700">
                             Manager
-                        </div>
+                        </p>
 
                     </div>
 
                     {{-- see more route --}}
-                    <div class="mb-3">
+                    <div class="mb-3" data-aos="fade-up" data-aos-delay="800">
                         <a href="javascript:void(0)" class="btn btn-theme rounded-pill px-4 py-2">
                             See More
                         </a>
@@ -1002,10 +1041,13 @@
                 <div class="col-lg-6">
 
                     {{-- carousel image of feedback provider --}}
-                    <div class="position-relative">
-                        <img src="{{asset('/images/home/feedback-1.jpg')}}" class="img-fluid object-fit-cover h-100 w-100 rounded-3" alt="feedback-1">
-                        <div class="position-absolute end-0 bottom-0 p-3">
-                            <img src="{{asset('/images/home/feedback-2.jpg')}}" class="width-120 height-120 img-fluid object-fit-cover h-100 w-100 rounded-3 shadow" alt="feedback-2">
+                    <div class="position-relative" data-aos="fade-up" data-aos-delay="900">
+                        <img src="{{asset('/images/home/feedback-1.jpg')}}"
+                             class="img-fluid object-fit-cover h-100 w-100 rounded-3" alt="feedback-1">
+                        <div class="position-absolute end-0 bottom-0 p-3" data-aos="fade-down" data-aos-delay="1000">
+                            <img src="{{asset('/images/home/feedback-2.jpg')}}"
+                                 class="width-120 height-120 img-fluid object-fit-cover h-100 w-100 rounded-3 shadow"
+                                 alt="feedback-2">
                         </div>
                     </div>
 
@@ -1015,62 +1057,70 @@
     </section>
 
     {{-- trusted company --}}
-    <section class="w-100 py-5">
+    <section class="w-100 py-5" data-aos="fade-up">
         <div class="container text-center py-5 border-top border-bottom">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
-                <div class="p-2">
-                    <img src="{{asset('/images/home/company-logo-1.png')}}" class="img-fluid object-fit-contain" alt="company-logo">
+                <div class="p-2" data-aos="fade-up" data-aos-delay="100">
+                    <img src="{{asset('/images/home/company-logo-1.png')}}" class="img-fluid object-fit-contain"
+                         alt="company-logo">
                 </div>
-                <div class="p-2">
-                    <img src="{{asset('/images/home/company-logo-2.png')}}" class="img-fluid object-fit-contain" alt="company-logo">
+                <div class="p-2" data-aos="fade-up" data-aos-delay="200">
+                    <img src="{{asset('/images/home/company-logo-2.png')}}" class="img-fluid object-fit-contain"
+                         alt="company-logo">
                 </div>
-                <div class="p-2">
-                    <img src="{{asset('/images/home/company-logo-3.png')}}" class="img-fluid object-fit-contain" alt="company-logo">
+                <div class="p-2" data-aos="fade-up" data-aos-delay="300">
+                    <img src="{{asset('/images/home/company-logo-3.png')}}" class="img-fluid object-fit-contain"
+                         alt="company-logo">
                 </div>
-                <div class="p-2">
-                    <img src="{{asset('/images/home/company-logo-4.png')}}" class="img-fluid object-fit-contain" alt="company-logo">
+                <div class="p-2" data-aos="fade-up" data-aos-delay="400">
+                    <img src="{{asset('/images/home/company-logo-4.png')}}" class="img-fluid object-fit-contain"
+                         alt="company-logo">
                 </div>
             </div>
         </div>
     </section>
 
     {{-- Latest blog --}}
-    <section class="w-100 py-5">
+    <section class="w-100 py-5" data-aos="fade-up">
         <div class="container py-5">
 
             <div class="row">
                 <div class="col-lg-6">
 
-                    <div class="mb-2 fs-1 fw-bold"> Latest Blog</div>
+                    <h1 class="mb-2 fs-1 fw-bold" data-aos="fade-up" data-aos-delay="100">
+                        Latest Blog
+                    </h1>
 
-                    <div class="text-dark fw-medium mb-3">
+                    <p class="text-dark fw-medium mb-3" data-aos="fade-up" data-aos-delay="200">
                         Experience seamless online learning with our user-friendly LMS website.
                         Explore our courses and improve your skills today.
-                    </div>
+                    </p>
 
                 </div>
             </div>
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
 
-                <div class="p-2 mb-5">
+                {{-- blog item --}}
+                <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="300">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-6.jpg')}}"
                              class="img-fluid object-fit-cover height-350 rounded-3" alt="course-1">
                         <div class="position-absolute bottom-0 start-0 end-0 p-3 -mb-60">
                             <div class="bg-white p-3 shadow rounded-3 position-relative">
                                 <div class="position-absolute top-0 start-0 translate-middle-y ps-3">
-                                    <div class="bg-theme py-1 px-3 text-white d-inline-block small rounded-4">
+                                    <p class="bg-theme py-1 px-3 text-white d-inline-block small rounded-4">
                                         21 December 2023
-                                    </div>
+                                    </p>
                                 </div>
                                 <div class="py-2">
-                                    <div class="truncate-line-2 fs-3 fw-bold px-2">
+                                    <p class="truncate-line-2 fs-3 fw-bold px-2">
                                         11 Tips To Help You Get New Client
-                                    </div>
+                                    </p>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center p-2">
                                     <div class="d-flex align-items-center justify-content-start">
-                                        <img src="{{asset('/images/svg/home/person-circle.svg')}}" class="width-25 height-25" alt="person-circle">
+                                        <img src="{{asset('/images/svg/home/person-circle.svg')}}"
+                                             class="width-25 height-25" alt="person-circle">
                                         <span class="ms-2 text-secondary"> By Sumit Raj </span>
                                     </div>
                                     <a href="javascript:void(0)" class="text-theme fw-medium">
@@ -1082,25 +1132,27 @@
                     </div>
                 </div>
 
-                <div class="p-2 mb-5">
+                {{-- blog item --}}
+                <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="300">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-5.jpg')}}"
                              class="img-fluid object-fit-cover height-350 rounded-3" alt="course-1">
                         <div class="position-absolute bottom-0 start-0 end-0 p-3 -mb-60">
                             <div class="bg-white p-3 shadow rounded-3 position-relative">
                                 <div class="position-absolute top-0 start-0 translate-middle-y ps-3">
-                                    <div class="bg-theme py-1 px-3 text-white d-inline-block small rounded-4">
+                                    <p class="bg-theme py-1 px-3 text-white d-inline-block small rounded-4">
                                         21 December 2023
-                                    </div>
+                                    </p>
                                 </div>
                                 <div class="py-2">
-                                    <div class="truncate-line-2 fs-3 fw-bold px-2">
+                                    <p class="truncate-line-2 fs-3 fw-bold px-2">
                                         11 Tips To Help You Get New Client
-                                    </div>
+                                    </p>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center p-2">
                                     <div class="d-flex align-items-center justify-content-start">
-                                        <img src="{{asset('/images/svg/home/person-circle.svg')}}" class="width-25 height-25" alt="person-circle">
+                                        <img src="{{asset('/images/svg/home/person-circle.svg')}}"
+                                             class="width-25 height-25" alt="person-circle">
                                         <span class="ms-2 text-secondary"> By Sumit Raj </span>
                                     </div>
                                     <a href="javascript:void(0)" class="text-theme fw-medium">
@@ -1112,25 +1164,27 @@
                     </div>
                 </div>
 
-                <div class="p-2 mb-5">
+                {{-- blog item --}}
+                <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="300">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-4.jpg')}}"
                              class="img-fluid object-fit-cover height-350 rounded-3" alt="course-1">
                         <div class="position-absolute bottom-0 start-0 end-0 p-3 -mb-60">
                             <div class="bg-white p-3 shadow rounded-3 position-relative">
                                 <div class="position-absolute top-0 start-0 translate-middle-y ps-3">
-                                    <div class="bg-theme py-1 px-3 text-white d-inline-block small rounded-4">
+                                    <p class="bg-theme py-1 px-3 text-white d-inline-block small rounded-4">
                                         21 December 2023
-                                    </div>
+                                    </p>
                                 </div>
                                 <div class="py-2">
-                                    <div class="truncate-line-2 fs-3 fw-bold px-2">
+                                    <p class="truncate-line-2 fs-3 fw-bold px-2">
                                         11 Tips To Help You Get New Client
-                                    </div>
+                                    </p>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center p-2">
                                     <div class="d-flex align-items-center justify-content-start">
-                                        <img src="{{asset('/images/svg/home/person-circle.svg')}}" class="width-25 height-25" alt="person-circle">
+                                        <img src="{{asset('/images/svg/home/person-circle.svg')}}"
+                                             class="width-25 height-25" alt="person-circle">
                                         <span class="ms-2 text-secondary"> By Sumit Raj </span>
                                     </div>
                                     <a href="javascript:void(0)" class="text-theme fw-medium">
@@ -1147,27 +1201,29 @@
     </section>
 
     {{-- Join our community of students --}}
-    <section class="w-100 py-5">
+    <section class="w-100 py-5" data-aos="fade-up">
         <div class="container">
             <div class="bg-light-pink px-4 rounded-3 py-5">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
-                        <div class="fs-1 text-white ">
+                        <h1 class="fs-1 text-white" data-aos="fade-up" data-aos-delay="100">
                             Join our community of students
-                        </div>
+                        </h1>
                     </div>
-                    <div class="col-lg-6 py-3">
+                    <div class="col-lg-6 py-3" data-aos="fade-up" data-aos-delay="200">
+                        <label for="email" hidden="hidden">Email</label>
                         <div class="position-relative">
-                            <input type="email" name="email"
+                            <input id="email" type="email" name="email"
                                    class="form-control shadow-none py-3 ps-4 rounded-0 rounded-pill" required
-                                   autocomplete="new-email" placeholder="Enter your Email">
+                                   autocomplete="off" placeholder="Enter your Email">
                             <div class="position-absolute top-50 end-0 translate-middle-y pe-3">
                                 <button type="submit" class="btn btn-theme rounded-pill px-4">
                                     <span class="d-none d-md-inline me-2">
                                         Subscribe
                                     </span>
                                     <span>
-                                        <img src="{{asset('/images/svg/home/send.svg')}}" class="width-21 height-21" alt="send">
+                                        <img src="{{asset('/images/svg/home/send.svg')}}" class="width-21 height-21"
+                                             alt="send">
                                     </span>
                                 </button>
                             </div>

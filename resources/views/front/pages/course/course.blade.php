@@ -4,13 +4,16 @@
 @section('content')
 
     {{-- Breadcrumb --}}
-    <section class="w-100 bg-warning-subtle">
+    <section class="w-100 bg-warning-subtle" data-aos="fade-up">
         <div class="container">
             <div class="d-flex justify-content-start align-items-center height-350">
                 <div>
-                    <div class="fs-1 fw-bold text-theme-secondary mb-3 d-block"> Courses </div>
 
-                    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                    <h1 class="fs-1 fw-bold text-theme-secondary mb-3 d-block" data-aos="fade-up" data-aos-delay="100">
+                        Courses
+                    </h1>
+
+                    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="200">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item">
                                 <a href="{{route('front.home')}}" class="text-decoration-none text-dark">
@@ -24,22 +27,24 @@
                             </li>
                         </ol>
                     </nav>
+
                 </div>
             </div>
         </div>
     </section>
 
     {{-- course --}}
-    <section class="w-100 py-5">
+    <section class="w-100 py-5" data-aos="fade-up">
         <div class="container py-5">
             <div class="row">
-                <div class="col-lg-6">
+                <form class="col-lg-6">
 
                     {{-- search course --}}
-                    <div class="position-relative z-2">
-                        <input type="text" name="keyword"
+                    <div class="position-relative z-2" data-aos="fade-up" data-aos-delay="100">
+                        <label for="course" hidden="hidden">course</label>
+                        <input id="course" type="text" name="course"
                                class="form-control shadow-none py-3 ps-5 rounded-0 rounded-pill" required
-                               autocomplete="new-keyword" placeholder="Search Courses">
+                               autocomplete="off" placeholder="Search Courses">
                         <div class="position-absolute top-50 start-0 translate-middle-y ps-3">
                             <img src="{{asset('/images/svg/home/search.svg')}}" class="width-25 height-25" alt="search">
                         </div>
@@ -79,16 +84,18 @@
                                 <img src="{{asset('/images/svg/home/arrow-right.svg')}}"
                                      class="img-fluid width-25 height-25" alt="arrow-right">
                             </button>
+
                         </div>
                     </div>
-                </div>
+
+                </form>
             </div>
 
             {{-- courses list --}}
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 mt-5">
 
                 {{-- course item --}}
-                <div class="p-2 mb-5">
+                <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="100">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-1.jpg')}}"
                              class="img-fluid object-fit-cover height-350 rounded-3" alt="course-1">
@@ -131,7 +138,7 @@
                                         Enroll Now
                                     </a>
                                     <div
-                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
+                                        class="width-65 height-65 fw-medium d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
                                         $40
                                     </div>
                                 </div>
@@ -141,7 +148,7 @@
                 </div>
 
                 {{-- course item --}}
-                <div class="p-2 mb-5">
+                <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="200">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-2.jpg')}}"
                              class="img-fluid object-fit-cover height-350 rounded-3" alt="course-2">
@@ -174,17 +181,17 @@
                                     </div>
                                 </div>
                                 <div class="mb-3">
-                                    <div class="fs-4 px-2 fw-bold truncate-line-2">
+                                    <h4 class="fs-4 px-2 fw-bold truncate-line-2">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae explicabo
                                         natus reprehenderit saepe temporibus.
-                                    </div>
+                                    </h4>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-4 py-2">
                                         Enroll Now
                                     </a>
                                     <div
-                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
+                                        class="width-65 height-65 fw-medium d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
                                         $40
                                     </div>
                                 </div>
@@ -194,7 +201,7 @@
                 </div>
 
                 {{-- course item --}}
-                <div class="p-2 mb-5">
+                <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="300">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-3.jpg')}}"
                              class="img-fluid object-fit-cover height-350 rounded-3" alt="course-3">
@@ -227,17 +234,17 @@
                                     </div>
                                 </div>
                                 <div class="mb-3">
-                                    <div class="fs-4 px-2 fw-bold truncate-line-2">
+                                    <h4 class="fs-4 px-2 fw-bold truncate-line-2">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae explicabo
                                         natus reprehenderit saepe temporibus.
-                                    </div>
+                                    </h4>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-4 py-2">
                                         Enroll Now
                                     </a>
                                     <div
-                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
+                                        class="width-65 height-65 fw-medium d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
                                         $40
                                     </div>
                                 </div>
@@ -247,7 +254,7 @@
                 </div>
 
                 {{-- course item --}}
-                <div class="p-2 mb-5">
+                <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="400">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-4.jpg')}}"
                              class="img-fluid object-fit-cover height-350 rounded-3" alt="course-4">
@@ -280,17 +287,17 @@
                                     </div>
                                 </div>
                                 <div class="mb-3">
-                                    <div class="fs-4 px-2 fw-bold truncate-line-2">
+                                    <h4 class="fs-4 px-2 fw-bold truncate-line-2">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae explicabo
                                         natus reprehenderit saepe temporibus.
-                                    </div>
+                                    </h4>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-4 py-2">
                                         Enroll Now
                                     </a>
                                     <div
-                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
+                                        class="width-65 height-65 fw-medium d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
                                         $40
                                     </div>
                                 </div>
@@ -300,7 +307,7 @@
                 </div>
 
                 {{-- course item --}}
-                <div class="p-2 mb-5">
+                <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="500">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-5.jpg')}}"
                              class="img-fluid object-fit-cover height-350 rounded-3" alt="course-5">
@@ -333,17 +340,17 @@
                                     </div>
                                 </div>
                                 <div class="mb-3">
-                                    <div class="fs-4 px-2 fw-bold truncate-line-2">
+                                    <h4 class="fs-4 px-2 fw-bold truncate-line-2">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae explicabo
                                         natus reprehenderit saepe temporibus.
-                                    </div>
+                                    </h4>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-4 py-2">
                                         Enroll Now
                                     </a>
                                     <div
-                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
+                                        class="width-65 height-65 fw-medium d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
                                         $40
                                     </div>
                                 </div>
@@ -353,7 +360,7 @@
                 </div>
 
                 {{-- course item --}}
-                <div class="p-2 mb-5">
+                <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="600">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-6.jpg')}}"
                              class="img-fluid object-fit-cover height-350 rounded-3" alt="course-6">
@@ -386,17 +393,17 @@
                                     </div>
                                 </div>
                                 <div class="mb-3">
-                                    <div class="fs-4 px-2 fw-bold truncate-line-2">
+                                    <h4 class="fs-4 px-2 fw-bold truncate-line-2">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae explicabo
                                         natus reprehenderit saepe temporibus.
-                                    </div>
+                                    </h4>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <a href="{{route('front.course-details')}}" class="btn btn-theme rounded-pill px-4 py-2">
                                         Enroll Now
                                     </a>
                                     <div
-                                        class="width-65 height-65 fw-bold d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
+                                        class="width-65 height-65 fw-medium d-flex justify-content-center align-items-center rounded-circle bg-success text-white">
                                         $40
                                     </div>
                                 </div>
@@ -406,10 +413,11 @@
                 </div>
 
             </div>
+
             <div class="mt-5">
 
                 {{-- course pagination --}}
-                <nav aria-label="Page navigation example">
+                <nav aria-label="Page navigation example" data-aos="fade-up" data-aos-delay="700">
                     <ul class="pagination d-flex justify-content-center align-items-center">
                         <li class="page-item">
                             <a class="page-link" href="javascript:void(0)">
@@ -448,19 +456,20 @@
     </section>
 
     {{-- Join our community of students --}}
-    <section class="w-100 py-5">
+    <section class="w-100 py-5" data-aos="fade-up">
         <div class="container">
             <div class="bg-light-pink px-4 rounded-3 py-5">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
-                        <div class="fs-1 text-white ">
+                        <div class="fs-1 text-white" data-aos="fade-up" data-aos-delay="100">
                             Join our community of students
                         </div>
                     </div>
-                    <div class="col-lg-6 py-3">
+                    <div class="col-lg-6 py-3" data-aos="fade-up" data-aos-delay="200">
+                        <label for="email" hidden="hidden">email</label>
                         <div class="position-relative">
-                            <input type="email" name="email" class="form-control shadow-none py-3 ps-4 rounded-0 rounded-pill" required
-                                   autocomplete="new-email" placeholder="Enter your Email">
+                            <input id="email" type="email" name="email" class="form-control shadow-none py-3 ps-4 rounded-0 rounded-pill" required
+                                   autocomplete="pff" placeholder="Enter your Email">
                             <div class="position-absolute top-50 end-0 translate-middle-y pe-3">
                                 <button type="submit" class="btn btn-theme rounded-pill px-4">
                                     <span class="d-none d-sm-inline me-1">Subscribe</span>
