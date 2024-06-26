@@ -6,11 +6,13 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Routing\Controller as BaseController;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 
 class AuthController extends BaseController
 {
 
+    /* *** *** *** *** *** *** *** *** Login *** *** *** *** *** *** *** *** */
     public function login(Request $request) {
         try {
             $validator = Validator::make($request->all(), [
@@ -31,12 +33,13 @@ class AuthController extends BaseController
         }
     }
 
+    /* *** *** *** *** *** *** *** *** Register *** *** *** *** *** *** *** *** */
     public function register(Request $request) {
         try {
             $validator = Validator::make($request->all(), [
                 'name' => 'required',
                 'email' => 'required|unique:users,email',
-                'password' => 'required|confirmed'
+                'password' => 'required|min:6|confirmed'
             ]);
             if($validator->fails()) {
                 return response()->json(['errors' => $validator->errors()], 422);
@@ -52,6 +55,7 @@ class AuthController extends BaseController
         }
     }
 
+    /* *** *** *** *** *** *** *** *** Forget *** *** *** *** *** *** *** *** */
     public function forget(Request $request) {
         try {
             $validator = Validator::make($request->all(), [
@@ -73,8 +77,32 @@ class AuthController extends BaseController
         }
     }
 
-    public function reset() {
-
+    /* *** *** *** *** *** *** *** *** Reset *** *** *** *** *** *** *** *** */
+    public function reset(Request $request) {
+        try {
+            $input = $request->input();
+            $validator = Validator::make($input, [
+                'email' => 'required|email',
+                'reset_code' => 'required',
+                'password' => 'required|min:6|confirmed',
+            ]);
+            if($validator->fails()) {
+                return response()->json(['errors' => $validator->errors()], 422);
+            }
+            $userInformation = User::where(['email' => $input['email'], 'reset_code' => $input['reset_code']])->first();
+            if($userInformation === null) {
+                return response()->json(['error' => 'invalid request. Check your reset code'], 500);
+            }
+            if(Hash::check($input['password'], $userInformation['password'])) {
+                return response()->json(['error' => ['password' => 'Not allow same password. Please kindly use another password']], 500);
+            }
+            $userInformation->password = bcrypt($input['password']);
+            $userInformation->reset_code = null;
+            $userInformation->save();
+            return response()->json(['message' => 'Reset password has been successfully']);
+        }catch( \Exception $exception) {
+            return response()->json(['status' => 500, 'errors' => $exception->getMessage(), 'line' => $exception->getLine()], 500);
+        }
     }
 
 }
