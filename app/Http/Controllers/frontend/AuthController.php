@@ -15,11 +15,38 @@ use Illuminate\Support\Facades\Validator;
 class AuthController extends BaseController
 {
 
-    public function login() {
+    public function login(Request $request) {
 
         try {
 
-            
+            $validator = Validator::make($request->all(), [
+                'email' => 'required',
+                'password' => 'required',
+            ]);
+
+            if($validator->fails()) {
+                return response()->json(['errors' => $validator->errors()], 422);
+            }
+
+//            dd($validator);
+
+            $credential = ['email' => $request->email, 'password' => $request->password];
+
+//            dd($credential);
+
+            if(Auth::guard('users')->attempt($credential)) {
+
+//                dd(Auth::guard('users'));
+
+                return response()->json(['message' => 'Login successfully', 'data' => Auth::guard('users')->user()], 200);
+
+            } else {
+
+//                dd(response()->json());
+
+                return response()->json(['status' => 500, 'errors' => ['error' => 'Invalid Credentials! Please try again']], 500);
+
+            }
 
         }catch ( \Exception $exception ) {
 
