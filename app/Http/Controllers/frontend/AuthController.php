@@ -68,7 +68,7 @@ class AuthController extends BaseController
             $userInformation = User::where('email', $request->email)->first();
 
             if($userInformation == null) {
-                return response()->json(['errors' => 'Email not found'], 500);
+                return response()->json(['errors' => ['email' => ['Email not found']]], 500);
             }
 
             $random_number = rand(10000000, 99999999);
@@ -91,16 +91,16 @@ class AuthController extends BaseController
         try {
             $input = $request->input();
             $validator = Validator::make($input, [
-                'email' => 'required|email',
+                'email' => 'required',
                 'reset_code' => 'required',
                 'password' => 'required|min:6|confirmed',
             ]);
             if($validator->fails()) {
-                return response()->json(['errors' => $validator->errors()], 422);
+                return response()->json(['errors' => $validator->errors()], 500);
             }
             $userInformation = User::where(['email' => $input['email'], 'reset_code' => $input['reset_code']])->first();
             if($userInformation === null) {
-                return response()->json(['error' => 'invalid request. Check your reset code'], 500);
+                return response()->json(['status' => 500, 'error' => 'invalid request. Check your reset code']);
             }
             if(Hash::check($input['password'], $userInformation['password'])) {
                 return response()->json(['error' => ['password' => 'Not allow same password. Please kindly use another password']], 500);

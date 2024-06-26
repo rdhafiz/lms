@@ -26,9 +26,6 @@
                 <br><br>
                 Forget your password? <br>
                 This is reset code. Use this into this side
-                <a href="{{route('front.reset_password')}}">
-                    Reset Code
-                </a>
                 <br><br>
                 {{$userInfo->reset_code}}
             </p>
