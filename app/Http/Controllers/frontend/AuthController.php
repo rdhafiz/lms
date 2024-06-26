@@ -7,6 +7,7 @@ use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
 
 class AuthController extends BaseController
@@ -71,6 +72,12 @@ class AuthController extends BaseController
             $random_number = rand(10000000, 99999999);
             $userInformation->reset_code = $random_number;
             $userInformation->save();
+
+            Mail::send('emails.forget', ['userInfo' => $userInformation], function ($message) use ($userInformation) {
+                $message->to($userInformation['email'], $userInformation['name'])->subject(env('MAIL_FROM_NAME') . ': Password reset code');
+                $message->from(env('MAIL_FROM_ADDRESS'), env('MAIL_FROM_NAME'));
+            });
+
             return response()->json(['message' => 'Forget password has been successfully']);
         }catch( \Exception $exception ) {
             return response()->json(['status' => 500, 'errors' => $exception->getMessage(), 'line' => $exception->getLine()], 500);
