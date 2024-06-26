@@ -43,7 +43,7 @@ class AuthController extends BaseController
                 'password' => 'required|min:6|confirmed'
             ]);
             if($validator->fails()) {
-                return response()->json(['errors' => $validator->errors()], 422);
+                return response()->json(['errors' => $validator->errors()], 500);
             }
             $user = new User();
             $user->name = $request->name;
