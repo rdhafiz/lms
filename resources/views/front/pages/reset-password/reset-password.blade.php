@@ -38,7 +38,7 @@
                         <div class="mb-3 text-center fw-medium fs-3">
                             Remember Password
                         </div>
-                        <a href="{{route('login')}}" class="text-decoration-none text-secondary fs-5">
+                        <a href="{{route('front.login')}}" class="text-decoration-none text-secondary fs-5">
                             Welcome to your account
                         </a>
                     </div>
