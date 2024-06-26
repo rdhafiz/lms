@@ -42,10 +42,10 @@
                                 <div class="error-report" v-if="error != null && error.password_confirmation !== undefined" v-text="error.password_confirmation[0]"></div>
                             </div>
                             <div class="mb-3">
-                                <button type="submit" class="btn btn-theme py-2 px-3 rounded-0" v-if="loading === false">
+                                <button type="submit" class="btn btn-theme py-2 px-3 rounded-0" v-if="!loading">
                                     Registration
                                 </button>
-                                <button type="button" class="btn btn-theme py-2 px-3 rounded-0" v-if="loading === true">
+                                <button type="button" class="btn btn-theme py-2 px-3 rounded-0" v-if="loading">
                                     Loading
                                 </button>
                             </div>
@@ -106,7 +106,7 @@
                                 password: '',
                                 password_confirmation: ''
                             };
-                            this.window.location = '/login'
+                            window.location.href = "{{route('front.login')}}"
                         }
                     }).catch(err => {
                         this.loading = false;

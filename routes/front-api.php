@@ -20,7 +20,7 @@ Route::group(
     function () {
         Route::post('/login', [AuthController::class, 'login'])->name('User.Auth.Login');
         Route::post('/register', [AuthController::class, 'register'])->name('User.Auth.Register');
-        Route::post('/forget', [AuthController::class, 'forget'])->name('User.Auth.Forgot');
+        Route::post('/forget', [AuthController::class, 'forget'])->name('User.Auth.Forget');
         Route::post('/reset', [AuthController::class, 'reset'])->name('User.Auth.Reset');
     }
 );

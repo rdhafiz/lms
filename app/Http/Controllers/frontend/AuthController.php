@@ -66,9 +66,11 @@ class AuthController extends BaseController
                 return response()->json(['errors' => $validator->errors()], 422);
             }
             $userInformation = User::where('email', $request->email)->first();
-            if($userInformation === null) {
-                return response()->json(['errors' => 'Email not found'], 422);
+
+            if($userInformation == null) {
+                return response()->json(['errors' => 'Email not found'], 500);
             }
+
             $random_number = rand(10000000, 99999999);
             $userInformation->reset_code = $random_number;
             $userInformation->save();
