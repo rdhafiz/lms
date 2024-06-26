@@ -57,4 +57,8 @@ class FrontController extends BaseController
         return view('front.pages.course.course-details.course-details');
     }
 
+    public function emailTemplate() {
+        return view('emails.forget');
+    }
+
 }
