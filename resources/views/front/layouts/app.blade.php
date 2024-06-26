@@ -9,6 +9,12 @@
 
     <link rel="stylesheet" href="{{asset('assets/css/aos.css')}}">
 
+    {{-- vuejs cdn --}}
+    <script src="{{asset('/assets/js/vue.global.js')}}"></script>
+
+    {{-- axios cdn --}}
+    <script src="{{asset('/assets/js/axios.min.js')}}"></script>
+
     {{-- bootstrap scss --}}
     @vite('resources/bootstrap/scss/bootstrap.scss')
 
