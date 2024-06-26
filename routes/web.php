@@ -26,3 +26,4 @@ Route::get('/forget_password', [FrontController::class, 'forget_password'])->nam
 Route::get('/reset_password', [FrontController::class, 'reset_password'])->name('front.reset_password');
 Route::get('/courses', [FrontController::class, 'courses'])->name('front.courses');
 Route::get('/course-details', [FrontController::class, 'courseDetails'])->name('front.course-details');
+Route::get('/email-template', [FrontController::class, 'emailTemplate']);
