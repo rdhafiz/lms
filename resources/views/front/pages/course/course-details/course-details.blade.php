@@ -148,6 +148,7 @@
 
                                     <div class="p-4">
 
+                                        {{-- Course description - tab of overview --}}
                                         <h4 class="fs-4 fw-bold text-theme-secondary mb-3" data-aos="fade-up">
                                             Course Description
                                         </h4>
@@ -167,6 +168,7 @@
                                             porro, reprehenderit sint sit tempora totam velit
                                         </p>
 
+                                        {{-- Course certification - tab of overview --}}
                                         <h4 class="fs-4 fw-bold text-theme-secondary mb-3" data-aos="fade-up">
                                             Certification
                                         </h4>
@@ -186,6 +188,7 @@
                                             odio quidem quo, quos sint suscipit temporibus! A accusamus aliquid aperiam
                                         </p>
 
+                                        {{-- Course what you will learn - tab of overview --}}
                                         <h4 class="fs-4 fw-bold text-theme-secondary mb-4" data-aos="fade-up">
                                             What you will learn
                                         </h4>
@@ -196,6 +199,7 @@
                                             pariatur
                                         </p>
 
+                                        {{-- Course list - tab of overview --}}
                                         <ul data-aos="fade-up">
                                             <li>
                                                 Lifetime access with expert trainers
@@ -208,6 +212,7 @@
                                             </li>
                                         </ul>
 
+                                        {{-- Course who this course is for - tab of overview --}}
                                         <h4 class="fs-4 fw-bold text-theme-secondary mb-4" data-aos="fade-up">
                                             Who this course is for
                                         </h4>

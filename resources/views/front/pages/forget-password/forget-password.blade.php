@@ -3,52 +3,90 @@
 
 @section('content')
 
-    {{-- forget content --}}
-    <section class="container-fluid" id="forget">
-        <div class="vh-100 row justify-content-center align-items-center bg-light">
-            <div class="px-2 border col-11 col-sm-9 col-md-8 col-lg-7 bg-white">
-                <div class="row align-items-center px-2">
+    {{-- Breadcrumb --}}
+    <section class="w-100 bg-warning-subtle" data-aos="fade-up">
+        <div class="container">
+            <div class="d-flex justify-content-start align-items-center height-350">
+                <div>
 
-                    {{-- forget form --}}
-                    <form @submit.prevent="forgetForm()" class="col-lg-5 p-4 fw-medium">
+                    <h1 class="fs-1 fw-bold text-theme-secondary mb-3 d-block" data-aos="fade-up" data-aos-delay="100">
+                        Forget Password
+                    </h1>
 
-                        {{-- forget title --}}
-                        <div class="fs-3 mb-3"> Forget Password </div>
+                    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="200">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="{{route('front.home')}}" class="text-decoration-none text-dark">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item active">
+                                <a href="{{route('front.forget_password')}}" class="text-decoration-none text-theme">
+                                    Forget Password
+                                </a>
+                            </li>
+                        </ol>
+                    </nav>
 
-                        {{-- forget description --}}
-                        <div class="text-secondary mb-3">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, libero.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{-- Forget content --}}
+    <section class="w-100 py-5" id="forget">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="px-2 col-11 col-sm-10">
+                    <div class="row align-items-center px-2">
+
+                        {{-- Forget form --}}
+                        <form @submit.prevent="forgetForm()" class="col-lg-5 p-4 border fw-medium">
+
+                            {{-- Forget title --}}
+                            <div class="fs-4">
+                                Forget Password
+                            </div>
+
+                            {{-- Forget description --}}
+                            <div class="text-secondary mb-3">
+                                Enter your email and we'll send you instructions to reset your password
+                            </div>
+
+                            {{-- Form-group - email --}}
+                            <div class="form-group mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input id="email" type="email" name="email"
+                                       class="form-control py-2 px-3 rounded-0 shadow-none border" autocomplete="off"
+                                       v-model="forgetParam.email">
+                                <div class="error-report" v-if="error != null && error.email !== undefined"
+                                     v-text="error.email[0]"></div>
+                            </div>
+
+                            {{-- Action button --}}
+                            <div class="mb-3">
+                                <button type="submit" class="btn btn-theme py-2 px-3 rounded-0" v-if="!loading">
+                                    Forget
+                                </button>
+                                <button type="button" class="btn btn-theme py-2 px-3 rounded-0" v-if="loading">
+                                    Loading
+                                </button>
+                            </div>
+
+                        </form>
+
+                        {{-- Login route --}}
+                        <div class="col-lg-7 d-flex justify-content-center align-items-center flex-column"
+                             style="min-height: 600px">
+                            <div class="mb-3 text-center fw-medium fs-3">
+                                Remember Password
+                            </div>
+                            <a href="{{route('front.login')}}" class="text-decoration-none text-secondary fs-5">
+                                Welcome to your account
+                            </a>
                         </div>
 
-                        {{-- form-group - email --}}
-                        <div class="form-group mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input id="email" type="email" name="email" class="form-control py-2 px-3 rounded-0 shadow-none border" autocomplete="off" v-model="forgetParam.email">
-                            <div class="error-report" v-if="error != null && error.email !== undefined" v-text="error.email[0]"></div>
-                        </div>
-
-                        {{-- action button --}}
-                        <div class="mb-3">
-                            <button type="submit" class="btn btn-theme py-2 px-3 rounded-0" v-if="!loading">
-                                Forget
-                            </button>
-                            <button type="button" class="btn btn-theme py-2 px-3 rounded-0" v-if="loading">
-                                Loading
-                            </button>
-                        </div>
-
-                    </form>
-
-                    {{-- login route --}}
-                    <div class="col-lg-7 border-start d-flex justify-content-center align-items-center flex-column" style="min-height: 600px">
-                        <div class="mb-3 text-center fw-medium fs-3">
-                            Remember Password
-                        </div>
-                        <a href="{{route('front.login')}}" class="text-decoration-none text-secondary fs-5">
-                            Welcome to your account
-                        </a>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -57,7 +95,7 @@
     <script type="module">
         const {createApp, ref} = Vue;
         createApp({
-            data(){
+            data() {
                 return {
                     // data properties
                     loading: false,
@@ -67,7 +105,8 @@
                     }
                 }
             },
-            mounted(){},
+            mounted() {
+            },
             methods: {
 
                 /* --- --- --- function of clear error handler --- --- --- */

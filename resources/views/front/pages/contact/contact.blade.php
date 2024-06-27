@@ -45,7 +45,7 @@
 
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2">
 
-                {{-- address --}}
+                {{-- Address --}}
                 <div class="p-3" data-aos="fade-up" data-aos-delay="200">
                     <div
                         class="shadow p-2 p-sm-5 bg-size-cover object-fit-cover bg-repeat-none d-flex align-items-center justify-content-start"
@@ -68,7 +68,7 @@
                     </div>
                 </div>
 
-                {{-- contact --}}
+                {{-- Contact --}}
                 <div class="p-3" data-aos="fade-up" data-aos-delay="300">
                     <div
                         class="shadow p-2 p-sm-5 bg-size-cover object-fit-cover bg-repeat-none d-flex align-items-center justify-content-start"
@@ -91,7 +91,7 @@
                     </div>
                 </div>
 
-                {{-- contact --}}
+                {{-- Operation time --}}
                 <div class="p-3" data-aos="fade-up" data-aos-delay="400">
                     <div
                         class="shadow p-2 p-sm-5 bg-size-cover object-fit-cover bg-repeat-none d-flex align-items-center justify-content-start"
@@ -114,7 +114,7 @@
                     </div>
                 </div>
 
-                {{-- email --}}
+                {{-- Email --}}
                 <div class="p-3" data-aos="fade-up" data-aos-delay="500">
                     <div
                         class="shadow p-2 p-sm-5 bg-size-cover object-fit-cover bg-repeat-none d-flex align-items-center justify-content-start"
@@ -211,8 +211,8 @@
                     </div>
                     <div class="col-lg-6 py-3" data-aos="fade-up" data-aos-delay="200">
                         <div class="position-relative">
-                            <label for="email" hidden="hidden">email</label>
-                            <input id="email" type="email" name="email" class="form-control shadow-none py-3 ps-4 rounded-0 rounded-pill" required
+                            <label for="newsletter" hidden="hidden">email</label>
+                            <input id="newsletter" type="email" name="email" class="form-control shadow-none py-3 ps-4 rounded-0 rounded-pill" required
                                    autocomplete="off" placeholder="Enter your Email">
                             <div class="position-absolute top-50 end-0 translate-middle-y pe-3">
                                 <button type="submit" class="btn btn-theme rounded-pill px-4">

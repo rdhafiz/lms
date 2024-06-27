@@ -33,13 +33,13 @@
         </div>
     </section>
 
-    {{-- course --}}
+    {{-- Course --}}
     <section class="w-100 py-5" data-aos="fade-up">
         <div class="container py-5">
             <div class="row">
                 <form class="col-lg-6">
 
-                    {{-- search course --}}
+                    {{-- Search course --}}
                     <div class="position-relative z-2" data-aos="fade-up" data-aos-delay="100">
                         <label for="course" hidden="hidden">course</label>
                         <input id="course" type="text" name="course"
@@ -51,7 +51,7 @@
                         <div
                             class="position-absolute top-50 end-0 translate-middle-y pe-2 d-flex justify-content-end align-items-center">
 
-                            {{-- course category --}}
+                            {{-- Course category --}}
                             <div class="dropdown">
                                 <button type="button" class="btn height-40 bg-opacity-theme px-4 border-0 rounded-pill"
                                         data-bs-toggle="dropdown" aria-expanded="false">
@@ -78,7 +78,7 @@
                                 </ul>
                             </div>
 
-                            {{-- course submit action --}}
+                            {{-- Course submit action --}}
                             <button type="submit"
                                     class="btn btn-theme width-40 height-40 ms-1 rounded-circle d-flex justify-content-center align-items-center">
                                 <img src="{{asset('/images/svg/home/arrow-right.svg')}}"
@@ -91,10 +91,10 @@
                 </form>
             </div>
 
-            {{-- courses list --}}
+            {{-- Courses list --}}
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 mt-5">
 
-                {{-- course item --}}
+                {{-- Course item --}}
                 <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="100">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-1.jpg')}}"
@@ -147,7 +147,7 @@
                     </div>
                 </div>
 
-                {{-- course item --}}
+                {{-- Course item --}}
                 <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="200">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-2.jpg')}}"
@@ -200,7 +200,7 @@
                     </div>
                 </div>
 
-                {{-- course item --}}
+                {{-- Course item --}}
                 <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="300">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-3.jpg')}}"
@@ -253,7 +253,7 @@
                     </div>
                 </div>
 
-                {{-- course item --}}
+                {{-- Course item --}}
                 <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="400">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-4.jpg')}}"
@@ -306,7 +306,7 @@
                     </div>
                 </div>
 
-                {{-- course item --}}
+                {{-- Course item --}}
                 <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="500">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-5.jpg')}}"
@@ -359,7 +359,7 @@
                     </div>
                 </div>
 
-                {{-- course item --}}
+                {{-- Course item --}}
                 <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="600">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-6.jpg')}}"
@@ -416,7 +416,7 @@
 
             <div class="mt-5">
 
-                {{-- course pagination --}}
+                {{-- Course pagination --}}
                 <nav aria-label="Page navigation example" data-aos="fade-up" data-aos-delay="700">
                     <ul class="pagination d-flex justify-content-center align-items-center">
                         <li class="page-item">
@@ -466,10 +466,10 @@
                         </div>
                     </div>
                     <div class="col-lg-6 py-3" data-aos="fade-up" data-aos-delay="200">
-                        <label for="email" hidden="hidden">email</label>
                         <div class="position-relative">
-                            <input id="email" type="email" name="email" class="form-control shadow-none py-3 ps-4 rounded-0 rounded-pill" required
-                                   autocomplete="pff" placeholder="Enter your Email">
+                            <label for="newsletter" hidden="hidden">email</label>
+                            <input id="newsletter" type="email" name="email" class="form-control shadow-none py-3 ps-4 rounded-0 rounded-pill" required
+                                   autocomplete="off" placeholder="Enter your Email">
                             <div class="position-absolute top-50 end-0 translate-middle-y pe-3">
                                 <button type="submit" class="btn btn-theme rounded-pill px-4">
                                     <span class="d-none d-sm-inline me-1">Subscribe</span>
