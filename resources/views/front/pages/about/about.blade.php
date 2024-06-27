@@ -3,7 +3,7 @@
 
 @section('content')
 
-    {{-- breadcrumb --}}
+    {{-- Breadcrumb --}}
     <section class="w-100 bg-warning-subtle" data-aos="fade-up">
         <div class="container">
             <div class="d-flex justify-content-start align-items-center height-350">
@@ -34,7 +34,7 @@
         </div>
     </section>
 
-    {{-- welcome to our online platform --}}
+    {{-- Welcome to our online platform --}}
     <section class="w-100 bg-white py-5" data-aos="fade-up">
         <div class="container">
             <div class="row">
@@ -82,7 +82,7 @@
         </div>
     </section>
 
-    {{-- box content --}}
+    {{-- Box content --}}
     <section class="w-100 py-5" data-aos="fade-up">
         <div class="container">
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">

@@ -3,7 +3,7 @@
 
 @section('content')
 
-    {{-- hero content --}}
+    {{-- Hero content --}}
     <section class="w-100 bg-warning-subtle h-100 py-5" data-aos="fade-up">
         <div class="container py-5 pb-3">
             <div class="row py-5 justify-content-center">
@@ -89,12 +89,12 @@
         </div>
     </section>
 
-    {{-- box content --}}
+    {{-- Box content --}}
     <section class="w-100 py-5">
         <div class="container">
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
 
-                {{-- box count of online courses --}}
+                {{-- Box count of online courses --}}
                 <div class="p-2" data-aos="fade-up" data-aos-delay="100">
                     <div
                         class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start"
@@ -111,7 +111,7 @@
                     </div>
                 </div>
 
-                {{-- box count of expert tutors --}}
+                {{-- Box count of expert tutors --}}
                 <div class="p-2" data-aos="fade-up" data-aos-delay="200">
                     <div
                         class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start"
@@ -128,7 +128,7 @@
                     </div>
                 </div>
 
-                {{-- box count of certified courses --}}
+                {{-- Box count of certified courses --}}
                 <div class="p-2" data-aos="fade-up" data-aos-delay="300">
                     <div
                         class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start"
@@ -145,7 +145,7 @@
                     </div>
                 </div>
 
-                {{-- box count of online students --}}
+                {{-- Box count of online students --}}
                 <div class="p-2" data-aos="fade-up" data-aos-delay="400">
                     <div
                         class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start"
@@ -183,7 +183,7 @@
 
                 </div>
 
-                {{-- courses route --}}
+                {{-- Courses route --}}
                 <div class="col-lg-6 text-end mb-3" data-aos="fade-up" data-aos-delay="200">
                     <a href="{{route('front.courses')}}" class="btn btn-theme rounded-pill py-2 px-4">
                         View all courses
@@ -194,7 +194,7 @@
 
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3">
 
-                {{-- course item --}}
+                {{-- Course item --}}
                 <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="100">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-1.jpg')}}"
@@ -248,7 +248,7 @@
                     </div>
                 </div>
 
-                {{-- course item --}}
+                {{-- Course item --}}
                 <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="200">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-2.jpg')}}"
@@ -302,7 +302,7 @@
                     </div>
                 </div>
 
-                {{-- course item --}}
+                {{-- Course item --}}
                 <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="300">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-3.jpg')}}"
@@ -356,7 +356,7 @@
                     </div>
                 </div>
 
-                {{-- course item --}}
+                {{-- Course item --}}
                 <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="400">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-4.jpg')}}"
@@ -410,7 +410,7 @@
                     </div>
                 </div>
 
-                {{-- course item --}}
+                {{-- Course item --}}
                 <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="500">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-5.jpg')}}"
@@ -464,7 +464,7 @@
                     </div>
                 </div>
 
-                {{-- course item --}}
+                {{-- Course item --}}
                 <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="600">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-6.jpg')}}"
@@ -523,7 +523,7 @@
         </div>
     </section>
 
-    {{-- top category --}}
+    {{-- Top category --}}
     <section class="w-100 py-5" data-aos="fade-up">
         <div class="container py-5">
 
@@ -533,7 +533,7 @@
 
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
 
-                {{-- course category --}}
+                {{-- Course category --}}
                 <div class="p-2" data-aos="fade-up" data-aos-delay="100">
                     <a href="javascript:void(0)"
                        class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start text-decoration-none text-dark"
@@ -546,7 +546,7 @@
                     </a>
                 </div>
 
-                {{-- course category --}}
+                {{-- Course category --}}
                 <div class="p-2" data-aos="fade-up" data-aos-delay="200">
                     <a href="javascript:void(0)"
                        class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start text-decoration-none text-dark"
@@ -559,7 +559,7 @@
                     </a>
                 </div>
 
-                {{-- course category --}}
+                {{-- Course category --}}
                 <div class="p-2" data-aos="fade-up" data-aos-delay="300">
                     <a href="javascript:void(0)"
                        class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start text-decoration-none text-dark"
@@ -572,7 +572,7 @@
                     </a>
                 </div>
 
-                {{-- course category --}}
+                {{-- Course category --}}
                 <div class="p-2" data-aos="fade-up" data-aos-delay="400">
                     <a href="javascript:void(0)"
                        class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start text-decoration-none text-dark"
@@ -585,7 +585,7 @@
                     </a>
                 </div>
 
-                {{-- course category --}}
+                {{-- Course category --}}
                 <div class="p-2" data-aos="fade-up" data-aos-delay="500">
                     <a href="javascript:void(0)"
                        class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start text-decoration-none text-dark"
@@ -598,7 +598,7 @@
                     </a>
                 </div>
 
-                {{-- course category --}}
+                {{-- Course category --}}
                 <div class="p-2" data-aos="fade-up" data-aos-delay="600">
                     <a href="javascript:void(0)"
                        class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start text-decoration-none text-dark"
@@ -611,7 +611,7 @@
                     </a>
                 </div>
 
-                {{-- course category --}}
+                {{-- Course category --}}
                 <div class="p-2" data-aos="fade-up" data-aos-delay="700">
                     <a href="javascript:void(0)"
                        class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start text-decoration-none text-dark"
@@ -624,7 +624,7 @@
                     </a>
                 </div>
 
-                {{-- course category --}}
+                {{-- Course category --}}
                 <div class="p-2" data-aos="fade-up" data-aos-delay="800">
                     <a href="javascript:void(0)"
                        class="shadow p-3 p-sm-4 rounded-3 bg-size-cover object-fit-contain bg-repeat-none d-flex align-items-center justify-content-start text-decoration-none text-dark"
@@ -662,7 +662,7 @@
 
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
 
-                {{-- instructor --}}
+                {{-- Instructor --}}
                 <div class="py-2 mb-5" data-aos="fade-up" data-aos-delay="100">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/team-1.jpg')}}"
@@ -692,7 +692,7 @@
                     </div>
                 </div>
 
-                {{-- instructor --}}
+                {{-- Instructor --}}
                 <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="200">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/team-2.jpg')}}"
@@ -722,7 +722,7 @@
                     </div>
                 </div>
 
-                {{-- instructor --}}
+                {{-- Instructor --}}
                 <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="300">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/team-3.jpg')}}"
@@ -752,7 +752,7 @@
                     </div>
                 </div>
 
-                {{-- instructor --}}
+                {{-- Instructor --}}
                 <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="400">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/team-4.jpg')}}"
@@ -807,7 +807,7 @@
 
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
 
-                {{-- trend course --}}
+                {{-- Trend course --}}
                 <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="300">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-1.jpg')}}"
@@ -861,7 +861,7 @@
                     </div>
                 </div>
 
-                {{-- trend course --}}
+                {{-- Trend course --}}
                 <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="400">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-2.jpg')}}"
@@ -915,7 +915,7 @@
                     </div>
                 </div>
 
-                {{-- trend course --}}
+                {{-- Trend course --}}
                 <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="500">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-3.jpg')}}"
@@ -996,7 +996,7 @@
 
                     <div class="p-4 bg-white rounded-4 mb-4" data-aos="fade-up" data-aos-delay="300">
 
-                        {{-- carousel message - rate --}}
+                        {{-- Carousel message - rate --}}
                         <div class="d-flex justify-content-start align-items-center gap-1 mb-3" data-aos="fade-up"
                              data-aos-delay="400">
                             <img src="{{asset('/images/svg/home/star-fill.svg')}}" class="width-18 height-18"
@@ -1011,26 +1011,26 @@
                                  alt="star">
                         </div>
 
-                        {{-- carousel message - description --}}
+                        {{-- Carousel message - description --}}
                         <p class="lead text-secondary fw-medium mb-3" data-aos="fade-up" data-aos-delay="500">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur id magnam natus
                             saepe! A ab, accusamus ad alias amet architecto asperiores aspernatur aut beatae dicta est
                             eum ex exercitationem expedita
                         </p>
 
-                        {{-- carousel message - author --}}
+                        {{-- Carousel message - author --}}
                         <h4 class="fs-4 fw-bold" data-aos="fade-up" data-aos-delay="600">
                             Melissa McGovern
                         </h4>
 
-                        {{-- carousel message - profession --}}
+                        {{-- Carousel message - profession --}}
                         <p class="small text-secondary" data-aos="fade-up" data-aos-delay="700">
                             Manager
                         </p>
 
                     </div>
 
-                    {{-- see more route --}}
+                    {{-- See more route --}}
                     <div class="mb-3" data-aos="fade-up" data-aos-delay="800">
                         <a href="javascript:void(0)" class="btn btn-theme rounded-pill px-4 py-2">
                             See More
@@ -1040,7 +1040,7 @@
                 </div>
                 <div class="col-lg-6">
 
-                    {{-- carousel image of feedback provider --}}
+                    {{-- Carousel image of feedback provider --}}
                     <div class="position-relative" data-aos="fade-up" data-aos-delay="900">
                         <img src="{{asset('/images/home/feedback-1.jpg')}}"
                              class="img-fluid object-fit-cover h-100 w-100 rounded-3" alt="feedback-1">
@@ -1056,7 +1056,7 @@
         </div>
     </section>
 
-    {{-- trusted company --}}
+    {{-- Trusted company --}}
     <section class="w-100 py-5" data-aos="fade-up">
         <div class="container text-center py-5 border-top border-bottom">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
@@ -1100,7 +1100,7 @@
             </div>
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
 
-                {{-- blog item --}}
+                {{-- Blog item --}}
                 <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="300">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-6.jpg')}}"
@@ -1132,7 +1132,7 @@
                     </div>
                 </div>
 
-                {{-- blog item --}}
+                {{-- Blog item --}}
                 <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="300">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-5.jpg')}}"
@@ -1164,7 +1164,7 @@
                     </div>
                 </div>
 
-                {{-- blog item --}}
+                {{-- Blog item --}}
                 <div class="p-2 mb-5" data-aos="fade-up" data-aos-delay="300">
                     <div class="position-relative">
                         <img src="{{asset('/images/home/course-4.jpg')}}"
@@ -1206,21 +1206,18 @@
             <div class="bg-light-pink px-4 rounded-3 py-5">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
-                        <h1 class="fs-1 text-white" data-aos="fade-up" data-aos-delay="100">
+                        <div class="fs-1 text-white" data-aos="fade-up" data-aos-delay="100">
                             Join our community of students
-                        </h1>
+                        </div>
                     </div>
                     <div class="col-lg-6 py-3" data-aos="fade-up" data-aos-delay="200">
-                        <label for="email" hidden="hidden">Email</label>
                         <div class="position-relative">
-                            <input id="email" type="email" name="email"
-                                   class="form-control shadow-none py-3 ps-4 rounded-0 rounded-pill" required
+                            <label for="newsletter" hidden="hidden">email</label>
+                            <input id="newsletter" type="email" name="email" class="form-control shadow-none py-3 ps-4 rounded-0 rounded-pill" required
                                    autocomplete="off" placeholder="Enter your Email">
                             <div class="position-absolute top-50 end-0 translate-middle-y pe-3">
                                 <button type="submit" class="btn btn-theme rounded-pill px-4">
-                                    <span class="d-none d-md-inline me-2">
-                                        Subscribe
-                                    </span>
+                                    <span class="d-none d-sm-inline me-1">Subscribe</span>
                                     <span>
                                         <img src="{{asset('/images/svg/home/send.svg')}}" class="width-21 height-21"
                                              alt="send">

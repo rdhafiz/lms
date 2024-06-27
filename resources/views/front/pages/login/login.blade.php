@@ -3,42 +3,79 @@
 
 @section('content')
 
-    {{-- login content --}}
+    {{-- Breadcrumb --}}
+    <section class="w-100 bg-warning-subtle" data-aos="fade-up">
+        <div class="container">
+            <div class="d-flex justify-content-start align-items-center height-350">
+                <div>
+
+                    <h1 class="fs-1 fw-bold text-theme-secondary mb-3 d-block" data-aos="fade-up" data-aos-delay="100">
+                        Login
+                    </h1>
+
+                    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="200">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="{{route('front.home')}}" class="text-decoration-none text-dark">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item active">
+                                <a href="{{route('front.login')}}" class="text-decoration-none text-theme">
+                                    Login
+                                </a>
+                            </li>
+                        </ol>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{-- Login content --}}
     <section class="w-100 py-5" id="login">
         <div class="container py-5">
             <div class="row justify-content-center align-items-center py-5">
-                <div class="px-2 border col-11 col-sm-9 bg-white">
+                <div class="px-2 col-11 col-sm-10">
                     <div class="row align-items-center px-2">
 
-                        {{-- login form --}}
-                        <form @submit.prevent="loginForm()" class="col-lg-5 p-4 fw-medium">
+                        {{-- Login form --}}
+                        <form @submit.prevent="loginForm()" class="col-lg-5 p-4 fw-medium border">
 
-                            {{-- login title --}}
-                            <div class="fs-3 mb-3"> Welcome to your account </div>
+                            {{-- Login title --}}
+                            <div class="fs-4"> Welcome to your account</div>
 
-                            {{-- credential error message --}}
-                            <div class="alert alert-danger rounded-3 mb-3 text-center" v-if="error !== null && error.error !== undefined" v-text="error.error"></div>
+                            {{-- Credential error message --}}
+                            <div class="alert alert-danger rounded-3 my-3 text-center"
+                                 v-if="error !== null && error.error !== undefined" v-text="error.error"></div>
 
-                            {{-- description --}}
+                            {{-- Description --}}
                             <div class="text-secondary mb-3">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, libero.
+                                Please sign-in to your account and start the adventure
                             </div>
 
-                            {{-- form group - email --}}
+                            {{-- Form group - email --}}
                             <div class="form-group mb-3">
                                 <label for="email" class="form-label">Email</label>
-                                <input id="email" type="email" name="email" class="form-control py-2 px-3 rounded-0 shadow-none border" autocomplete="off" v-model="loginParam.email">
-                                <div class="error-report" v-if="error != null && error.email !== undefined" v-text="error.email[0]"></div>
+                                <input id="email" type="email" name="email"
+                                       class="form-control py-2 px-3 rounded-0 shadow-none border" autocomplete="off"
+                                       v-model="loginParam.email">
+                                <div class="error-report" v-if="error != null && error.email !== undefined"
+                                     v-text="error.email[0]"></div>
                             </div>
 
-                            {{-- form group - password --}}
+                            {{-- Form group - password --}}
                             <div class="form-group mb-3">
                                 <label for="password" class="form-label">Password</label>
-                                <input id="password" type="password" name="password" class="form-control py-2 px-3 rounded-0 shadow-none border" autocomplete="off" v-model="loginParam.password">
-                                <div class="error-report" v-if="error != null && error.password !== undefined" v-text="error.password[0]"></div>
+                                <input id="password" type="password" name="password"
+                                       class="form-control py-2 px-3 rounded-0 shadow-none border" autocomplete="off"
+                                       v-model="loginParam.password">
+                                <div class="error-report" v-if="error != null && error.password !== undefined"
+                                     v-text="error.password[0]"></div>
                             </div>
 
-                            {{-- action button --}}
+                            {{-- Action button --}}
                             <div class="d-flex justify-content-between align-items-center">
                                 <button type="submit" class="btn btn-theme py-2 px-3 rounded-0" v-if="!loading">
                                     Login
@@ -47,7 +84,7 @@
                                     Loading
                                 </button>
 
-                                {{-- forget password route --}}
+                                {{-- Forget password route --}}
                                 <a href="{{route('front.forget_password')}}" class="text-danger text-decoration-none">
                                     Forget Password?
                                 </a>
@@ -55,8 +92,9 @@
                             </div>
                         </form>
 
-                        {{-- registration route --}}
-                        <div class="col-lg-7 border-start d-flex justify-content-center align-items-center flex-column" style="min-height: 600px">
+                        {{-- Registration route --}}
+                        <div class="col-lg-7 d-flex justify-content-center align-items-center flex-column"
+                             style="min-height: 600px">
                             <div class="mb-3 text-center fw-medium fs-3">
                                 Don't have any account
                             </div>
@@ -74,7 +112,7 @@
     <script type="module">
         const {createApp, ref} = Vue;
         createApp({
-            data(){
+            data() {
                 return {
                     // data properties
                     loading: false,
@@ -85,7 +123,8 @@
                     }
                 }
             },
-            mounted(){},
+            mounted() {
+            },
             methods: {
 
                 /* --- --- --- function of clear error handler --- --- --- */

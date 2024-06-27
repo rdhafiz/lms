@@ -13,7 +13,13 @@ use Illuminate\Support\Facades\Validator;
 class AuthController extends BaseController
 {
 
-    /* *** *** *** *** *** *** *** *** Login *** *** *** *** *** *** *** *** */
+    /**
+     * User login
+     *
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+
     public function login(Request $request) {
         try {
             $validator = Validator::make($request->all(), [
@@ -34,7 +40,13 @@ class AuthController extends BaseController
         }
     }
 
-    /* *** *** *** *** *** *** *** *** Register *** *** *** *** *** *** *** *** */
+    /**
+     * User registration
+     *
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+
     public function register(Request $request) {
         try {
             $validator = Validator::make($request->all(), [
@@ -56,7 +68,13 @@ class AuthController extends BaseController
         }
     }
 
-    /* *** *** *** *** *** *** *** *** Forget *** *** *** *** *** *** *** *** */
+    /**
+     * User forget
+     *
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+
     public function forget(Request $request) {
         try {
             $validator = Validator::make($request->all(), [
@@ -86,7 +104,13 @@ class AuthController extends BaseController
         }
     }
 
-    /* *** *** *** *** *** *** *** *** Reset *** *** *** *** *** *** *** *** */
+    /**
+     * User reset
+     *
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+
     public function reset(Request $request) {
         try {
             $input = $request->input();
@@ -103,7 +127,7 @@ class AuthController extends BaseController
                 return response()->json(['status' => 500, 'error' => 'invalid request. Check your reset code']);
             }
             if(Hash::check($input['password'], $userInformation['password'])) {
-                return response()->json(['error' => ['password' => 'Not allow same password. Please kindly use another password']], 500);
+                return response()->json(['errors' => ['password' => ['Please kindly use another password']]], 500);
             }
             $userInformation->password = bcrypt($input['password']);
             $userInformation->reset_code = null;
