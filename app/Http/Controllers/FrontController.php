@@ -61,4 +61,8 @@ class FrontController extends BaseController
         return view('emails.forget');
     }
 
+    public function profile_details() {
+        return view('front.pages.profile.profile');
+    }
+
 }

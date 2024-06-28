@@ -16,11 +16,21 @@ use App\Http\Controllers\frontend\AuthController;
 */
 
 Route::group(
-    ['prefix' => 'auth'],
+    ['middleware' => 'userAuth', 'prefix' => 'auth'],
     function () {
         Route::post('/login', [AuthController::class, 'login'])->name('User.Auth.Login');
         Route::post('/register', [AuthController::class, 'register'])->name('User.Auth.Register');
         Route::post('/forget', [AuthController::class, 'forget'])->name('User.Auth.Forget');
         Route::post('/reset', [AuthController::class, 'reset'])->name('User.Auth.Reset');
+    }
+);
+
+Route::group(
+    ['middleware' => 'userAuthReq', 'prefix' => 'profile'],
+    function () {
+        Route::get('/details', [AuthController::class, 'profileDetails'])->name('User.Profile.Details');
+        Route::patch('/update', [AuthController::class, 'profileUpdate'])->name('User.Profile.Update');
+        Route::patch('/update/password', [AuthController::class, 'profileUpdatePassword'])->name('User.Profile.Update.Password');
+        Route::get('/logout', [AuthController::class, 'profileLogout'])->name('User.Profile.Logout');
     }
 );

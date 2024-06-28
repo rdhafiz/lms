@@ -138,4 +138,94 @@ class AuthController extends BaseController
         }
     }
 
+    /**
+     * User profile details
+     *
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function profileDetails(Request $request) {
+        try {
+            $user_id = Auth::guard('users')->id();
+            $user = User::where('id', $user_id)->first();
+            return response()->json(['message' => 'User data show successfully', 'data' => $user]);
+        } catch ( \Exception $exception) {
+            return response()->json(['status' => 500, 'errors' => $exception->getMessage(), 'line' => $exception->getLine()], 500);
+        }
+    }
+
+    /**
+     * User profile update
+     *
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function profileUpdate(Request $request) {
+        try {
+            $validator = Validator::make(
+                $request->all(),
+                [
+                    'email' => 'required',
+                    'name' => 'required',
+                ]
+            );
+            if($validator->fails()) {
+                return response()->json(['status' => 500, 'errors' => $validator->errors()], 500);
+            }
+            $user = User::where('id', Auth::guard('users')->id())->first();
+            $user->name = $request->name;
+            $user->email = $request->email;
+            $user->save();
+            return response()->json(['message' => 'Profile update successfully']);
+        } catch ( \Exception $exception) {
+            return response()->json(['status' => 500, 'errors' => $exception->getMessage(), 'line' => $exception->getLine()], 500);
+        }
+    }
+
+    /**
+     * User profile update password
+     *
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function profileUpdatePassword(Request $request) {
+        try {
+            $validator = Validator::make(
+                $request->all(),
+                [
+                    'current_password' => 'required',
+                    'password' => 'required|min:6|confirmed',
+                ]
+            );
+            if($validator->fails()) {
+                return response()->json(['status' => 500, 'errors' => $validator->errors()], 500);
+            }
+            $user = User::where('id', Auth::guard('users')->id())->first();
+            if(Hash::check($request->current_password, $user->password)){
+                $user->password = bcrypt($request->password);
+                $user->save();
+            } else {
+                return response()->json(['status' => 500, 'errors' => ['current_password' => ['Current password is not correct! Please type correct password']]]);
+            }
+            return response()->json(['message' => 'Profile update successfully']);
+        } catch ( \Exception $exception) {
+            return response()->json(['status' => 500, 'errors' => $exception->getMessage(), 'line' => $exception->getLine()], 500);
+        }
+    }
+
+    /**
+     * User profile logout
+     *
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function profileLogout(Request $request) {
+        try {
+            Auth::guard('users')->logout();
+            return response()->json([ 'message' => 'Logout successfully']);
+        } catch (\Exception $e) {
+            return response()->json(['status' => 500, 'errors' => $e->getMessage(), 'line' => $e->getLine()], 500);
+        }
+    }
+
 }
