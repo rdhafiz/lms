@@ -38,37 +38,32 @@
     {{-- Profile content --}}
     <section class="w-100 py-5" id="front-profile">
         <div class="container">
-            <div class="row justify-content-center">
+            <div class="row">
                 <div class="col-lg-8 col-xl-6">
-                    <div class="border p-4 w-100">
-
-                        {{-- group btn --}}
-                        <div class="w-100 d-flex justify-content-start align-items-center mb-3 gap-2">
-                            <button type="button" class="btn btn-outline-theme rounded-0 px-3" @click="changeTab('edit-profile')">
-                                Edit Profile
-                            </button>
-                            <button type="button" class="btn btn-outline-theme rounded-0 px-3" @click="changeTab('change-password')">
-                                Change Password
-                            </button>
-                        </div>
 
                         {{-- edit profile --}}
-                        <form @submit.prevent="updateProfile()" class="w-100" v-if="this.tab === 'edit-profile'">
+                        <form @submit.prevent="updateProfile()" class="w-100 border p-4 w-100 mb-4">
+                            <div class="fs-4 fw-bold mb-3">
+                                Edit Profile
+                            </div>
                             <div class="form-group mb-3">
                                 <label for="name" class="form-label">Name</label>
-                                <input id="name" type="text" name="name" class="form-control shadow-none px-3 py-2 rounded-0"
+                                <input id="name" type="text" name="name"
+                                       class="form-control shadow-none px-3 py-2 rounded-0"
                                        autocomplete="off" v-model="profileParam.name">
                                 <div class="error-report" v-if="error != null && error.name !== undefined"
                                      v-text="error.name[0]"></div>
                             </div>
                             <div class="form-group mb-3">
                                 <label for="email" class="form-label">Email</label>
-                                <input id="email" type="email" name="email" class="form-control shadow-none px-3 py-2 rounded-0"
+                                <input id="email" type="email" name="email"
+                                       class="form-control shadow-none px-3 py-2 rounded-0"
                                        autocomplete="off" v-model="profileParam.email">
                                 <div class="error-report" v-if="error != null && error.email !== undefined"
                                      v-text="error.email[0]"></div>
                             </div>
-                            <button type="submit" class="btn btn-theme width-120 rounded-0" v-if="!profileUpdateLoading">
+                            <button type="submit" class="btn btn-theme width-120 rounded-0"
+                                    v-if="!profileUpdateLoading">
                                 Update
                             </button>
                             <button type="button" class="btn btn-theme width-120 rounded-0" v-if="profileUpdateLoading">
@@ -77,10 +72,14 @@
                         </form>
 
                         {{-- change password --}}
-                        <form @submit.prevent="updatePassword()" class="w-100" v-if="this.tab === 'change-password'">
+                        <form @submit.prevent="updatePassword()" class="w-100 border p-4 w-100 mb-4">
+                            <div class="fs-4 fw-bold mb-3">
+                                Change Password
+                            </div>
                             <div class="form-group mb-3">
                                 <label for="current_password" class="form-label">Current Password</label>
-                                <input id="current_password" type="password" name="current_password" v-model="passwordParam.current_password"
+                                <input id="current_password" type="password" name="current_password"
+                                       v-model="passwordParam.current_password"
                                        class="form-control shadow-none px-3 py-2 rounded-0" autocomplete="off">
                                 <div class="error-report" v-if="error != null && error.current_password !== undefined"
                                      v-text="error.current_password[0]"></div>
@@ -94,20 +93,23 @@
                             </div>
                             <div class="form-group mb-3">
                                 <label for="password_confirmation" class="form-label"> Password Confirmation </label>
-                                <input id="password_confirmation" type="password" name="password_confirmation" v-model="passwordParam.password_confirmation"
+                                <input id="password_confirmation" type="password" name="password_confirmation"
+                                       v-model="passwordParam.password_confirmation"
                                        class="form-control shadow-none px-3 py-2 rounded-0" autocomplete="off">
-                                <div class="error-report" v-if="error != null && error.password_confirmation !== undefined"
+                                <div class="error-report"
+                                     v-if="error != null && error.password_confirmation !== undefined"
                                      v-text="error.password[0]"></div>
                             </div>
-                            <button type="submit" class="btn btn-theme width-120 rounded-0" v-if="!passwordUpdateLoading">
+                            <button type="submit" class="btn btn-theme width-120 rounded-0"
+                                    v-if="!passwordUpdateLoading">
                                 Update
                             </button>
-                            <button type="button" class="btn btn-theme width-120 rounded-0" v-if="passwordUpdateLoading">
+                            <button type="button" class="btn btn-theme width-120 rounded-0"
+                                    v-if="passwordUpdateLoading">
                                 Loading
                             </button>
                         </form>
 
-                    </div>
                 </div>
             </div>
         </div>
@@ -135,7 +137,7 @@
                 }
             },
             mounted() {
-
+                this.profileDetails();
             },
             methods: {
 
@@ -173,7 +175,7 @@
                 },
 
                 /* --- --- --- function of update profile --- --- --- */
-                updateProfile(){
+                updateProfile() {
                     this.ClearErrorHandler();
                     this.profileUpdateLoading = true;
                     let headerContent = {
@@ -184,14 +186,14 @@
                         window.location.href = `{{route('front.profile_details')}}`;
                     }).catch(err => {
                         let res = err?.response;
-                        if(res?.data?.errors !== undefined) {
+                        if (res?.data?.errors !== undefined) {
                             this.error = res?.data?.errors;
                         }
                     })
                 },
 
                 /* --- --- --- function of update password --- --- --- */
-                updatePassword(){
+                updatePassword() {
                     this.ClearErrorHandler();
                     this.passwordUpdateLoading = true;
                     let headerContent = {
@@ -202,7 +204,7 @@
                         {{--window.location.href = `{{route('front.profile_details')}}`;--}}
                     }).catch(err => {
                         let res = err?.response;
-                        if(res?.data?.errors !== undefined) {
+                        if (res?.data?.errors !== undefined) {
                             this.error = res?.data?.errors;
                         }
                     })

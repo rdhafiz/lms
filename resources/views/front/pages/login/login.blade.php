@@ -3,36 +3,6 @@
 
 @section('content')
 
-    {{-- Breadcrumb --}}
-    <section class="w-100 bg-warning-subtle" data-aos="fade-up">
-        <div class="container">
-            <div class="d-flex justify-content-start align-items-center height-350">
-                <div>
-
-                    <h1 class="fs-1 fw-bold text-theme-secondary mb-3 d-block" data-aos="fade-up" data-aos-delay="100">
-                        Login
-                    </h1>
-
-                    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="200">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item">
-                                <a href="{{route('front.home')}}" class="text-decoration-none text-dark">
-                                    Home
-                                </a>
-                            </li>
-                            <li class="breadcrumb-item active">
-                                <a href="{{route('front.login')}}" class="text-decoration-none text-theme">
-                                    Login
-                                </a>
-                            </li>
-                        </ol>
-                    </nav>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
     {{-- Login content --}}
     <section class="w-100 py-5" id="login">
         <div class="container py-5">
@@ -93,8 +63,7 @@
                         </form>
 
                         {{-- Registration route --}}
-                        <div class="col-lg-7 d-flex justify-content-center align-items-center flex-column"
-                             style="min-height: 600px">
+                        <div class="col-lg-7 d-flex justify-content-center align-items-center flex-column">
                             <div class="mb-3 text-center fw-medium fs-3">
                                 Don't have any account
                             </div>
