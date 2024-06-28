@@ -135,7 +135,7 @@
                 }
             },
             mounted() {
-                this.profileDetails();
+
             },
             methods: {
 

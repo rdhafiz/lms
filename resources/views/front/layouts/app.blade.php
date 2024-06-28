@@ -43,15 +43,6 @@
     <script src="{{asset('assets/js/aos.js')}}"></script>
 
     <script>
-
-        window.core = {
-            @if(\Illuminate\Support\Facades\Auth::guard('users')->check())
-                UserInfo: {!! \Illuminate\Support\Facades\Auth::guard('users')->user() !!},
-            @else
-                UserInfo: null,
-            @endif
-        };
-
         AOS.init();
     </script>
 
