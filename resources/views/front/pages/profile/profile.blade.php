@@ -185,6 +185,7 @@
                         this.profileUpdateLoading = false;
                         window.location.href = `{{route('front.profile_details')}}`;
                     }).catch(err => {
+                        this.profileUpdateLoading = false;
                         let res = err?.response;
                         if (res?.data?.errors !== undefined) {
                             this.error = res?.data?.errors;
@@ -203,6 +204,7 @@
                         this.passwordUpdateLoading = false;
                         {{--window.location.href = `{{route('front.profile_details')}}`;--}}
                     }).catch(err => {
+                        this.passwordUpdateLoading = false;
                         let res = err?.response;
                         if (res?.data?.errors !== undefined) {
                             this.error = res?.data?.errors;
