@@ -15,6 +15,21 @@ body {
     --light-info: #6792bc;
 }
 
+.scrollbar {
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        background-color: transparent;
+        width: 5px !important;
+        height: 5px !important;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: var(--light-gray);
+        height: 5px !important;
+    }
+}
+
 .cursor-pointer {
     cursor: pointer;
 }
