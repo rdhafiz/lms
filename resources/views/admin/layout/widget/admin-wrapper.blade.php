@@ -1,5 +1,9 @@
 <div class="admin-wrapper">
+
+    {{-- Admin sidebar --}}
     <div class="admin-sidebar">
+
+        {{-- Admin sidebar header --}}
         <div class="admin-sidebar-header">
             <a href="{{route('admin.dashboard')}}" class="h5 mb-0 pb-0 text-decoration-none text-theme">
                 Admin Panel
@@ -8,6 +12,8 @@
                 <img src="{{asset('/images/svg/header/close.svg')}}" class="width-25 height-25" alt="close" onclick="sidebarClose()">
             </button>
         </div>
+
+        {{-- Admin sidebar body --}}
         <div class="admin-sidebar-body">
             <a href="{{route('admin.dashboard')}}" class="nav-link {{Route::currentRouteName() == 'admin.dashboard' ? 'active' : ''}}">
                 Dashboard
@@ -20,7 +26,11 @@
             </a>
         </div>
     </div>
+
+    {{-- Admin content --}}
     <div class="admin-content">
+
+        {{-- Admin content header --}}
         <div class="admin-content-header">
 
             <button type="button" class="btn p-0 border-0 sidebar-toggle" onclick="sidebarOpen()">
@@ -47,25 +57,31 @@
             </div>
 
         </div>
+
+        {{-- Admin content body --}}
         <div class="admin-content-body">
 
             {{-- content --}}
             @yield('content')
 
         </div>
+
     </div>
+
 </div>
 
 <script>
 
-    function sidebarClose() {
-        let sidebar = document.querySelector('.admin-sidebar');
-        sidebar.classList.remove('active');
-    }
-
+    {{-- admin sidebar open --}}
     function sidebarOpen() {
         let sidebar = document.querySelector('.admin-sidebar');
         sidebar.classList.add('active');
+    }
+
+    {{-- admin sidebar close --}}
+    function sidebarClose() {
+        let sidebar = document.querySelector('.admin-sidebar');
+        sidebar.classList.remove('active');
     }
 
 </script>

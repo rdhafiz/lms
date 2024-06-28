@@ -3,34 +3,49 @@
 
 @section('content')
 
+    {{-- Profile content --}}
     <div class="row justify-content-center fw-medium h-100 align-items-center">
         <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4 border shadow p-4">
+
+            {{-- Profile content - title --}}
             <div class="fs-4 mb-3">
                 Profile
             </div>
+
+            {{-- Profile content - avatar --}}
             <div class="mb-3 d-flex justify-content-center">
                 <img src="{{asset('/images/home/team-1.jpg')}}" class="img-fluid object-fit-cover rounded-circle width-200 height-200" alt="avatar">
             </div>
+
             <div class="text-center">
+
+                {{-- Profile content - email --}}
                 <div class="mb-3">
                     <div class="text-dark"> Name </div>
                     <div class="text-secondary"> John Smith </div>
                 </div>
+
+                {{-- Profile content - email --}}
                 <div class="mb-3">
                     <div class="text-dark"> Email </div>
                     <div class="text-secondary"> johnsmith@gmail.com </div>
                 </div>
                 <div class="row">
+
+                    {{-- Profile content - edit profile --}}
                     <div class="col-6">
                         <button type="button" class="btn btn-outline-theme w-100 rounded-0" data-bs-toggle="modal" data-bs-target="#editProfile">
                             Edit Profile
                         </button>
                     </div>
+
+                    {{-- Profile content - change password --}}
                     <div class="col-6">
                         <button type="button" class="btn btn-outline-theme w-100 rounded-0" data-bs-toggle="modal" data-bs-target="#changePassword">
                             Change Password
                         </button>
                     </div>
+
                 </div>
             </div>
         </div>

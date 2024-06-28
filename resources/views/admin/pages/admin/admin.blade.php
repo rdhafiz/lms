@@ -3,7 +3,10 @@
 
 @section('content')
 
+    {{-- search and add new admin --}}
     <div class="row justify-content-between align-items-center">
+
+        {{-- Search --}}
         <div class="col-12 col-lg-4 mb-3">
             <div class="position-relative">
                 <input type="text" name="keyword" class="form-control shadow-none py-2 ps-5" placeholder="Search here" required autocomplete="off">
@@ -12,17 +15,25 @@
                 </div>
             </div>
         </div>
+
+        {{-- New --}}
         <div class="col-12 col-lg-5 text-end mb-3">
             <button type="button" class="btn btn-theme rounded-0 width-95" data-bs-toggle="modal" data-bs-target="#manageModal">
                 New
             </button>
         </div>
+
     </div>
 
+    {{-- Admin management card --}}
     <div class="card bg-white border rounded-3 overflow-hidden">
+
+        {{-- Admin management card header --}}
         <div class="card-header p-3 bg-white border-0 rounded-0 border-bottom">
             <h5 class="h5 mb-0 fw-medium"> Admin Management </h5>
         </div>
+
+        {{-- Admin management card body as data list --}}
         <div class="card-body height-calc-350 scrollbar p-3 bg-white border-0 rounded-0">
             <div class="table-responsive">
                 <table class="table table-borderless">
@@ -548,6 +559,8 @@
                 </table>
             </div>
         </div>
+
+        {{-- Admin management card footer as pagination --}}
         <div class="card-footer bg-white border-0 border-top rounded-0 py-3">
             <nav aria-label="Page navigation example">
                 <ul class="pagination pb-0 mb-0 d-flex justify-content-center align-items-center">
@@ -584,9 +597,10 @@
                 </ul>
             </nav>
         </div>
+
     </div>
 
-    {{-- Manage Modal --}}
+    {{-- Manage Modal of admin create and edit --}}
     <div class="modal fade" id="manageModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content p-4 rounded-0 shadow-none">
@@ -626,7 +640,7 @@
         </div>
     </div>
 
-    {{-- Delete Modal --}}
+    {{-- Delete Modal of admin delete --}}
     <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content p-4 rounded-0 shadow-none">

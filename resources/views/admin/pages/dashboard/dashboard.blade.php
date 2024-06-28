@@ -4,6 +4,8 @@
 @section('content')
 
     <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3">
+
+        {{-- Admins count --}}
         <div class="p-3">
             <a href="{{route('admin.admin_management')}}" class="w-100 shadow bg-white p-5 text-center d-block text-decoration-none">
                 <div class="pb-3 text-theme-secondary fs-5">
@@ -17,6 +19,8 @@
                 </div>
             </a>
         </div>
+
+        {{-- Users count --}}
         <div class="p-3">
             <a href="{{route('admin.user_management')}}" class="w-100 shadow bg-white p-5 text-center d-block text-decoration-none">
                 <div class="pb-3 text-theme-secondary fs-5">
@@ -30,6 +34,7 @@
                 </div>
             </a>
         </div>
+
     </div>
 
 @endsection
