@@ -46,7 +46,7 @@ body {
             border-radius: 5px !important;
             padding: 10px 20px;
 
-            &:hover, &:active, &:focus {
+            &:hover, &:active, &.active, &:focus {
                 background-color: var(--theme) !important;
                 color: var(--bs-white) !important;
                 transition: 0.3s all ease-in-out;

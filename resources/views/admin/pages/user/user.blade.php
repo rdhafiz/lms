@@ -3,8 +3,8 @@
 
 @section('content')
 
-    <div class="row justify-content-between align-items-center mb-3">
-        <div class="col-12 col-sm-4">
+    <div class="row justify-content-between align-items-center">
+        <div class="col-12 col-lg-4 mb-3">
             <div class="position-relative">
                 <input type="text" name="keyword" class="form-control shadow-none py-2 ps-5" placeholder="Search here" required autocomplete="off">
                 <div class="position-absolute top-50 start-0 translate-middle-y ps-3">
@@ -12,7 +12,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 col-sm-5 text-end">
+        <div class="col-12 col-lg-5 text-end mb-3">
             <button type="button" class="btn btn-theme rounded-0 width-95" data-bs-toggle="modal" data-bs-target="#manageModal">
                 New
             </button>
