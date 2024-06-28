@@ -183,8 +183,8 @@
                     }
                     axios.patch('{{route('User.Profile.Update')}}', this.profileParam, {headers: headerContent}).then((response) => {
                         this.profileUpdateLoading = false;
-                        window.location.href = `{{route('front.profile_details')}}`;
                     }).catch(err => {
+                        this.profileUpdateLoading = false;
                         let res = err?.response;
                         if (res?.data?.errors !== undefined) {
                             this.error = res?.data?.errors;
@@ -201,8 +201,8 @@
                     }
                     axios.patch('{{route('User.Profile.Update.Password')}}', this.passwordParam, {headers: headerContent}).then((response) => {
                         this.passwordUpdateLoading = false;
-                        {{--window.location.href = `{{route('front.profile_details')}}`;--}}
                     }).catch(err => {
+                        this.passwordUpdateLoading = false;
                         let res = err?.response;
                         if (res?.data?.errors !== undefined) {
                             this.error = res?.data?.errors;
