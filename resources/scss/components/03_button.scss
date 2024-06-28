@@ -31,3 +31,20 @@
     transition: 0.3s all ease-in-out !important;
     border: 1px solid transparent !important;
 }
+
+.btn-icon {
+    background-color: transparent !important;
+    border: none;
+    outline: none;
+    transition: 0.3s all ease-in-out !important;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+
+    &:hover {
+        transition: 0.3s all ease-in-out !important;
+        background-color: var(--bs-light) !important;
+        box-shadow: 0 0 8px 0 var(--bs-border-color) inset !important;
+    }
+
+}

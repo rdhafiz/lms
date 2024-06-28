@@ -1,0 +1,122 @@
+.admin-wrapper {
+    display: flex;
+
+    .admin-sidebar {
+        width: 250px;
+        height: 100vh;
+        background-color: var(--bs-white);
+
+        @media screen and (max-width: 991px) {
+            position: fixed;
+            left: -260px;
+            top: 0;
+            bottom: 0;
+            transition: 0.3s all ease-in-out;
+            z-index: 999;
+            box-shadow: 0 0 8px 0 var(--bs-border-color);
+
+            &.active {
+                transition: 0.3s all ease-in-out;
+                left: 0;
+            }
+
+        }
+
+        @media screen and (max-width: 576px) {
+            width: 100%;
+            position: fixed;
+            left: -110%;
+            top: 0;
+            bottom: 0;
+            transition: 0.3s all ease-in-out;
+            z-index: 999;
+            box-shadow: 0 0 8px 0 var(--bs-border-color);
+
+            &.active {
+                transition: 0.3s all ease-in-out;
+                left: 0;
+            }
+        }
+
+        .admin-sidebar-header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 20px;
+            height: 70px;
+
+            @media screen and (max-width: 991px) {
+                justify-content: space-between;
+            }
+
+            .sidebar-close {
+                display: none;
+
+                @media screen and (max-width: 991px) {
+                    display: inline;
+                }
+
+            }
+
+        }
+
+        .admin-sidebar-body {
+            padding: 5px;
+
+            .nav-link {
+                padding: 10px 15px;
+                font-size: 14px;
+                transition: 0.3s all ease-in-out !important;
+
+                &:hover, &.active {
+                    transition: 0.3s all ease-in-out !important;
+                    color: var(--theme) !important;
+                }
+
+            }
+
+        }
+
+    }
+
+    .admin-content {
+        width: calc(100% - 250px);
+        height: 100vh;
+
+        @media screen and (max-width: 991px) {
+            width: 100%;
+        }
+
+        .admin-content-header {
+            height: 70px;
+            background-color: var(--bs-white);
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            padding: 10px 20px;
+
+            @media screen and (max-width: 991px) {
+                justify-content: space-between;
+            }
+
+            .sidebar-toggle {
+                display: none;
+
+                @media screen and (max-width: 991px) {
+                    display: inline;
+                }
+
+            }
+
+        }
+        .admin-content-body {
+            width: 100%;
+            height: calc(100vh - 70px);
+            padding: 20px;
+            background-color: var(--bs-light);
+            box-shadow: 0 0 8px 0 var(--bs-border-color) inset;
+        }
+
+    }
+
+}

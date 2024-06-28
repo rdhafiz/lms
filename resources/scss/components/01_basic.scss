@@ -15,6 +15,21 @@ body {
     --light-info: #6792bc;
 }
 
+.scrollbar {
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        background-color: transparent;
+        width: 5px !important;
+        height: 5px !important;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: var(--light-gray);
+        height: 5px !important;
+    }
+}
+
 .cursor-pointer {
     cursor: pointer;
 }
@@ -31,7 +46,7 @@ body {
             border-radius: 5px !important;
             padding: 10px 20px;
 
-            &:hover, &:active, &:focus {
+            &:hover, &:active, &.active, &:focus {
                 background-color: var(--theme) !important;
                 color: var(--bs-white) !important;
                 transition: 0.3s all ease-in-out;
