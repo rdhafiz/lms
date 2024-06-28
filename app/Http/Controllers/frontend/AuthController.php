@@ -138,4 +138,23 @@ class AuthController extends BaseController
         }
     }
 
+    public function profileDetails(Request $request) {
+        try {
+            $user_id = Auth::guard('users')->id();
+            $user = User::where('id', $user_id)->first();
+            return response()->json(['message' => 'User data show successfully', 'data' => $user]);
+        } catch ( \Exception $exception) {
+            return response()->json(['status' => 500, 'errors' => $exception->getMessage(), 'line' => $exception->getLine()], 500);
+        }
+    }
+
+    public function profileLogout(Request $request) {
+        try {
+            Auth::guard('users')->logout();
+            return response()->json([ 'message' => 'Logout successfully']);
+        } catch (\Exception $e) {
+            return response()->json(['status' => 500, 'errors' => $e->getMessage(), 'line' => $e->getLine()], 500);
+        }
+    }
+
 }

@@ -24,3 +24,13 @@ Route::group(
         Route::post('/reset', [AuthController::class, 'reset'])->name('User.Auth.Reset');
     }
 );
+
+Route::group(
+    ['prefix' => 'profile'],
+    function () {
+        Route::get('/details', [AuthController::class, 'profileDetails'])->name('User.Profile.Details');
+        Route::patch('/update', [AuthController::class, 'profileUpdate'])->name('User.Profile.Update');
+        Route::patch('/update/password', [AuthController::class, 'profileUpdatePassword'])->name('User.Profile.Update.Password');
+        Route::get('/logout', [AuthController::class, 'profileLogout'])->name('User.Profile.Logout');
+    }
+);
