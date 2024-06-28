@@ -100,6 +100,16 @@
                         SignUp
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-theme rounded-pill px-4 mx-2" href="{{route('front.profile_details')}}">
+                        Profile
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-theme rounded-pill px-4 mx-2">
+                        Logout
+                    </button>
+                </li>
             </ul>
         </div>
     </div>
@@ -107,6 +117,7 @@
 
 <script>
 
+    {{-- function of collapse --}}
     function collapse() {
         if (window.innerWidth < 991) {
             const navbarCollapse = document.querySelector('.navbar-collapse');

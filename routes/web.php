@@ -32,10 +32,10 @@ Route::get('/courses', [FrontController::class, 'courses'])->name('front.courses
 Route::get('/course-details', [FrontController::class, 'courseDetails'])->name('front.course-details');
 Route::get('/email-template', [FrontController::class, 'emailTemplate']);
 
-Route::get('/register', [FrontController::class, 'register'])->name('front.register');
-Route::get('/login', [FrontController::class, 'login'])->name('front.login');
-Route::get('/forget_password', [FrontController::class, 'forget_password'])->name('front.forget_password');
-Route::get('/reset_password', [FrontController::class, 'reset_password'])->name('front.reset_password');
+Route::middleware('loginCheck')->get('/register', [FrontController::class, 'register'])->name('front.register');
+Route::middleware('loginCheck')->get('/login', [FrontController::class, 'login'])->name('front.login');
+Route::middleware('loginCheck')->get('/forget_password', [FrontController::class, 'forget_password'])->name('front.forget_password');
+Route::middleware('loginCheck')->get('/reset_password', [FrontController::class, 'reset_password'])->name('front.reset_password');
 
 Route::get('/profile_details', [FrontController::class, 'profile_details'])->name('front.profile_details');
 

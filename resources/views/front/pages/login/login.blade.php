@@ -146,6 +146,7 @@
                     axios.post(`{{route('User.Auth.Login')}}`, this.loginParam, {headers: headerContent}).then((response) => {
                         if (response.data) {
                             this.loading = false;
+                            window.location.href = `{{route('front.profile_details')}}`;
                             this.loginParam = {
                                 email: '',
                                 password: '',

@@ -16,7 +16,7 @@ use App\Http\Controllers\frontend\AuthController;
 */
 
 Route::group(
-    ['prefix' => 'auth'],
+    ['middleware' => 'userAuth', 'prefix' => 'auth'],
     function () {
         Route::post('/login', [AuthController::class, 'login'])->name('User.Auth.Login');
         Route::post('/register', [AuthController::class, 'register'])->name('User.Auth.Register');
@@ -26,7 +26,7 @@ Route::group(
 );
 
 Route::group(
-    ['prefix' => 'profile'],
+    ['middleware' => 'userAuthReq', 'prefix' => 'profile'],
     function () {
         Route::get('/details', [AuthController::class, 'profileDetails'])->name('User.Profile.Details');
         Route::patch('/update', [AuthController::class, 'profileUpdate'])->name('User.Profile.Update');
